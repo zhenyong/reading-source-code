@@ -1,9 +1,10 @@
 import GitHub from "github-api";
 import fs from "fs";
 const gh = new GitHub();
-let repo = gh.getRepo("vuejs", "vue");
+let repo = gh.getRepo("vuejs", "core");
 
-repo.getTree("master?recursive=1", function (err, data) {
+repo.getTree("main?recursive=1", function (err, data) {
+  console.log(data)
   if (err) {
     console.dir(err.status);
   }

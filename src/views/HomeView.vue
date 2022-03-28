@@ -13,7 +13,7 @@ const handleCheckChange = async (
   indeterminate: boolean
 ) => {
   loading.value = true;
-  await fileTreeStore.toggleCheck(data);
+  await fileTreeStore.toggleCheck(data, checked);
   loading.value = false;
 };
 
@@ -41,17 +41,30 @@ const hanldeTextChange = (e: Event) => {
       :data="(fileTreeStore.tree as any)"
       show-checkbox
     />
-    <textarea @change="hanldeTextChange" :value="fileTreeStore.curNodeNotes" />
+    <div class="content-pane">
+      <div>{{ fileTreeStore.curNodePath }}</div>
+      <textarea
+        @change="hanldeTextChange"
+        :value="fileTreeStore.curNodeNotes"
+      />
+    </div>
   </main>
 </template>
 
-<style scope>
+<style scope lang="scss">
 main {
   display: flex;
 }
-textarea {
-  width: 640px;
-  border: 1px solid #eee;
+.content-pane {
+  display: flex;
+  flex-direction: column;
   margin-left: 28px;
+
+  textarea {
+    margin-top: 16px;
+    width: 640px;
+    border: 1px solid #eee;
+    flex: 1;
+  }
 }
 </style>

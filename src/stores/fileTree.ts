@@ -84,12 +84,8 @@ const _useFileTreeStore = defineStore({
       const targetNode = findNodeByPath(node.path, this.tree);
       this.curNodeNotes = targetNode?.notes || "";
     },
-    toggleCheck(node: any) {
-      if (node.status === Status.DONE) {
-        node.status = Status.UNDO;
-      } else {
-        node.status = Status.DONE;
-      }
+    toggleCheck(node: any, checked: boolean) {
+      node.status = checked ? Status.DONE : Status.UNDO;
     },
   },
 });
