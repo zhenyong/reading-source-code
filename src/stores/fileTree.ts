@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
-import fileTreeJson from "./fileTree.json";
+import rawFileTreeJson from "@/data/fileTree.json";
+import { mapValues, isPlainObject } from "lodash-es";
 
 interface INodeMeta {
   path: string;
@@ -10,55 +11,93 @@ interface INodeMeta {
   url: string;
 }
 
+enum Status {
+  DONE = "done",
+  UNDO = "undo",
+}
+
 export type TreeNode = {
-  // customer
-  root?: boolean;
-  items?: TreeNode[];
+  label: string;
+  children?: TreeNode[];
   meta?: INodeMeta;
   dir: boolean;
   path: string;
+  status: Status;
+  notes?: string;
 };
 
-function convertToTree(rawNodes: INodeMeta[]) {
-  const root = { items: [] as TreeNode[], path: "", dir: true };
-
-  function insertNode(meta: INodeMeta) {
-    let node: TreeNode = root;
-    let pathUnderPNode = "";
-    let remainPath = meta.path.split("/");
-    while (node && remainPath.length) {
-      pathUnderPNode = pathUnderPNode
-        ? `${pathUnderPNode}/${remainPath[0]}`
-        : remainPath[0];
-      remainPath = remainPath.slice(1);
-
-      let tmpNode: TreeNode | undefined = node.items?.find(
-        (v) => v.path === pathUnderPNode
-      );
-      if (!tmpNode) {
-        tmpNode =
-          remainPath.length > 0
-            ? { path: pathUnderPNode, items: [] as TreeNode[], dir: true }
-            : { path: pathUnderPNode, meta, dir: false };
-
-        (node.items = node.items || []).push(tmpNode);
-      }
-      node = tmpNode;
-    }
-  }
-  rawNodes.forEach(insertNode);
-  return root;
+let fileTreeData = rawFileTreeJson;
+const fileTreeLocalStorage = localStorage.getItem("FILE_TREE_STORE");
+if (fileTreeLocalStorage) {
+  fileTreeData = JSON.parse(fileTreeLocalStorage).tree;
+} else {
+  localStorage.setItem("FILE_TREE_STORE", JSON.stringify(rawFileTreeJson));
 }
 
-export const useFileTreeStore = defineStore({
+const flatten = (item: any) => {
+  const { children, ...props } = item;
+  return !item.dir ? props : [props].concat(children.map(flatten));
+};
+
+const findNodeByPath = (path: string, tree: TreeNode[]) => {
+  const paths = path.split("/");
+  let nextPath = "";
+  let nodes: TreeNode[] | undefined = tree;
+  let node;
+  while (paths.length) {
+    nextPath = nextPath + (nextPath ? "/" : "") + paths.shift();
+    node = nodes?.find((item) => item.path === nextPath);
+    nodes = node?.children;
+  }
+  return node;
+};
+
+const _useFileTreeStore = defineStore({
   id: "fileTree",
   state: () => ({
-    rawItems: fileTreeJson as INodeMeta[],
+    tree: fileTreeData as TreeNode[],
+    /**
+     * 当前节点路径
+     */
+    curNodePath: "",
+    curNodeNotes: "",
   }),
   getters: {
-    root(state) {
-      return convertToTree(state.rawItems);
+    flattenItems: (state) => {
+      return state.tree.reduce((acc: TreeNode[], cur: TreeNode) => {
+        return acc.concat(flatten(cur));
+      }, []);
     },
   },
-  actions: {},
+  actions: {
+    updateCurNodeNotes(content: string) {
+      if (!this.curNodePath) {
+        throw new Error("no any node selected");
+      }
+      const targetNode = findNodeByPath(this.curNodePath, this.tree);
+      if (targetNode) {
+        targetNode.notes = content;
+      }
+    },
+    activeNode(node: any) {
+      const path = (this.curNodePath = node.path);
+      const targetNode = findNodeByPath(node.path, this.tree);
+      this.curNodeNotes = targetNode?.notes || "";
+    },
+    toggleCheck(node: any) {
+      if (node.status === Status.DONE) {
+        node.status = Status.UNDO;
+      } else {
+        node.status = Status.DONE;
+      }
+    },
+  },
 });
+
+export const useFileTreeStore = () => {
+  const store = _useFileTreeStore();
+  store.$subscribe((x, state) => {
+    localStorage.setItem("FILE_TREE_STORE", JSON.stringify(state));
+  });
+  return store;
+};
