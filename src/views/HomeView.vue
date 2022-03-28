@@ -42,10 +42,10 @@ const hanldeTextChange = (e: Event) => {
       show-checkbox
     />
     <div class="content-pane">
-      <div>{{ fileTreeStore.curNodePath }}</div>
+      <div>{{ fileTreeStore.curNode?.path }}</div>
       <textarea
         @change="hanldeTextChange"
-        :value="fileTreeStore.curNodeNotes"
+        :value="fileTreeStore.curNode?.notes"
       />
     </div>
   </main>

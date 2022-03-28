@@ -57,10 +57,9 @@ const _useFileTreeStore = defineStore({
   state: () => ({
     tree: fileTreeData as TreeNode[],
     /**
-     * 当前节点路径
+     * 当前节点
      */
-    curNodePath: "",
-    curNodeNotes: "",
+    curNode: undefined as TreeNode | undefined,
   }),
   getters: {
     flattenItems: (state) => {
@@ -71,18 +70,18 @@ const _useFileTreeStore = defineStore({
   },
   actions: {
     updateCurNodeNotes(content: string) {
-      if (!this.curNodePath) {
+      console.log(">>>>updateCurNodeNotes", content);
+      if (!this.curNode) {
         throw new Error("no any node selected");
       }
-      const targetNode = findNodeByPath(this.curNodePath, this.tree);
+      const targetNode = findNodeByPath(this.curNode.path, this.tree);
       if (targetNode) {
         targetNode.notes = content;
       }
     },
     activeNode(node: any) {
-      const path = (this.curNodePath = node.path);
       const targetNode = findNodeByPath(node.path, this.tree);
-      this.curNodeNotes = targetNode?.notes || "";
+      this.curNode = targetNode;
     },
     toggleCheck(node: any, checked: boolean) {
       node.status = checked ? Status.DONE : Status.UNDO;
