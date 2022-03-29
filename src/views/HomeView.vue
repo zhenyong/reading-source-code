@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Upload } from "@element-plus/icons-vue";
 import { useFileTreeStore } from "@/stores/fileTree";
 import type { TreeNodeData } from "element-plus/lib/components/tree-v2/src/types";
 import { computed, ref, toRaw, watch, watchEffect } from "vue";
@@ -10,18 +11,21 @@ const curNodeId = ref("");
 const handleCheckChange = async (
   data: TreeNodeData,
   checked: boolean,
-  indeterminate: boolean
+  indeterminate: boolean // 是否半选
 ) => {
   loading.value = true;
-  await fileTreeStore.toggleCheck(data, checked);
+  await fileTreeStore.toggleCheck(data.path, checked);
   loading.value = false;
 };
 
-const defaultCheckedKeys = computed(() =>
-  fileTreeStore.flattenItems
-    .filter((item) => item.status === "done")
-    .map((item) => item.path)
-);
+// TODO 现在每个操作都会计算 flattenItems，保证数据初始化后只需要算一遍
+const defaultCheckedKeys = computed(() => {
+  return fileTreeStore.flattenItems
+    .filter((item) => {
+      return item.status === "done";
+    })
+    .map((item) => item.path);
+});
 
 const handleNodeClick = (data: TreeNodeData) => fileTreeStore.activeNode(data);
 const hanldeTextChange = (e: Event) => {
@@ -42,7 +46,17 @@ const hanldeTextChange = (e: Event) => {
       show-checkbox
     />
     <div class="content-pane">
-      <div>{{ fileTreeStore.curNode?.path }}</div>
+      <div class="h-wrap">
+        <div>{{ fileTreeStore.curNode?.path }}</div>
+        <el-button
+          class="btn-push"
+          size="small"
+          type="primary"
+          :icon="Upload"
+          :loading="fileTreeStore.pushStatePending"
+          >Push State</el-button
+        >
+      </div>
       <textarea
         @change="hanldeTextChange"
         :value="fileTreeStore.curNode?.notes"
@@ -55,10 +69,19 @@ const hanldeTextChange = (e: Event) => {
 main {
   display: flex;
 }
+.btn-push {
+  display: inline-flex;
+  width: 100px;
+  align-self: flex-end;
+}
 .content-pane {
   display: flex;
   flex-direction: column;
   margin-left: 28px;
+  .h-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 
   textarea {
     margin-top: 16px;
