@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { Upload } from "@element-plus/icons-vue";
 import { useFileTreeStore } from "@/stores/fileTree";
-import type { TreeNodeData } from "element-plus/lib/components/tree-v2/src/types";
-import { computed, ref, toRaw, watch, watchEffect } from "vue";
+import { computed, reactive, ref, toRaw, watch, watchEffect } from "vue";
+import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
+import { useTree } from "@/hooks/tree";
 const fileTreeStore = useFileTreeStore();
 
 const loading = ref(false);
@@ -31,15 +32,20 @@ const handleNodeClick = (data: TreeNodeData) => fileTreeStore.activeNode(data);
 const hanldeTextChange = (e: Event) => {
   fileTreeStore.updateCurNodeNotes((e.target as HTMLTextAreaElement).value);
 };
+
+const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
 </script>
 
 <template>
   <main>
     <el-tree
+      :default-expanded-keys="vm.expandedKeys"
       :default-checked-keys="defaultCheckedKeys"
       v-loading="loading"
       @check-change="handleCheckChange"
       @node-click="handleNodeClick"
+      @node-expand="handleNodeExpand"
+      @node-collapse="handleNodeCollapse"
       :props="{ disabled: 'dir' }"
       node-key="path"
       :data="(fileTreeStore.tree as any)"
