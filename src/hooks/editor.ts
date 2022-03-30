@@ -9,17 +9,20 @@ import codeSyntaxHighlight from "@toast-ui/editor-plugin-code-syntax-highlight/d
 import Prism from "prismjs";
 
 export const useEditor = (domId: string, initialValueFn: () => string) => {
-  let obj: { editor: EditorCore | null } = { editor: null };
-  onMounted(() => {
-    obj.editor = new Editor({
-      el: document.querySelector("#editor") as HTMLElement,
-      previewStyle: "tab",
-      initialValue: initialValueFn(),
-      plugins: [[codeSyntaxHighlight, { highlighter: Prism }]],
-      // height: '600px',
-      initialEditType: "markdown",
-      // previewStyle: "vertical",
-    });
+  const el = document.createElement("div");
+  document.body.appendChild(el);
+  Object.assign(el.style, { position: "absolute", left: "-9999px" });
+
+  const editor = new Editor({
+    el,
+    previewStyle: "tab",
+    initialValue: initialValueFn(),
+    plugins: [[codeSyntaxHighlight, { highlighter: Prism }]],
+    initialEditType: "markdown",
   });
-  return obj;
+  onMounted(() => {
+    document.querySelector("#editor")?.appendChild(el);
+    Object.assign(el.style, {});
+  });
+  return editor;
 };

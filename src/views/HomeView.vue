@@ -9,7 +9,7 @@ import { computed, onMounted, ref, watchEffect } from "vue";
 
 const fileTreeStore = useFileTreeStore();
 
-const obj = useEditor("editor", () => fileTreeStore.curNode?.notes || "");
+const editor = useEditor("editor", () => fileTreeStore.curNode?.notes || "");
 
 const loading = ref(false);
 const curNodeId = ref("");
@@ -42,9 +42,7 @@ const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
 
 watchEffect(() => {
   const notes = fileTreeStore.curNode?.notes || "";
-  if (obj && obj.editor) {
-    obj.editor.setMarkdown(notes);
-  }
+  editor.setMarkdown(notes);
 });
 </script>
 
@@ -72,14 +70,13 @@ watchEffect(() => {
           type="primary"
           :icon="Upload"
           :loading="fileTreeStore.pushStatePending"
-          >Push State</el-button
-        >
+        >Push State</el-button>
       </div>
       <div id="editor"></div>
       <!-- <textarea
         @change="hanldeTextChange"
         :value="fileTreeStore.curNode?.notes"
-      /> -->
+      />-->
     </div>
   </main>
 </template>
@@ -89,6 +86,7 @@ main {
   display: flex;
 }
 #editor {
+  border: 1px solid red;
   width: 720px;
   margin-top: 16px;
   flex: 1;
