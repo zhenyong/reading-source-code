@@ -1,10 +1,15 @@
 <script setup lang="ts">
-import { Upload } from "@element-plus/icons-vue";
-import { useFileTreeStore } from "@/stores/fileTree";
-import { computed, reactive, ref, toRaw, watch, watchEffect } from "vue";
-import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
+import { useEditor } from "@/hooks/editor";
 import { useTree } from "@/hooks/tree";
+import { useFileTreeStore } from "@/stores/fileTree";
+import { file } from "@babel/types";
+import { Upload } from "@element-plus/icons-vue";
+import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
+import { computed, onMounted, ref, watchEffect } from "vue";
+
 const fileTreeStore = useFileTreeStore();
+
+const obj = useEditor("editor", () => fileTreeStore.curNode?.notes || "");
 
 const loading = ref(false);
 const curNodeId = ref("");
@@ -34,6 +39,13 @@ const hanldeTextChange = (e: Event) => {
 };
 
 const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
+
+watchEffect(() => {
+  const notes = fileTreeStore.curNode?.notes || "";
+  if (obj && obj.editor) {
+    obj.editor.setMarkdown(notes);
+  }
+});
 </script>
 
 <template>
@@ -63,10 +75,11 @@ const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
           >Push State</el-button
         >
       </div>
-      <textarea
+      <div id="editor"></div>
+      <!-- <textarea
         @change="hanldeTextChange"
         :value="fileTreeStore.curNode?.notes"
-      />
+      /> -->
     </div>
   </main>
 </template>
@@ -74,6 +87,11 @@ const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
 <style scope lang="scss">
 main {
   display: flex;
+}
+#editor {
+  width: 720px;
+  margin-top: 16px;
+  flex: 1;
 }
 .btn-push {
   display: inline-flex;
@@ -87,13 +105,6 @@ main {
   .h-wrap {
     display: flex;
     justify-content: space-between;
-  }
-
-  textarea {
-    margin-top: 16px;
-    width: 640px;
-    border: 1px solid #eee;
-    flex: 1;
   }
 }
 </style>

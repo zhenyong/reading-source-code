@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from "vue-router";
 @import "@/assets/base.css";
 
 #app {
-  max-width: 1280px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 2rem;
 
@@ -74,7 +74,7 @@ nav a:first-of-type {
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 1rem;
   }
 
   header {
