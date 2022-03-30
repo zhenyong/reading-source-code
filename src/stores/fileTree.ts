@@ -76,7 +76,9 @@ const _useFileTreeStore = defineStore({
     },
   },
   actions: {
+    // TODO 依赖了 curNode，其实不稳定，传入 nodePath 参数，每次都去查找节点
     updateCurNodeNotes(content: string) {
+      console.info(">>>updateCurNodeNotes", content);
       if (!this.curNode) {
         throw new Error("no any node selected");
       }

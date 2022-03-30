@@ -6,10 +6,17 @@ import { file } from "@babel/types";
 import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
 import { computed, onMounted, ref, watchEffect } from "vue";
+import { debounce } from 'lodash'
 
 const fileTreeStore = useFileTreeStore();
 
-const editor = useEditor("editor", () => fileTreeStore.curNode?.notes || "");
+const updateCurNodeNotes = debounce(fileTreeStore.updateCurNodeNotes, 500)
+const editor = useEditor("#editor", {
+  initialValueFn: () => fileTreeStore.curNode?.notes || "",
+  change(content) {
+    updateCurNodeNotes(content);
+  }
+});
 
 const loading = ref(false);
 const curNodeId = ref("");
@@ -33,16 +40,15 @@ const defaultCheckedKeys = computed(() => {
     .map((item) => item.path);
 });
 
-const handleNodeClick = (data: TreeNodeData) => fileTreeStore.activeNode(data);
-const hanldeTextChange = (e: Event) => {
-  fileTreeStore.updateCurNodeNotes((e.target as HTMLTextAreaElement).value);
-};
+const editorVisible = computed(() => Boolean(fileTreeStore.curNode))
 
+const handleNodeClick = (data: TreeNodeData) => fileTreeStore.activeNode(data);
 const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
 
 watchEffect(() => {
-  const notes = fileTreeStore.curNode?.notes || "";
-  editor.setMarkdown(notes);
+  if (fileTreeStore.curNode) {
+    editor.setMarkdown(fileTreeStore.curNode?.notes || '');
+  }
 });
 </script>
 
@@ -72,7 +78,9 @@ watchEffect(() => {
           :loading="fileTreeStore.pushStatePending"
         >Push State</el-button>
       </div>
-      <div id="editor"></div>
+      <div class="editor-wrap">
+        <div :hidden="!editorVisible" id="editor"></div>
+      </div>
       <!-- <textarea
         @change="hanldeTextChange"
         :value="fileTreeStore.curNode?.notes"
@@ -85,11 +93,15 @@ watchEffect(() => {
 main {
   display: flex;
 }
-#editor {
+.editor-wrap {
   border: 1px solid red;
   width: 720px;
   margin-top: 16px;
   flex: 1;
+  #editor {
+    width: 100%;
+    height: 100%;
+  }
 }
 .btn-push {
   display: inline-flex;
