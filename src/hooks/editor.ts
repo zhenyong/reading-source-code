@@ -24,7 +24,7 @@ export const useEditor = (
     initialValue: initialValueFn(),
     plugins: [[codeSyntaxHighlight, { highlighter: Prism }]],
     initialEditType: "markdown",
-    height: "700px",
+    height: "800px",
     events: {
       change() {
         options.change(editor.getMarkdown());

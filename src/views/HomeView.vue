@@ -5,7 +5,7 @@ import { useFileTreeStore } from "@/stores/fileTree";
 import { file } from "@babel/types";
 import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
-import { computed, onMounted, ref, watchEffect } from "vue";
+import { computed, onMounted, ref, watch, watchEffect } from "vue";
 import { debounce } from 'lodash'
 
 const fileTreeStore = useFileTreeStore();
@@ -45,9 +45,10 @@ const editorVisible = computed(() => Boolean(fileTreeStore.curNode))
 const handleNodeClick = (data: TreeNodeData) => fileTreeStore.activeNode(data);
 const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
 
-watchEffect(() => {
-  if (fileTreeStore.curNode) {
+const unwatch = watch(() => fileTreeStore.curNode?.notes, (value, oldValue) => {
+  if (!oldValue && value) {
     editor.setMarkdown(fileTreeStore.curNode?.notes || '');
+    unwatch()
   }
 });
 </script>
