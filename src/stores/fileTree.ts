@@ -113,14 +113,26 @@ const throttlePushStatePerHalfMin = throttle(
 
 export const useFileTreeStore = () => {
   const store = _useFileTreeStore();
+  let fobidSub = false;
   store.$subscribe(async (x, state) => {
-    console.info("subscribe:state got change");
+    console.log(">>>subscribe", fobidSub);
+    if (fobidSub) {
+      fobidSub = false;
+      return;
+    }
+    console.info("subscribe:state got change", x);
     const strJson = JSON.stringify(state);
     localStorage.setItem("FILE_TREE_STORE", strJson);
     // TODO 这里改了 pushStatePending 又会出发 subscribe 处理，咋整？？
-    // state.pushStatePending = true;
-    await throttlePushStatePerHalfMin(strJson);
-    // state.pushStatePending = false;
+    fobidSub = true;
+    state.pushStatePending = true;
+    try {
+      await throttlePushStatePerHalfMin(strJson);
+    } catch (e) {
+      console.error(e);
+    }
+    fobidSub = true;
+    state.pushStatePending = false;
   });
   return store;
 };
