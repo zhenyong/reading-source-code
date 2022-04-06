@@ -1,14 +1,14 @@
 // @ts-ignore
 import GitHub from "github-api";
 export const gh = new GitHub({
-  token: "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",
+  token: "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",
 });
 
 export enum GIST_FILES {
   FILE_TREE = "reading-vue3-src-tree.json",
   COMMITS = "reading-vue3-commits.md",
 }
-const gist = gh.getGist("1425e1123a56fc325c002da12eef6c67"); // not a gist yet
+const gist = gh.getGist("9c2ac99ea929088fee17a42731767685"); // not a gist yet
 
 export const pushGist = (name: GIST_FILES, content: string) => {
   const newGist = {
