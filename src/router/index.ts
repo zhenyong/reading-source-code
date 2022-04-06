@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import CommitsView from "../views/CommitsView.vue";
 
 console.log(import.meta.env);
 const router = createRouter({
@@ -9,6 +10,11 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+    },
+    {
+      path: "/commits",
+      name: "commits",
+      component: CommitsView,
     },
   ],
 });

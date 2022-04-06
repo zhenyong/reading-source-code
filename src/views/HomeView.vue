@@ -5,7 +5,7 @@ import { useFileTreeStore } from "@/stores/fileTree";
 import { file } from "@babel/types";
 import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
-import { computed, onMounted, ref, watch, watchEffect } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { debounce } from 'lodash'
 
 const fileTreeStore = useFileTreeStore();
@@ -96,7 +96,7 @@ main {
 }
 .editor-wrap {
   border: 1px solid red;
-  width: 720px;
+  width: 1200px;
   margin-top: 16px;
   flex: 1;
   #editor {

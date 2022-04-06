@@ -1,8 +1,9 @@
 import { defineStore } from "pinia";
 import rawFileTreeJson from "@/data/fileTree.json";
 import { mapValues, isPlainObject } from "lodash-es";
-import { pushStateToRemote } from "@/api";
+import { GIST_FILES, pushGist } from "@/api";
 import { throttle } from "lodash";
+
 interface INodeMeta {
   path: string;
   mode: string;
@@ -101,10 +102,14 @@ const _useFileTreeStore = defineStore({
   },
 });
 
-const throttlePushStatePerHalfMin = throttle(pushStateToRemote, 30 * 1000, {
-  leading: true,
-  trailing: true,
-});
+const throttlePushStatePerHalfMin = throttle(
+  pushGist.bind(null, GIST_FILES.FILE_TREE),
+  30 * 1000,
+  {
+    leading: true,
+    trailing: true,
+  }
+);
 
 export const useFileTreeStore = () => {
   const store = _useFileTreeStore();

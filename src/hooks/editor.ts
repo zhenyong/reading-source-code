@@ -20,7 +20,7 @@ export const useEditor = (
   const editor = new Editor({
     el,
     autofocus: false,
-    previewStyle: "tab",
+    previewStyle: "vertical",
     initialValue: initialValueFn(),
     plugins: [[codeSyntaxHighlight, { highlighter: Prism }]],
     initialEditType: "markdown",
