@@ -6,33 +6,38 @@ import { file } from "@babel/types";
 import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
 import { computed, onMounted, ref, watch } from "vue";
-import { debounce } from 'lodash'
-import Commits from '@/components/commits/Commits.vue';
+import { debounce } from "lodash";
+import Commits from "@/components/commits/Commits.vue";
+import type { ICommitItem } from "@/types";
+import { useCommitsStore } from "@/stores/commitsStore";
 
-const fileTreeStore = useFileTreeStore();
+const store = useCommitsStore();
 
-const updateCurNodeNotes = debounce(fileTreeStore.updateCurNodeNotes, 500)
 const editor = useEditor("#editor", {
-  initialValueFn: () => fileTreeStore.curNode?.notes || "",
+  initialValueFn: () => "",
   change(content) {
-    updateCurNodeNotes(content);
-  }
+    store.updateNote(content);
+  },
 });
 
-const loading = ref(false);
-const curNodeId = ref("");
+const handleItemClick = (item: ICommitItem) => {
+  store.setCurItem(item);
+  console.log(store.commitNotesMap[item.sha]?.content);
+  editor.setMarkdown(store.commitNotesMap[item.sha]?.content || "");
+};
 
-const editorVisible = true;//computed(() => Boolean(fileTreeStore.curNode))
-
+const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 </script>
 
 <template>
   <main>
-    <Commits />
+    <Commits @click="handleItemClick" />
     <div class="content-pane">
       <div class="h-wrap">
-        <div>xxx</div>
-        <el-button class="btn-push" size="small" type="primary" :icon="Upload">Push State</el-button>
+        <div>{{ store.curItem?.sha.substring(0, 8) }}</div>
+        <el-button class="btn-push" size="small" type="primary" :icon="Upload"
+          >Push State</el-button
+        >
       </div>
       <div class="editor-wrap">
         <div :hidden="!editorVisible" id="editor"></div>

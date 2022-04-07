@@ -24,16 +24,17 @@ export const pushGist = (name: GIST_FILES, content: string) => {
     .catch(console.error);
 };
 
-export const getGist = (name: GIST_FILES, content: string) => {
+export const getGist = (name: GIST_FILES) => {
   const newGist = {
     files: {
-      [name]: { content },
+      [name]: {},
     },
   };
   return gist
-    .read(newGist)
-    .then(() => {
-      console.log("read gist success");
+    .read()
+    .then((resp: any) => {
+      const files = resp?.data?.files;
+      return files && files[name] ? JSON.parse(files[name]) : {};
     })
     .catch(console.error);
 };
