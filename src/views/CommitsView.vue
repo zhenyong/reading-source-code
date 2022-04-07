@@ -10,6 +10,7 @@ import { debounce } from "lodash";
 import Commits from "@/components/commits/Commits.vue";
 import type { ICommitItem } from "@/types";
 import { useCommitsStore } from "@/stores/commitsStore";
+import copy from "clipboard-copy";
 
 const store = useCommitsStore();
 
@@ -24,6 +25,7 @@ const handleItemClick = (item: ICommitItem) => {
   store.setCurItem(item);
   console.log(store.commitNotesMap[item.sha]?.content);
   editor.setMarkdown(store.commitNotesMap[item.sha]?.content || "");
+  copy(item.sha);
 };
 
 const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))

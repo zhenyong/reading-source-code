@@ -5,6 +5,13 @@
       :key="item.sha"
       :class="{ selected: item.sha === store.curItem?.sha }"
       @click="$emit('click', item)"
+      @click.meta="
+        () => {
+          window
+            .open(`https://github.com/vuejs/core/commit/${item.sha}`, '_blank')
+            ?.focus();
+        }
+      "
     >
       <div class="msg">{{ item.commit.message }}</div>
       <div>{{ item.sha.substring(0, 8) }} {{ item.commit.committer.date }}</div>

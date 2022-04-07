@@ -16,6 +16,7 @@ specifiers:
   '@vue/eslint-config-typescript': ^10.0.0
   '@vue/test-utils': ^2.0.0-rc.18
   '@vue/tsconfig': ^0.1.3
+  clipboard-copy: ^4.0.1
   cypress: ^9.5.0
   dayjs: ^1.11.0
   element-plus: ^2.1.4
@@ -43,6 +44,7 @@ dependencies:
   '@octokit/graphql': registry.npmmirror.com/@octokit/graphql/4.8.0
   '@toast-ui/editor': registry.npmmirror.com/@toast-ui/editor/3.1.3
   '@toast-ui/editor-plugin-code-syntax-highlight': registry.npmmirror.com/@toast-ui/editor-plugin-code-syntax-highlight/3.0.0
+  clipboard-copy: registry.npmmirror.com/clipboard-copy/4.0.1
   dayjs: registry.npmmirror.com/dayjs/1.11.0
   element-plus: registry.npmmirror.com/element-plus/2.1.8_1a412d14def5ff5ca1122000e4bee666
   lodash: registry.npmmirror.com/lodash/4.17.21
@@ -1868,6 +1870,12 @@ packages:
       slice-ansi: registry.npmmirror.com/slice-ansi/3.0.0
       string-width: registry.npmmirror.com/string-width/4.2.3
     dev: true
+
+  registry.npmmirror.com/clipboard-copy/4.0.1:
+    resolution: {integrity: sha512-wOlqdqziE/NNTUJsfSgXmBMIrYmfd5V0HCGsR8uAKHcg+h9NENWINcfRjtWGU77wDHC8B8ijV4hMTGYbrKovng==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/clipboard-copy/-/clipboard-copy-4.0.1.tgz}
+    name: clipboard-copy
+    version: 4.0.1
+    dev: false
 
   registry.npmmirror.com/color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-convert/-/color-convert-1.9.3.tgz}
