@@ -91,6 +91,7 @@ const _useFileTreeStore = defineStore({
     activeNode(node: any) {
       const targetNode = findNodeByPath(node.path, this.tree);
       this.curNode = targetNode;
+      console.log("activeNode", targetNode);
     },
     toggleCheck(path: string, checked: boolean) {
       console.log(">>>toggle check");

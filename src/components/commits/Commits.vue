@@ -24,7 +24,7 @@ import { reactive } from "vue";
 //@ts-ignore-next-line
 import list from "@/data/commits";
 import type { ICommitItem } from "@/types";
-import { useCommitsStore } from "@/stores/commitsStore";
+import { useCommitsStore } from "@/stores/commits";
 
 const emit = defineEmits<{
   (e: "click", item: ICommitItem): void;

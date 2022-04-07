@@ -6,16 +6,16 @@ import { file } from "@babel/types";
 import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
 import { computed, onMounted, ref, watch } from "vue";
-import { debounce } from 'lodash'
+import { debounce } from "lodash";
 
 const fileTreeStore = useFileTreeStore();
 
-const updateCurNodeNotes = debounce(fileTreeStore.updateCurNodeNotes, 500)
+const updateCurNodeNotes = debounce(fileTreeStore.updateCurNodeNotes, 500);
 const editor = useEditor("#editor", {
   initialValueFn: () => fileTreeStore.curNode?.notes || "",
   change(content) {
     updateCurNodeNotes(content);
-  }
+  },
 });
 
 const loading = ref(false);
@@ -40,17 +40,23 @@ const defaultCheckedKeys = computed(() => {
     .map((item) => item.path);
 });
 
-const editorVisible = computed(() => Boolean(fileTreeStore.curNode))
+const editorVisible = computed(() => Boolean(fileTreeStore.curNode));
 
-const handleNodeClick = (data: TreeNodeData) => fileTreeStore.activeNode(data);
+const handleNodeClick = (data: TreeNodeData) => {
+  fileTreeStore.activeNode(data);
+  editor.setMarkdown(data?.notes || "");
+};
 const { vm, handleNodeExpand, handleNodeCollapse } = useTree();
 
-const unwatch = watch(() => fileTreeStore.curNode?.notes, (value, oldValue) => {
-  if (!oldValue && value) {
-    editor.setMarkdown(fileTreeStore.curNode?.notes || '');
-    unwatch()
+const unwatch = watch(
+  () => fileTreeStore.curNode?.notes,
+  (value, oldValue) => {
+    if (!oldValue && value) {
+      editor.setMarkdown(fileTreeStore.curNode?.notes || "");
+      unwatch();
+    }
   }
-});
+);
 </script>
 
 <template>
@@ -77,7 +83,8 @@ const unwatch = watch(() => fileTreeStore.curNode?.notes, (value, oldValue) => {
           type="primary"
           :icon="Upload"
           :loading="fileTreeStore.pushStatePending"
-        >Push State</el-button>
+          >Push State</el-button
+        >
       </div>
       <div class="editor-wrap">
         <div :hidden="!editorVisible" id="editor"></div>

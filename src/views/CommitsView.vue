@@ -9,7 +9,7 @@ import { computed, onMounted, ref, watch } from "vue";
 import { debounce } from "lodash";
 import Commits from "@/components/commits/Commits.vue";
 import type { ICommitItem } from "@/types";
-import { useCommitsStore } from "@/stores/commitsStore";
+import { useCommitsStore } from "@/stores/commits";
 import copy from "clipboard-copy";
 
 const store = useCommitsStore();
@@ -22,11 +22,19 @@ const editor = useEditor("#editor", {
 });
 
 const handleItemClick = (item: ICommitItem) => {
+  console.log(">>>handleItemClick", item);
+  /**
+   * 每次点击后再去加载该提交对应的文件信息
+   */
   store.setCurItem(item);
-  console.log(store.commitNotesMap[item.sha]?.content);
-  editor.setMarkdown(store.commitNotesMap[item.sha]?.content || "");
+  store.pullCommitFilesInfo(item);
+  editor.setMarkdown(store.commitInfoMap[item.sha]?.content || "");
   copy(item.sha);
 };
+
+if (store.curItem) {
+  handleItemClick(store.curItem);
+}
 
 const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 </script>
@@ -34,6 +42,9 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 <template>
   <main>
     <Commits @click="handleItemClick" />
+    <div>
+      <!-- x{{ JSON.stringify(store.commitInfoMap[store.curItem.sha].files) }}y -->
+    </div>
     <div class="content-pane">
       <div class="h-wrap">
         <div>{{ store.curItem?.sha.substring(0, 8) }}</div>
