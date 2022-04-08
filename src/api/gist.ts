@@ -1,7 +1,7 @@
 // @ts-ignore
 import GitHub from "github-api";
 export const gh = new GitHub({
-  token: "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",
+  token: "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",
 });
 
 export enum GIST_FILES {

@@ -1,16 +1,12 @@
 import GitHub from "github-api";
 import fs from "fs";
 const gh = new GitHub({
-  token: "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",
+  token: "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",
 });
 
 let repo = gh.getRepo("vuejs", "core");
 
 let count = 0;
-
-// repo.listCommits().then((resp) => {
-//   console.log(resp.data);
-// });
 
 const per_page = 30;
 const FILE = "/Users/zy/codes/reading-source-code/src/data/commits.json";

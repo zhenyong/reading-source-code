@@ -7,10 +7,11 @@ import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
 import { computed, onMounted, ref, watch } from "vue";
 import { debounce } from "lodash";
-import Commits from "@/components/commits/Commits.vue";
+import Commits from "@/components/Commits.vue";
 import type { ICommitItem } from "@/types";
 import { useCommitsStore } from "@/stores/commits";
 import copy from "clipboard-copy";
+import CommitFilesTree from "../components/CommitFilesTree.vue";
 
 const store = useCommitsStore();
 
@@ -21,15 +22,17 @@ const editor = useEditor("#editor", {
   },
 });
 
-const handleItemClick = (item: ICommitItem) => {
-  console.log(">>>handleItemClick", item);
+const handleItemClick = (item: ICommitItem, e?: MouseEvent) => {
+  console.log(">>>handleItemClick", item, e);
   /**
    * 每次点击后再去加载该提交对应的文件信息
    */
   store.setCurItem(item);
   store.pullCommitFilesInfo(item);
-  editor.setMarkdown(store.commitInfoMap[item.sha]?.content || "");
-  copy(item.sha);
+  editor.setMarkdown(store.commitInfoMap[item.sha]?.content || "", false);
+  try {
+    copy(item.sha);
+  } catch (e) {}
 };
 
 if (store.curItem) {
@@ -41,9 +44,9 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 
 <template>
   <main>
-    <Commits @click="handleItemClick" />
     <div>
-      <!-- x{{ JSON.stringify(store.commitInfoMap[store.curItem.sha].files) }}y -->
+      <Commits @click="handleItemClick" />
+      <CommitFilesTree />
     </div>
     <div class="content-pane">
       <div class="h-wrap">

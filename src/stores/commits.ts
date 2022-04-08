@@ -1,20 +1,8 @@
 import { getSingleCommit, GIST_FILES, pushGist } from "@/api";
 import { throttle } from "lodash";
 import { defineStore } from "pinia";
-import type { ICommitItem } from "./../types/index";
-
-interface ICommitFile {
-  sha: string;
-  filename: string;
-  status: string;
-  additions: number;
-  deletions: number;
-  changes: number;
-  blob_url: string;
-  raw_url: string;
-  contents_url: string;
-  patch: string;
-}
+import { isReactive } from "vue";
+import type { ICommitItem, ICommitFile } from "./../types/index";
 
 const throttlePushStatePerHalfMin = throttle(
   pushGist.bind(null, GIST_FILES.COMMITS),
@@ -36,6 +24,8 @@ const localStorageCurItem = localStorage.getItem(
   STORAGE_KEY_LAST_SELECTED_ITEM
 );
 
+console.log("init load commitInfoMap", commitInfoMap);
+
 export const _useCommitsStore = defineStore({
   id: "commitStore",
   state: () => ({
@@ -44,9 +34,18 @@ export const _useCommitsStore = defineStore({
       ? JSON.parse(localStorageCurItem)
       : null) as ICommitItem | null,
   }),
-  getters: {},
+  getters: {
+    curFiles(): ICommitFile[] | undefined {
+      console.log(">>>getter curFiles", this.commitInfoMap);
+      if (this.curItem?.sha) {
+        return this.commitInfoMap[this.curItem?.sha].files;
+      }
+    },
+  },
   actions: {
     setCurItem(item: ICommitItem) {
+      console.log(">>>setCurItem");
+      console.log("isReactive(item)", isReactive(item));
       this.curItem = item;
       localStorage.setItem(
         STORAGE_KEY_LAST_SELECTED_ITEM,
@@ -61,12 +60,14 @@ export const _useCommitsStore = defineStore({
     updateNote(content: string) {
       if (!this.curItem) throw new Error("item should be seleced");
       this.commitInfoMap[this.curItem.sha] = {
+        ...this.commitInfoMap[this.curItem.sha],
         content,
         date: Date.now(),
       };
       this.save();
     },
     async pullCommitFilesInfo(item: ICommitItem) {
+      console.log(">>>pullCommitFilesInfo", item.sha);
       if (!this.commitInfoMap[item.sha]?.files) {
         const { data } = await getSingleCommit(item.sha);
         this.commitInfoMap[item.sha].files = data.files;

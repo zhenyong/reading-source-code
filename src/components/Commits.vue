@@ -20,14 +20,14 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive } from "vue";
+import { onMounted, reactive, ref } from "vue";
 //@ts-ignore-next-line
 import list from "@/data/commits";
 import type { ICommitItem } from "@/types";
 import { useCommitsStore } from "@/stores/commits";
 
 const emit = defineEmits<{
-  (e: "click", item: ICommitItem): void;
+  (name: "click", item: ICommitItem): void;
 }>();
 
 const store = useCommitsStore();
@@ -37,15 +37,16 @@ const vm = reactive({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .msg {
   word-break: break-word;
 }
 ul {
+  user-select: none;
   flex-shrink: 0;
   border: 1px solid #eee;
   overflow-y: auto;
-  height: 100vh;
+  height: 200px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -59,12 +60,12 @@ ul {
     }
     border-radius: 4px;
     width: 400px;
-    padding: 16px;
+    padding: 4px 12px;
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
     background: var(--el-color-primary-light-9);
-    margin: 10px;
+    margin: 6px;
     color: var(--el-color-primary);
   }
   > li + li {
