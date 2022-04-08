@@ -15,10 +15,14 @@ import CommitFilesTree from "../components/CommitFilesTree.vue";
 
 const store = useCommitsStore();
 
+let canStoreUpdateNote = true;
+
 const editor = useEditor("#editor", {
   initialValueFn: () => "",
   change(content) {
-    store.updateNote(content);
+    if (canStoreUpdateNote) {
+      store.updateNote(content);
+    }
   },
 });
 
@@ -29,7 +33,9 @@ const handleItemClick = (item: ICommitItem, e?: MouseEvent) => {
    */
   store.setCurItem(item);
   store.pullCommitFilesInfo(item);
+  canStoreUpdateNote = false;
   editor.setMarkdown(store.commitInfoMap[item.sha]?.content || "", false);
+  canStoreUpdateNote = true;
   try {
     copy(item.sha);
   } catch (e) {}
@@ -50,7 +56,6 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
     </div>
     <div class="content-pane">
       <div class="h-wrap">
-        <div>{{ store.curItem?.sha.substring(0, 8) }}</div>
         <el-button class="btn-push" size="small" type="primary" :icon="Upload"
           >Push State</el-button
         >
@@ -65,6 +70,7 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 <style scope lang="scss">
 main {
   display: flex;
+  margin: 0 auto;
 }
 .editor-wrap {
   border: 1px solid red;

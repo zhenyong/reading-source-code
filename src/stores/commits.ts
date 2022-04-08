@@ -34,18 +34,9 @@ export const _useCommitsStore = defineStore({
       ? JSON.parse(localStorageCurItem)
       : null) as ICommitItem | null,
   }),
-  getters: {
-    curFiles(): ICommitFile[] | undefined {
-      console.log(">>>getter curFiles", this.commitInfoMap);
-      if (this.curItem?.sha) {
-        return this.commitInfoMap[this.curItem?.sha].files;
-      }
-    },
-  },
   actions: {
     setCurItem(item: ICommitItem) {
       console.log(">>>setCurItem");
-      console.log("isReactive(item)", isReactive(item));
       this.curItem = item;
       localStorage.setItem(
         STORAGE_KEY_LAST_SELECTED_ITEM,
@@ -58,6 +49,7 @@ export const _useCommitsStore = defineStore({
       throttlePushStatePerHalfMin(strCommitInfoMap);
     },
     updateNote(content: string) {
+      console.log(">>>updateNot");
       if (!this.curItem) throw new Error("item should be seleced");
       this.commitInfoMap[this.curItem.sha] = {
         ...this.commitInfoMap[this.curItem.sha],
@@ -67,12 +59,31 @@ export const _useCommitsStore = defineStore({
       this.save();
     },
     async pullCommitFilesInfo(item: ICommitItem) {
-      console.log(">>>pullCommitFilesInfo", item.sha);
+      console.log(
+        ">>>pullCommitFilesInfo",
+        item.sha,
+        this.commitInfoMap[item.sha]?.files
+      );
       if (!this.commitInfoMap[item.sha]?.files) {
+        console.log(">>>fetch coimmit files");
         const { data } = await getSingleCommit(item.sha);
         this.commitInfoMap[item.sha].files = data.files;
         this.save();
       }
+    },
+    toggleCheck(path: string, checked: boolean) {
+      // 进入方法可能是父节点，我们实际只针对子节点路径去操作
+      const fileItem = this.commitInfoMap[this.curItem!.sha].files?.find(
+        ({ filename }) => filename === path
+      );
+      if (!fileItem) throw new Error(`file with path ${path} not exist!`);
+      Object.assign(fileItem, {
+        custom: {
+          status: checked ? "done" : "undo",
+        },
+      });
+      console.log(">>>toggleCheck", path, checked);
+      this.save();
     },
   },
 });

@@ -83,4 +83,10 @@ export interface ICommitFile {
   raw_url: string;
   contents_url: string;
   patch: string;
+  /**
+   * 业务自定义属性
+   */
+  custom?: {
+    status: "undo" | "done";
+  };
 }
