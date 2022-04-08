@@ -45,7 +45,8 @@ ul {
   user-select: none;
   flex-shrink: 0;
   border: 1px solid #eee;
-  overflow-y: auto;
+  border-radius: 4px;
+  overflow-y: scroll;
   height: 200px;
   padding: 0;
   margin: 0;
@@ -65,7 +66,7 @@ ul {
     /* align-items: center; */
     /* justify-content: center; */
     background: var(--el-color-primary-light-9);
-    margin: 6px;
+    margin: 10px;
     color: var(--el-color-primary);
   }
   > li + li {

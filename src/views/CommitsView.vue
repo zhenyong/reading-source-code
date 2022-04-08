@@ -50,7 +50,7 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 
 <template>
   <main>
-    <div>
+    <div class="left-pane">
       <Commits @click="handleItemClick" />
       <CommitFilesTree />
     </div>
@@ -71,6 +71,10 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
 main {
   display: flex;
   margin: 0 auto;
+}
+.left-pane {
+  display: flex;
+  flex-direction: column;
 }
 .editor-wrap {
   border: 1px solid red;

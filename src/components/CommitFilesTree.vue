@@ -1,5 +1,5 @@
 <template>
-  <div v-loading="!vm.treeData">
+  <div class="wrap" v-loading="!vm.treeData">
     <!-- 
       @node-expand="handleNodeExpand"
       @node-collapse="handleNodeCollapse"
@@ -14,7 +14,18 @@
       v-loading="vm.treePending"
       :data="vm.treeData"
       show-checkbox
-    />
+    >
+      <template #default="{ node, data }">
+        <span>{{ node.label }}</span
+        ><span v-if="data.path === ''">
+          （{{
+            store.curItem?.sha
+              ? `${doneFilesLen}/${store.curFiles?.length}`
+              : ""
+          }}）</span
+        >
+      </template>
+    </el-tree>
   </div>
 </template>
 
@@ -29,6 +40,12 @@ onUpdated(() => {
 });
 onMounted(() => {
   console.log(`the component is now mounted.`);
+});
+const doneFilesLen = computed(() => {
+  return (
+    store.curFiles?.filter((item) => item.custom?.status === "done")?.length ||
+    0
+  );
 });
 
 const store = useCommitsStore();
@@ -67,7 +84,6 @@ const defaultCheckedKeys = computed(() => {
         })
         .map((item) => item.filename)
     : [];
-  console.log(">>>computed defaultCheckedKeys", keys);
   return keys;
 });
 
@@ -92,7 +108,10 @@ function convertToTree(rawNodes: ICommitFile[]) {
     dir: true,
   };
 
+  const exclude = ["yarn.lock"];
+
   rawNodes.forEach((raw) => {
+    if (exclude.includes(raw.filename)) return;
     let node: ITreeNode | typeof root = root;
     let pathUnderPNode = "";
     let remainPath = raw.filename.split("/");
@@ -129,4 +148,10 @@ function convertToTree(rawNodes: ICommitFile[]) {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.wrap {
+  flex: 1;
+  overflow: auto;
+  margin-top: 8px;
+}
+</style>

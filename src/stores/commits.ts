@@ -34,6 +34,15 @@ export const _useCommitsStore = defineStore({
       ? JSON.parse(localStorageCurItem)
       : null) as ICommitItem | null,
   }),
+  getters: {
+    curFiles: (state) => {
+      const sha = state.curItem?.sha;
+      if (sha) {
+        return state.commitInfoMap[sha].files;
+      }
+      return null;
+    },
+  },
   actions: {
     setCurItem(item: ICommitItem) {
       console.log(">>>setCurItem");

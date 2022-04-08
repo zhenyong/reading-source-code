@@ -14,6 +14,8 @@ import { RouterLink, RouterView } from "vue-router";
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 header {
