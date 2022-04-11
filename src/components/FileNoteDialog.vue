@@ -23,11 +23,16 @@ const vm = reactive({
   curFile: null as null | ICommitFile,
 });
 
+let preventStoreUpdate = false;
+
 const editor = useEditor("#fileNoteEditor", {
   height: "750px",
   lazyAppend: true,
   change(content) {
-    store.updateFileNotes(vm.curFile?.filename!, content);
+    console.log(">>>change");
+    if (!preventStoreUpdate) {
+      store.updateFileNotes(vm.curFile?.filename!, content);
+    }
   },
 });
 
@@ -35,7 +40,9 @@ const show = (file: ICommitFile) => {
   vm.visible = true;
   vm.curFile = file;
   vm.title = file.filename;
+  preventStoreUpdate = true;
   editor.setMarkdown(file?.custom?.notes || "");
+  preventStoreUpdate = false;
 };
 
 defineExpose({
@@ -43,5 +50,4 @@ defineExpose({
 });
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

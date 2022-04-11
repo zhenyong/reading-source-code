@@ -4,7 +4,7 @@ import GitHub from "github-api";
 export * from "./gist";
 import fs from "fs";
 const gh = new GitHub({
-  token: "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",
+  token: "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",
 });
 
 let repo = gh.getRepo("vuejs", "core");
