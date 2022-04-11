@@ -12,6 +12,7 @@ const fileTreeStore = useFileTreeStore();
 
 const updateCurNodeNotes = debounce(fileTreeStore.updateCurNodeNotes, 500);
 const editor = useEditor("#editor", {
+  lazyAppend: true,
   initialValueFn: () => fileTreeStore.curNode?.notes || "",
   change(content) {
     updateCurNodeNotes(content);

@@ -87,6 +87,7 @@ export interface ICommitFile {
    * 业务自定义属性
    */
   custom?: {
-    status: "undo" | "done";
+    status?: "undo" | "done";
+    notes?: string;
   };
 }

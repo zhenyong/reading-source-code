@@ -26,7 +26,7 @@ const localStorageCurItem = localStorage.getItem(
 
 console.log("init load commitInfoMap", commitInfoMap);
 
-export const _useCommitsStore = defineStore({
+export const useCommitsStore = defineStore({
   id: "commitStore",
   state: () => ({
     commitInfoMap,
@@ -86,18 +86,19 @@ export const _useCommitsStore = defineStore({
         ({ filename }) => filename === path
       );
       if (!fileItem) throw new Error(`file with path ${path} not exist!`);
-      Object.assign(fileItem, {
-        custom: {
-          status: checked ? "done" : "undo",
-        },
-      });
-      console.log(">>>toggleCheck", path, checked);
+      fileItem.custom = fileItem.custom || {};
+      (fileItem.custom.status = checked ? "done" : "undo"),
+        console.log(">>>toggleCheck", path, checked);
+      this.save();
+    },
+    updateFileNotes(filePath: string, content: string) {
+      const fileItem = this.commitInfoMap[this.curItem!.sha].files?.find(
+        ({ filename }) => filename === filePath
+      );
+      if (!fileItem) throw new Error(`file with path ${filePath} not exist!`);
+      fileItem.custom = fileItem.custom || {};
+      fileItem.custom.notes = content;
       this.save();
     },
   },
 });
-
-export const useCommitsStore = () => {
-  const store = _useCommitsStore();
-  return store;
-};

@@ -18,6 +18,7 @@ const store = useCommitsStore();
 let canStoreUpdateNote = true;
 
 const editor = useEditor("#editor", {
+  lazyAppend: true,
   initialValueFn: () => "",
   change(content) {
     if (canStoreUpdateNote) {

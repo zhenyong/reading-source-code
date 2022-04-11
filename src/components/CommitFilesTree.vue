@@ -11,21 +11,23 @@
       node-key="path"
       :default-expand-all="true"
       @check-change="handleCheckChange"
+      @node-click="handleNodeClick"
       v-loading="vm.treePending"
       :data="vm.treeData"
       show-checkbox
     >
       <template #default="{ node, data }">
-        <span>{{ node.label }}</span
-        ><span v-if="data.path === ''">
+        <span>{{ node.label }}</span>
+        <span v-if="data.path === ''">
           （{{
             store.curItem?.sha
               ? `${doneFilesLen}/${store.curFiles?.length}`
               : ""
-          }}）</span
-        >
+          }}）
+        </span>
       </template>
     </el-tree>
+    <FileNoteDialog ref="dialogRef" />
   </div>
 </template>
 
@@ -34,13 +36,16 @@ import { useCommitsStore } from "@/stores/commits";
 import { computed, onMounted, onUpdated, reactive, ref, toRaw } from "vue";
 import type { ICommitFile } from "@/types/";
 import { watch } from "vue";
+import FileNoteDialog from "./FileNoteDialog.vue";
 
+const dialogRef = ref();
 onUpdated(() => {
   console.log(`the component is now updated.`);
 });
 onMounted(() => {
   console.log(`the component is now mounted.`);
 });
+
 const doneFilesLen = computed(() => {
   return (
     store.curFiles?.filter((item) => item.custom?.status === "done")?.length ||
@@ -62,6 +67,17 @@ type ITreeNode = {
   dir: boolean;
   children?: ITreeNode[];
   raw?: ICommitFile;
+};
+
+const handleNodeClick = (nodeData: ITreeNode) => {
+  const fileInfo = store.curFiles?.find(
+    (item) => item.filename === nodeData.path
+  );
+  if (fileInfo) {
+    dialogRef.value.show(fileInfo);
+  }
+  // 展示弹窗编辑器
+  // data.path
 };
 
 watch(
