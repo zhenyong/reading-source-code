@@ -47,6 +47,21 @@ if (store.curItem) {
 }
 
 const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
+
+const pushSuccessIndicatorVisible = ref(false);
+let lastTimmer: number = 0;
+watch(
+  () => store.pushSuccessCount,
+  (newVal, oldVal) => {
+    if (newVal) {
+      lastTimmer && clearTimeout(lastTimmer);
+      pushSuccessIndicatorVisible.value = true;
+      lastTimmer = window.setTimeout(() => {
+        pushSuccessIndicatorVisible.value = false;
+      }, 3000);
+    }
+  }
+);
 </script>
 
 <template>
@@ -57,9 +72,15 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
     </div>
     <div class="content-pane">
       <div class="h-wrap">
-        <el-button class="btn-push" size="small" type="primary" :icon="Upload"
+        <el-button
+          :loading="store.pushing"
+          class="btn-push"
+          size="small"
+          type="primary"
+          :icon="Upload"
           >Push State</el-button
         >
+        <span v-if="pushSuccessIndicatorVisible">&nbsp;&#128512; Success!</span>
       </div>
       <div class="editor-wrap">
         <div :hidden="!editorVisible" id="editor"></div>
@@ -68,7 +89,7 @@ const editorVisible = true; //computed(() => Boolean(fileTreeStore.curNode))
   </main>
 </template>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 main {
   display: flex;
   margin: 0 auto;
@@ -98,7 +119,6 @@ main {
   margin-left: 28px;
   .h-wrap {
     display: flex;
-    justify-content: space-between;
   }
 }
 </style>

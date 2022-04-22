@@ -98,7 +98,7 @@ const unwatch = watch(
   </main>
 </template>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 main {
   display: flex;
 }

@@ -5,7 +5,10 @@ import { isReactive } from "vue";
 import type { ICommitItem, ICommitFile } from "./../types/index";
 
 const throttlePushStatePerHalfMin = throttle(
-  pushGist.bind(null, GIST_FILES.COMMITS),
+  (content, cb) => {
+    pushGist.apply(null, [GIST_FILES.COMMITS, content]);
+    cb && cb();
+  },
   30 * 1000,
   {
     leading: true,
@@ -29,7 +32,9 @@ console.log("init load commitInfoMap", commitInfoMap);
 export const useCommitsStore = defineStore({
   id: "commitStore",
   state: () => ({
+    pushing: false,
     commitInfoMap,
+    pushSuccessCount: 0,
     curItem: (localStorageCurItem
       ? JSON.parse(localStorageCurItem)
       : null) as ICommitItem | null,
@@ -52,10 +57,18 @@ export const useCommitsStore = defineStore({
         JSON.stringify(item)
       );
     },
-    save() {
+    async save() {
       const strCommitInfoMap = JSON.stringify(this.commitInfoMap);
       localStorage.setItem(STORAGE_KEY, strCommitInfoMap);
-      throttlePushStatePerHalfMin(strCommitInfoMap);
+      this.pushing = true;
+      try {
+        await throttlePushStatePerHalfMin(strCommitInfoMap, () => {
+          this.pushSuccessCount += 1;
+        });
+      } catch (e) {
+      } finally {
+        this.pushing = false;
+      }
     },
     updateNote(content: string) {
       console.log(">>>updateNot");
