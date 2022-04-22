@@ -124,10 +124,10 @@ function convertToTree(rawNodes: ICommitFile[]) {
     dir: true,
   };
 
-  const exclude = ["yarn.lock"];
+  const excludeFile = ["yarn.lock", ".npmignore"];
 
   rawNodes.forEach((raw) => {
-    if (exclude.includes(raw.filename)) return;
+    if (excludeFile.includes(raw.filename.split("/").pop()!)) return;
     let node: ITreeNode | typeof root = root;
     let pathUnderPNode = "";
     let remainPath = raw.filename.split("/");
