@@ -1,5 +1,10 @@
 {
   "files": [],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
   "references": [
     {
       "path": "./tsconfig.vite-config.json"

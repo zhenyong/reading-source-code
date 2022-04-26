@@ -1,12 +1,9 @@
+import { github } from "./../utils";
 //@ts-ignore
 import GitHub from "github-api";
 
 export * from "./gist";
-import fs from "fs";
-const gh = new GitHub({
-  token: "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",
-});
 
-let repo = gh.getRepo("vuejs", "core");
+let repo = github.getRepo("vuejs", "core");
 
 export const getSingleCommit = (sha: string) => repo.getSingleCommit(sha);
