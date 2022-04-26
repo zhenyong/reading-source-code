@@ -21,7 +21,7 @@
         <span v-if="data.path === ''">
           （{{
             store.curItem?.sha
-              ? `${doneFilesLen}/${store.curFiles?.length}`
+              ? `${store.doneFiles?.length}/${store.curFiles?.length}`
               : ""
           }}）
         </span>
@@ -38,19 +38,14 @@ import type { ICommitFile } from "@/types/";
 import { watch } from "vue";
 import FileNoteDialog from "./FileNoteDialog.vue";
 
+const excludeFile = ["yarn.lock", ".npmignore"];
+
 const dialogRef = ref();
 onUpdated(() => {
   console.log(`the component is now updated.`);
 });
 onMounted(() => {
   console.log(`the component is now mounted.`);
-});
-
-const doneFilesLen = computed(() => {
-  return (
-    store.curFiles?.filter((item) => item.custom?.status === "done")?.length ||
-    0
-  );
 });
 
 const store = useCommitsStore();
@@ -123,8 +118,6 @@ function convertToTree(rawNodes: ICommitFile[]) {
     path: "",
     dir: true,
   };
-
-  const excludeFile = ["yarn.lock", ".npmignore"];
 
   rawNodes.forEach((raw) => {
     if (excludeFile.includes(raw.filename.split("/").pop()!)) return;

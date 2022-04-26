@@ -29,6 +29,10 @@ const localStorageCurItem = localStorage.getItem(
 
 console.log("init load commitInfoMap", commitInfoMap);
 
+const isIgnoreFilename = (filename: string) => {
+  return !["yarn.lock", ".npmignore"].includes(filename.split("/").pop()!);
+};
+
 export const useCommitsStore = defineStore({
   id: "commitStore",
   state: () => ({
@@ -43,7 +47,19 @@ export const useCommitsStore = defineStore({
     curFiles: (state) => {
       const sha = state.curItem?.sha;
       if (sha) {
-        return state.commitInfoMap[sha].files;
+        return state.commitInfoMap[sha].files?.filter((item) =>
+          isIgnoreFilename(item.filename)
+        );
+      }
+      return null;
+    },
+    doneFiles: (state) => {
+      const sha = state.curItem?.sha;
+      if (sha) {
+        return state.commitInfoMap[sha].files?.filter(
+          (item) =>
+            isIgnoreFilename(item.filename) && item.custom?.status === "done"
+        );
       }
       return null;
     },
