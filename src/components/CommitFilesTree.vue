@@ -80,7 +80,7 @@ watch(
   (sha) => {
     if (sha) {
       console.log(">>sha change", sha);
-      vm.treeData = convertToTree(store.commitInfoMap[sha].files || []);
+      vm.treeData = convertToTree(store.commitInfoMap[sha]?.files || []);
     }
   },
   { immediate: true }
@@ -89,7 +89,7 @@ watch(
 const defaultCheckedKeys = computed(() => {
   const { curItem, commitInfoMap } = store;
   const keys = curItem
-    ? (commitInfoMap[curItem.sha].files || ([] as ICommitFile[]))
+    ? (commitInfoMap[curItem.sha]?.files || ([] as ICommitFile[]))
         .filter((item) => {
           return item.custom?.status === "done";
         })

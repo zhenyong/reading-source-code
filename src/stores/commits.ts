@@ -47,7 +47,7 @@ export const useCommitsStore = defineStore({
     curFiles: (state) => {
       const sha = state.curItem?.sha;
       if (sha) {
-        return state.commitInfoMap[sha].files?.filter((item) =>
+        return state.commitInfoMap[sha]?.files?.filter((item) =>
           isIgnoreFilename(item.filename)
         );
       }
@@ -56,7 +56,7 @@ export const useCommitsStore = defineStore({
     doneFiles: (state) => {
       const sha = state.curItem?.sha;
       if (sha) {
-        return state.commitInfoMap[sha].files?.filter(
+        return state.commitInfoMap[sha]?.files?.filter(
           (item) =>
             isIgnoreFilename(item.filename) && item.custom?.status === "done"
         );
@@ -68,6 +68,7 @@ export const useCommitsStore = defineStore({
     setCurItem(item: ICommitItem) {
       console.log(">>>setCurItem");
       this.curItem = item;
+      this.commitInfoMap[item.sha] = this.commitInfoMap[item.sha] || {};
       localStorage.setItem(
         STORAGE_KEY_LAST_SELECTED_ITEM,
         JSON.stringify(item)
