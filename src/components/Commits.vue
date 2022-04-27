@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul ref="ulRef">
     <li
       v-for="item in vm.list.slice(0, 1000)"
       :key="item.sha"
@@ -20,15 +20,24 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, reactive, ref } from "vue";
+import { onMounted, reactive, ref, onUpdated } from "vue";
 //@ts-ignore-next-line
 import list from "@/data/commits";
 import type { ICommitItem } from "@/types";
 import { useCommitsStore } from "@/stores/commits";
 
+const ulRef = ref();
+
 const emit = defineEmits<{
   (name: "click", item: ICommitItem): void;
 }>();
+
+onMounted(() => {
+  const el = ulRef.value?.querySelector("li.selected");
+  if (el) {
+    el.scrollIntoViewIfNeeded();
+  }
+});
 
 const store = useCommitsStore();
 
