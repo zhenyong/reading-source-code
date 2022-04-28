@@ -1,4 +1,11 @@
 <template>
+  <div class="head">
+    {{ store.numOfCompleted }}
+    completed
+    <span style="color: #e75480"
+      >&nbsp;&nbsp;(ง'̀-'́)ง&nbsp;&nbsp;(ง⪧.⪦)ง&nbsp;&nbsp;(و•̀ᴗ•́)و</span
+    >
+  </div>
   <ul ref="ulRef">
     <li
       v-for="item in vm.list.slice(0, 1000)"
@@ -49,6 +56,10 @@ const vm = reactive({
 <style lang="scss" scoped>
 .msg {
   word-break: break-word;
+}
+.head {
+  color: #666;
+  padding-left: 4px;
 }
 ul {
   user-select: none;

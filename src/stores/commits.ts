@@ -1,4 +1,5 @@
 import { getSingleCommit, GIST_FILES, pushGist } from "@/api";
+import { isIgnoreFilename } from "@/utils";
 import { throttle } from "lodash";
 import { defineStore } from "pinia";
 import { isReactive } from "vue";
@@ -29,10 +30,6 @@ const localStorageCurItem = localStorage.getItem(
 
 console.log("init load commitInfoMap", commitInfoMap);
 
-const isIgnoreFilename = (filename: string) => {
-  return !["yarn.lock", ".npmignore"].includes(filename.split("/").pop()!);
-};
-
 export const useCommitsStore = defineStore({
   id: "commitStore",
   state: () => ({
@@ -62,6 +59,16 @@ export const useCommitsStore = defineStore({
         );
       }
       return null;
+    },
+    numOfCompleted: (state) => {
+      return (
+        Object.entries(state.commitInfoMap).filter(([sha, map]) => {
+          return map.files?.every((file) => {
+            if (isIgnoreFilename(file.filename)) return true;
+            return file?.custom?.status === "done";
+          });
+        })?.length || 0
+      );
     },
   },
   actions: {
