@@ -3,10 +3,8 @@ import fs from "fs";
 import path from "path";
 
 const config = JSON.parse(
-  fs.readFileSync(path.join(process.cwd(), "config.json"))
+  fs.readFileSync(path.join(process.cwd(), "private-config.json"))
 );
-
-console.log(config.githubToken);
 
 const gh = new GitHub({
   token: config.githubToken,

@@ -1,6 +1,6 @@
 //@ts-ignore
 import GitHub from "github-api";
-import json from "../../config.json";
+import json from "../../private-config.json";
 
 export const github = new GitHub({
   token: json.githubToken,
