@@ -17,11 +17,15 @@
       show-checkbox
     >
       <template #default="{ node, data }">
-        <span>{{ node.label }}</span>
+        <span :class="data.raw?.status ? `status-${data.raw?.status}` : ''">{{
+          node.label
+        }}</span>
         <span v-if="data.path === ''">
           （{{
             store.curItem?.sha
-              ? `${store.doneFiles?.length}/${store.curFiles?.length}`
+              ? `${store.doneFiles?.length || 0}/${
+                  store.curFiles?.length || "-"
+                }`
               : ""
           }}）
         </span>
@@ -76,11 +80,12 @@ const handleNodeClick = (nodeData: ITreeNode) => {
 };
 
 watch(
-  () => store.curItem?.sha,
-  (sha) => {
-    if (sha) {
-      console.log(">>sha change", sha);
-      vm.treeData = convertToTree(store.commitInfoMap[sha]?.files || []);
+  () => store.curItem?.sha && store.commitInfoMap[store.curItem?.sha]?.files,
+  (files) => {
+    if (files) {
+      console.log(">>files change", files);
+      vm.treeData = convertToTree(files || []);
+      console.log("vm.treeData", vm.treeData);
     }
   },
   { immediate: true }
@@ -162,5 +167,12 @@ function convertToTree(rawNodes: ICommitFile[]) {
   flex: 1;
   overflow: auto;
   margin-top: 8px;
+}
+
+:deep(.el-tree-node__content) {
+  .status-removed {
+    text-decoration: line-through;
+    text-decoration-color: #999;
+  }
 }
 </style>

@@ -44,8 +44,8 @@ export const useCommitsStore = defineStore({
     curFiles: (state) => {
       const sha = state.curItem?.sha;
       if (sha) {
-        return state.commitInfoMap[sha]?.files?.filter((item) =>
-          isIgnoreFilename(item.filename)
+        return state.commitInfoMap[sha]?.files?.filter(
+          (item) => !isIgnoreFilename(item.filename)
         );
       }
       return null;
@@ -53,10 +53,14 @@ export const useCommitsStore = defineStore({
     doneFiles: (state) => {
       const sha = state.curItem?.sha;
       if (sha) {
-        return state.commitInfoMap[sha]?.files?.filter(
-          (item) =>
-            isIgnoreFilename(item.filename) && item.custom?.status === "done"
-        );
+        return state.commitInfoMap[sha]?.files?.filter((item) => {
+          if (item.custom?.status !== "done") {
+            console.log("item.filename", item.filename);
+          }
+          return (
+            !isIgnoreFilename(item.filename) && item.custom?.status === "done"
+          );
+        });
       }
       return null;
     },
