@@ -17,18 +17,31 @@
       show-checkbox
     >
       <template #default="{ node, data }">
-        <span :class="data.raw?.status ? `status-${data.raw?.status}` : ''">{{
-          node.label
-        }}</span>
-        <span v-if="data.path === ''">
-          （{{
-            store.curItem?.sha
-              ? `${store.doneFiles?.length || 0}/${
-                  store.curFiles?.length || "-"
-                }`
-              : ""
-          }}）
-        </span>
+        <div class="node-innerwrap">
+          <span :class="data.raw?.status ? `status-${data.raw?.status}` : ''">{{
+            node.label
+          }}</span>
+          <span v-if="data.path === ''">
+            （{{
+              store.curItem?.sha
+                ? `${store.doneFiles?.length || 0}/${
+                    store.curFiles?.length || "-"
+                  }`
+                : ""
+            }}）
+          </span>
+          <span
+            class="btn-copy"
+            @click="
+              (e) => {
+                e.stopPropagation();
+                copy(data.path);
+              }
+            "
+          >
+            <el-icon><copy-document /></el-icon
+          ></span>
+        </div>
       </template>
     </el-tree>
     <FileNoteDialog ref="dialogRef" />
@@ -41,6 +54,8 @@ import { computed, onMounted, onUpdated, reactive, ref, toRaw } from "vue";
 import type { ICommitFile } from "@/types/";
 import { watch } from "vue";
 import FileNoteDialog from "./FileNoteDialog.vue";
+import { CopyDocument } from "@element-plus/icons-vue";
+import copy from "clipboard-copy";
 
 const excludeFile = ["yarn.lock", ".npmignore"];
 
@@ -167,6 +182,19 @@ function convertToTree(rawNodes: ICommitFile[]) {
   flex: 1;
   overflow: auto;
   margin-top: 8px;
+}
+.node-innerwrap {
+  display: flex;
+  align-items: center;
+  .btn-copy {
+    display: none;
+    margin-left: 4px;
+  }
+  &:hover {
+    .btn-copy {
+      display: flex;
+    }
+  }
 }
 
 :deep(.el-tree-node__content) {
