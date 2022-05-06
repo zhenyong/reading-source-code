@@ -35,12 +35,20 @@
             @click="
               (e) => {
                 e.stopPropagation();
-                copy(data.path);
+                copy(data.path).then(() => {
+                  vm.copySuccessPath = data.path;
+                });
               }
             "
           >
-            <el-icon><copy-document /></el-icon
-          ></span>
+            <el-icon>
+              <finished
+                color="#1a7f37"
+                v-if="vm.copySuccessPath === data.path"
+              />
+              <copy-document v-else />
+            </el-icon>
+          </span>
         </div>
       </template>
     </el-tree>
@@ -72,6 +80,7 @@ const store = useCommitsStore();
 const vm = reactive({
   treeData: null as null | ITreeNode[],
   treePending: false,
+  copySuccessPath: "",
 });
 
 type ITreeNode = {
@@ -190,17 +199,17 @@ function convertToTree(rawNodes: ICommitFile[]) {
     display: none;
     margin-left: 4px;
   }
-  &:hover {
-    .btn-copy {
-      display: flex;
-    }
-  }
 }
 
 :deep(.el-tree-node__content) {
   .status-removed {
     text-decoration: line-through;
     text-decoration-color: #999;
+  }
+  &:hover {
+    .btn-copy {
+      display: flex;
+    }
   }
 }
 </style>
