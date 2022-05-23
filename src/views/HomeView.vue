@@ -7,6 +7,8 @@ import { Upload } from "@element-plus/icons-vue";
 import type { TreeNodeData } from "element-plus/lib/components/tree/src/tree.type";
 import { computed, onMounted, ref, watch } from "vue";
 import { debounce } from "lodash";
+import { CopyDocument } from "@element-plus/icons-vue";
+import copy from "clipboard-copy";
 
 const fileTreeStore = useFileTreeStore();
 
@@ -21,6 +23,7 @@ const editor = useEditor("#editor", {
 
 const loading = ref(false);
 const curNodeId = ref("");
+const copySuccessPath = ref("");
 
 const handleCheckChange = async (
   data: TreeNodeData,
@@ -33,7 +36,7 @@ const handleCheckChange = async (
 };
 
 // TODO 现在每个操作都会计算 flattenItems，保证数据初始化后只需要算一遍
-const defaultCheckedKeys = computed(() => {
+const checkedKeys = computed(() => {
   return fileTreeStore.flattenItems
     .filter((item) => {
       return item.status === "done";
@@ -61,10 +64,14 @@ const unwatch = watch(
 </script>
 
 <template>
+  <div>
+    {{ checkedKeys.length }}/{{ fileTreeStore.flattenItems.length }}<br />
+  </div>
   <main>
     <el-tree
+      class="tree"
       :default-expanded-keys="vm.expandedKeys"
-      :default-checked-keys="defaultCheckedKeys"
+      :default-checked-keys="checkedKeys"
       v-loading="loading"
       @check-change="handleCheckChange"
       @node-click="handleNodeClick"
@@ -74,7 +81,41 @@ const unwatch = watch(
       node-key="path"
       :data="(fileTreeStore.tree as any)"
       show-checkbox
-    />
+    >
+      <template #default="{ node, data }">
+        <div class="node-innerwrap">
+          <span :class="data.raw?.status ? `status-${data.raw?.status}` : ''">{{
+            node.label
+          }}</span>
+          <!-- <span v-if="data.path === ''">
+            （{{
+              store.curItem?.sha
+                ? `${store.doneFiles?.length || 0}/${
+                    store.curFiles?.length || "-"
+                  }`
+                : ""
+            }}）
+          </span> -->
+          <span
+            class="btn-copy"
+            @click="
+              (e) => {
+                debugger;
+                e.stopPropagation();
+                copy(data.path).then(() => {
+                  copySuccessPath = data.path;
+                });
+              }
+            "
+          >
+            <el-icon>
+              <finished color="#1a7f37" v-if="copySuccessPath === data.path" />
+              <copy-document v-else />
+            </el-icon>
+          </span>
+        </div>
+      </template>
+    </el-tree>
     <div class="content-pane">
       <div class="h-wrap">
         <div>{{ fileTreeStore.curNode?.path }}</div>
@@ -99,6 +140,10 @@ const unwatch = watch(
 </template>
 
 <style scoped lang="scss">
+.tree {
+  height: 100vh;
+  overflow: auto;
+}
 main {
   display: flex;
 }
@@ -124,6 +169,27 @@ main {
   .h-wrap {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.node-innerwrap {
+  display: flex;
+  align-items: center;
+  .btn-copy {
+    display: none;
+    margin-left: 4px;
+  }
+}
+
+:deep(.el-tree-node__content) {
+  .status-removed {
+    text-decoration: line-through;
+    text-decoration-color: #999;
+  }
+  &:hover {
+    .btn-copy {
+      display: flex;
+    }
   }
 }
 </style>
