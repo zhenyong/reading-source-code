@@ -84,9 +84,20 @@ const unwatch = watch(
     >
       <template #default="{ node, data }">
         <div class="node-innerwrap">
-          <span :class="data.raw?.status ? `status-${data.raw?.status}` : ''">{{
-            node.label
-          }}</span>
+          <span
+            :class="data.raw?.status ? `status-${data.raw?.status}` : ''"
+            @click.meta.stop="
+              () => {
+                window
+                  .open(
+                    `https://github.com/vuejs/core/blob/main/${data.path}`,
+                    '_blank'
+                  )
+                  ?.focus();
+              }
+            "
+            >{{ node.label }}</span
+          >
           <!-- <span v-if="data.path === ''">
             （{{
               store.curItem?.sha
