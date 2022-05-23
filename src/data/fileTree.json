@@ -8,9 +8,9 @@
       "path": ".eslintrc.js",
       "mode": "100644",
       "type": "blob",
-      "sha": "4c667f90216ebcebb96e020be9495a88fe7c65c9",
-      "size": 1972,
-      "url": "https://api.github.com/repos/vuejs/core/git/blobs/4c667f90216ebcebb96e020be9495a88fe7c65c9"
+      "sha": "8485d76f53ef74c0bfb1cc5549a0987e128d4884",
+      "size": 2182,
+      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8485d76f53ef74c0bfb1cc5549a0987e128d4884"
     }
   },
   {
@@ -22,8 +22,8 @@
       "path": ".github",
       "mode": "040000",
       "type": "tree",
-      "sha": "69afb1e949ea315d2bd537a82f37d66d0dda6ae1",
-      "url": "https://api.github.com/repos/vuejs/core/git/trees/69afb1e949ea315d2bd537a82f37d66d0dda6ae1"
+      "sha": "dafc85f0c6b9a0f211a3c50e5722f023e0a53eaa",
+      "url": "https://api.github.com/repos/vuejs/core/git/trees/dafc85f0c6b9a0f211a3c50e5722f023e0a53eaa"
     },
     "children": [
       {
@@ -49,10 +49,24 @@
           "path": ".github/ISSUE_TEMPLATE",
           "mode": "040000",
           "type": "tree",
-          "sha": "043acb299b79fa2da9e94d96ad1317de258fbd7d",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/043acb299b79fa2da9e94d96ad1317de258fbd7d"
+          "sha": "c17897d35f55bd9b308bf31bfd6785c2a706e5b0",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/c17897d35f55bd9b308bf31bfd6785c2a706e5b0"
         },
         "children": [
+          {
+            "label": "bug_report.yml",
+            "status": "undo",
+            "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+            "dir": false,
+            "meta": {
+              "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+              "mode": "100644",
+              "type": "blob",
+              "sha": "fe5e82b04a45d50803ddc92b1d2243aeac5d63a8",
+              "size": 3128,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/fe5e82b04a45d50803ddc92b1d2243aeac5d63a8"
+            }
+          },
           {
             "label": "config.yml",
             "status": "undo",
@@ -62,12 +76,40 @@
               "path": ".github/ISSUE_TEMPLATE/config.yml",
               "mode": "100644",
               "type": "blob",
-              "sha": "d331b5312a9e6361452a001c32bc994f0f91800b",
-              "size": 464,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/d331b5312a9e6361452a001c32bc994f0f91800b"
+              "sha": "af3782c8422620dbf4488349ca9dbce0992c5d2a",
+              "size": 616,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/af3782c8422620dbf4488349ca9dbce0992c5d2a"
+            }
+          },
+          {
+            "label": "feature_request.yml",
+            "status": "undo",
+            "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+            "dir": false,
+            "meta": {
+              "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+              "mode": "100644",
+              "type": "blob",
+              "sha": "9165eb4d291d5b888d421fd3ca31b08ac80f1071",
+              "size": 1977,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/9165eb4d291d5b888d421fd3ca31b08ac80f1071"
             }
           }
         ]
+      },
+      {
+        "label": "bug-repro-guidelines.md",
+        "status": "undo",
+        "path": ".github/bug-repro-guidelines.md",
+        "dir": false,
+        "meta": {
+          "path": ".github/bug-repro-guidelines.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "19e9a7e2f263f21e002eb5a242bef5ca351430d9",
+          "size": 1857,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/19e9a7e2f263f21e002eb5a242bef5ca351430d9"
+        }
       },
       {
         "label": "commit-convention.md",
@@ -92,9 +134,9 @@
           "path": ".github/contributing.md",
           "mode": "100644",
           "type": "blob",
-          "sha": "33395947855842b3618cc4ec7196da6c9fc5d176",
-          "size": 14455,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/33395947855842b3618cc4ec7196da6c9fc5d176"
+          "sha": "5f4e64b7e1eaf3bedbdc4af30a84549283c8f859",
+          "size": 14768,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/5f4e64b7e1eaf3bedbdc4af30a84549283c8f859"
         }
       },
       {
@@ -106,9 +148,9 @@
           "path": ".github/dependabot.yml",
           "mode": "100644",
           "type": "blob",
-          "sha": "af713d27a13b39dc65af4af3d9a678f24113b46b",
-          "size": 1179,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/af713d27a13b39dc65af4af3d9a678f24113b46b"
+          "sha": "206deefc56095f85140d7885bff77a0d6555d1a0",
+          "size": 1336,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/206deefc56095f85140d7885bff77a0d6555d1a0"
         }
       },
       {
@@ -120,8 +162,8 @@
           "path": ".github/workflows",
           "mode": "040000",
           "type": "tree",
-          "sha": "f6d416705d4216cb0e5578d0f356e9443b436dc7",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/f6d416705d4216cb0e5578d0f356e9443b436dc7"
+          "sha": "8ff7b611f8856ee1019c4d8fca8e33b404787170",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/8ff7b611f8856ee1019c4d8fca8e33b404787170"
         },
         "children": [
           {
@@ -133,9 +175,9 @@
               "path": ".github/workflows/ci.yml",
               "mode": "100644",
               "type": "blob",
-              "sha": "0e02bfc6627d3e320e10f8e0418fc9af41cadef0",
-              "size": 1678,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/0e02bfc6627d3e320e10f8e0418fc9af41cadef0"
+              "sha": "eadcd94f6d832f9adeeb7b6ee73451ea393bfde0",
+              "size": 1992,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/eadcd94f6d832f9adeeb7b6ee73451ea393bfde0"
             }
           },
           {
@@ -250,9 +292,9 @@
       "path": "CHANGELOG.md",
       "mode": "100644",
       "type": "blob",
-      "sha": "111f3e200fabd7f077a1da5c8818192d96fef061",
-      "size": 289658,
-      "url": "https://api.github.com/repos/vuejs/core/git/blobs/111f3e200fabd7f077a1da5c8818192d96fef061"
+      "sha": "d28a577059a6e462ab02db44ba0357469f22a831",
+      "size": 314706,
+      "url": "https://api.github.com/repos/vuejs/core/git/blobs/d28a577059a6e462ab02db44ba0357469f22a831"
     }
   },
   {
@@ -278,9 +320,9 @@
       "path": "README.md",
       "mode": "100644",
       "type": "blob",
-      "sha": "6f1c76bcd8ae5a9e0fea2c81fc673fba0b135f06",
-      "size": 1984,
-      "url": "https://api.github.com/repos/vuejs/core/git/blobs/6f1c76bcd8ae5a9e0fea2c81fc673fba0b135f06"
+      "sha": "0742b381303cdc463b3b5be248884b3fdef99647",
+      "size": 2001,
+      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0742b381303cdc463b3b5be248884b3fdef99647"
     }
   },
   {
@@ -348,9 +390,9 @@
       "path": "package.json",
       "mode": "100644",
       "type": "blob",
-      "sha": "9e4db32d354446f5453eeaf55aa591c484701e81",
-      "size": 3944,
-      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9e4db32d354446f5453eeaf55aa591c484701e81"
+      "sha": "00887995a7b12f1cacaa304c2a725f04eba1fe67",
+      "size": 4073,
+      "url": "https://api.github.com/repos/vuejs/core/git/blobs/00887995a7b12f1cacaa304c2a725f04eba1fe67"
     }
   },
   {
@@ -362,8 +404,8 @@
       "path": "packages",
       "mode": "040000",
       "type": "tree",
-      "sha": "15a7360bf338fb67610962a6ab8ce9aa835cdd2e",
-      "url": "https://api.github.com/repos/vuejs/core/git/trees/15a7360bf338fb67610962a6ab8ce9aa835cdd2e"
+      "sha": "c1fcc731e98db3bb2e9d90bb1b9eb43391e22778",
+      "url": "https://api.github.com/repos/vuejs/core/git/trees/c1fcc731e98db3bb2e9d90bb1b9eb43391e22778"
     },
     "children": [
       {
@@ -375,8 +417,8 @@
           "path": "packages/compiler-core",
           "mode": "040000",
           "type": "tree",
-          "sha": "eac5278d98f1c1aaaedaf5caa170c2ab3ef6c0d3",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/eac5278d98f1c1aaaedaf5caa170c2ab3ef6c0d3"
+          "sha": "79db898302766f0a73f52ee3652e941acc74f57f",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/79db898302766f0a73f52ee3652e941acc74f57f"
         },
         "children": [
           {
@@ -416,8 +458,8 @@
               "path": "packages/compiler-core/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "4e45e9a0e1e221634283e8cd95fd45413b2548f4",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/4e45e9a0e1e221634283e8cd95fd45413b2548f4"
+              "sha": "9ad3212285c28066569b0be8e43ea75472558b4a",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/9ad3212285c28066569b0be8e43ea75472558b4a"
             },
             "children": [
               {
@@ -429,8 +471,8 @@
                   "path": "packages/compiler-core/__tests__/__snapshots__",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "6cc5f7b6cd95aaeca7c3b0ad43c30b56713fca38",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/6cc5f7b6cd95aaeca7c3b0ad43c30b56713fca38"
+                  "sha": "56cf8374dea50902cd4cae37b5aec17f8c689c1d",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/56cf8374dea50902cd4cae37b5aec17f8c689c1d"
                 },
                 "children": [
                   {
@@ -456,9 +498,9 @@
                       "path": "packages/compiler-core/__tests__/__snapshots__/compile.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "a72a43782ce5098ed974f22134fa61ccf26c3337",
-                      "size": 3785,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/a72a43782ce5098ed974f22134fa61ccf26c3337"
+                      "sha": "a9189ac72a9fafcb0b9f0522cb1cf1aac1c7ad73",
+                      "size": 3722,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/a9189ac72a9fafcb0b9f0522cb1cf1aac1c7ad73"
                     }
                   },
                   {
@@ -528,9 +570,9 @@
                   "path": "packages/compiler-core/__tests__/parse.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "f1869739cf45a825188a61376a212e4b1aacef37",
-                  "size": 86189,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f1869739cf45a825188a61376a212e4b1aacef37"
+                  "sha": "4154e306c79dfa43cf0bb317267f99af2b1a1e98",
+                  "size": 86269,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/4154e306c79dfa43cf0bb317267f99af2b1a1e98"
                 }
               },
               {
@@ -584,8 +626,8 @@
                   "path": "packages/compiler-core/__tests__/transforms",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "1f5dfe0cf070eb1d22e108f2b7b7b479f97a4c8d",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/1f5dfe0cf070eb1d22e108f2b7b7b479f97a4c8d"
+                  "sha": "75e07e1c255c95fb0970e23c86193c2059fc218f",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/75e07e1c255c95fb0970e23c86193c2059fc218f"
                 },
                 "children": [
                   {
@@ -597,8 +639,8 @@
                       "path": "packages/compiler-core/__tests__/transforms/__snapshots__",
                       "mode": "040000",
                       "type": "tree",
-                      "sha": "890a2f919698c23a0e62b9d8028ddb583929acb4",
-                      "url": "https://api.github.com/repos/vuejs/core/git/trees/890a2f919698c23a0e62b9d8028ddb583929acb4"
+                      "sha": "7ef55283f2b7a01e30f95a8ba1ff08e34d5f1da1",
+                      "url": "https://api.github.com/repos/vuejs/core/git/trees/7ef55283f2b7a01e30f95a8ba1ff08e34d5f1da1"
                     },
                     "children": [
                       {
@@ -610,9 +652,9 @@
                           "path": "packages/compiler-core/__tests__/transforms/__snapshots__/hoistStatic.spec.ts.snap",
                           "mode": "100644",
                           "type": "blob",
-                          "sha": "73c714d837eb8132b24388b46ace69e9a41dfc19",
-                          "size": 15316,
-                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/73c714d837eb8132b24388b46ace69e9a41dfc19"
+                          "sha": "15b5cf4c309d745d14ab048a423dd27a9341864a",
+                          "size": 16163,
+                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/15b5cf4c309d745d14ab048a423dd27a9341864a"
                         }
                       },
                       {
@@ -666,9 +708,9 @@
                           "path": "packages/compiler-core/__tests__/transforms/__snapshots__/vIf.spec.ts.snap",
                           "mode": "100644",
                           "type": "blob",
-                          "sha": "54fc7cbe7b6eaff2dec3476724948b28fadd4d2f",
-                          "size": 4701,
-                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/54fc7cbe7b6eaff2dec3476724948b28fadd4d2f"
+                          "sha": "ee15a6558d963f20ff351b1afdbee0b8441628d7",
+                          "size": 4680,
+                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/ee15a6558d963f20ff351b1afdbee0b8441628d7"
                         }
                       },
                       {
@@ -738,9 +780,9 @@
                       "path": "packages/compiler-core/__tests__/transforms/hoistStatic.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "0cbd4910a303488eabdec6625ecaa1e6f2f5cf9b",
-                      "size": 17825,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0cbd4910a303488eabdec6625ecaa1e6f2f5cf9b"
+                      "sha": "2c4421aeb3b42e973cff7531037d76e65142eb7d",
+                      "size": 18076,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2c4421aeb3b42e973cff7531037d76e65142eb7d"
                     }
                   },
                   {
@@ -766,9 +808,9 @@
                       "path": "packages/compiler-core/__tests__/transforms/transformElement.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "e7a95622d1ab33d55ef7bf5d9b7ec4775cb650d2",
-                      "size": 32994,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/e7a95622d1ab33d55ef7bf5d9b7ec4775cb650d2"
+                      "sha": "bec7e119bd3d8209b5ff00ab9a0985eaab8d5e9c",
+                      "size": 34215,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/bec7e119bd3d8209b5ff00ab9a0985eaab8d5e9c"
                     }
                   },
                   {
@@ -980,9 +1022,9 @@
               "path": "packages/compiler-core/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "224d4ed0b134bf490e59e4cd55607ab48880a7ee",
+              "sha": "6315a32721bca133b52688d78d1557801f3453ad",
               "size": 950,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/224d4ed0b134bf490e59e4cd55607ab48880a7ee"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/6315a32721bca133b52688d78d1557801f3453ad"
             }
           },
           {
@@ -994,8 +1036,8 @@
               "path": "packages/compiler-core/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "1b381d24fd086b1e32f985e67d61260bdb7b9761",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/1b381d24fd086b1e32f985e67d61260bdb7b9761"
+              "sha": "d6afd9c0fda61fde1aa7ed6c7bacd4670f55a6ec",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/d6afd9c0fda61fde1aa7ed6c7bacd4670f55a6ec"
             },
             "children": [
               {
@@ -1007,9 +1049,9 @@
                   "path": "packages/compiler-core/src/ast.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "58fa76abe7ffcfe8cd4f6f4bf906acf2ff247f51",
-                  "size": 19458,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/58fa76abe7ffcfe8cd4f6f4bf906acf2ff247f51"
+                  "sha": "d6eda73bbbe5dbce35b043aa4fb7e20952b1bb16",
+                  "size": 19483,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d6eda73bbbe5dbce35b043aa4fb7e20952b1bb16"
                 }
               },
               {
@@ -1035,9 +1077,9 @@
                   "path": "packages/compiler-core/src/codegen.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "2b641e9ad69d47fb659234ea09f3e417db81c2fa",
-                  "size": 25167,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2b641e9ad69d47fb659234ea09f3e417db81c2fa"
+                  "sha": "9d715149b99abf678fe0337d4286597acfca1fa6",
+                  "size": 25091,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/9d715149b99abf678fe0337d4286597acfca1fa6"
                 }
               },
               {
@@ -1120,9 +1162,9 @@
                   "path": "packages/compiler-core/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "a68d239581508e821839443fd3289b22a045c9a7",
-                  "size": 1776,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a68d239581508e821839443fd3289b22a045c9a7"
+                  "sha": "6ed7aa5b8974fbcf824abcd37f5e1d83385077fd",
+                  "size": 1835,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6ed7aa5b8974fbcf824abcd37f5e1d83385077fd"
                 }
               },
               {
@@ -1134,9 +1176,9 @@
                   "path": "packages/compiler-core/src/options.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "a0658b4d75ddc781bbcc4463b20cef8e792fbac3",
-                  "size": 8956,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a0658b4d75ddc781bbcc4463b20cef8e792fbac3"
+                  "sha": "1221772f70661a034ef585b3f0a0b73fa31914b7",
+                  "size": 9088,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1221772f70661a034ef585b3f0a0b73fa31914b7"
                 }
               },
               {
@@ -1176,9 +1218,9 @@
                   "path": "packages/compiler-core/src/transform.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "29a04bc77d568c41b268f6f9ad6717ebbeb85dc6",
-                  "size": 13601,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/29a04bc77d568c41b268f6f9ad6717ebbeb85dc6"
+                  "sha": "6397df92f3c6a3366bd3c5bbffce6f408c5e627e",
+                  "size": 13604,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6397df92f3c6a3366bd3c5bbffce6f408c5e627e"
                 }
               },
               {
@@ -1190,8 +1232,8 @@
                   "path": "packages/compiler-core/src/transforms",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "3cefd4bda726654df567f2d6d27a8d87a8171374",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/3cefd4bda726654df567f2d6d27a8d87a8171374"
+                  "sha": "d7c450c7dc9acadc8b571f567c8d7c7eb885e426",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/d7c450c7dc9acadc8b571f567c8d7c7eb885e426"
                 },
                 "children": [
                   {
@@ -1203,9 +1245,9 @@
                       "path": "packages/compiler-core/src/transforms/hoistStatic.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "ae95eadb6830017c3d3b6d133f09e988ecb60bc7",
-                      "size": 11562,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/ae95eadb6830017c3d3b6d133f09e988ecb60bc7"
+                      "sha": "848052581ed7dd134aa42d89f362874e450b897b",
+                      "size": 11888,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/848052581ed7dd134aa42d89f362874e450b897b"
                     }
                   },
                   {
@@ -1231,9 +1273,9 @@
                       "path": "packages/compiler-core/src/transforms/transformElement.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "7143963d1f5d0b1ec73b6da8f947ce062e171b11",
-                      "size": 27681,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/7143963d1f5d0b1ec73b6da8f947ce062e171b11"
+                      "sha": "2d15227f70f6e038d85660fc6155b13b44e09a80",
+                      "size": 27934,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2d15227f70f6e038d85660fc6155b13b44e09a80"
                     }
                   },
                   {
@@ -1245,9 +1287,9 @@
                       "path": "packages/compiler-core/src/transforms/transformExpression.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "7a5e699efb4f36ba085fece5b302732392b4ca18",
-                      "size": 12784,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/7a5e699efb4f36ba085fece5b302732392b4ca18"
+                      "sha": "e4311ad4f880f3a6aa6a15da1b1678a071a212a6",
+                      "size": 12906,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/e4311ad4f880f3a6aa6a15da1b1678a071a212a6"
                     }
                   },
                   {
@@ -1259,9 +1301,9 @@
                       "path": "packages/compiler-core/src/transforms/transformSlotOutlet.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "394684b408d96c7064cdee22d793b94882920302",
-                      "size": 2740,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/394684b408d96c7064cdee22d793b94882920302"
+                      "sha": "409bfabb6edaa4462cb09197f35562daf21359a8",
+                      "size": 2790,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/409bfabb6edaa4462cb09197f35562daf21359a8"
                     }
                   },
                   {
@@ -1273,9 +1315,9 @@
                       "path": "packages/compiler-core/src/transforms/transformText.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "2ab6805c6a7b6e15e82d1e5fa4eafe31438b2766",
-                      "size": 4317,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2ab6805c6a7b6e15e82d1e5fa4eafe31438b2766"
+                      "sha": "2c8ab384fd8a2a1edb83ba805a8a7d64d6b8347d",
+                      "size": 4299,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2c8ab384fd8a2a1edb83ba805a8a7d64d6b8347d"
                     }
                   },
                   {
@@ -1315,9 +1357,9 @@
                       "path": "packages/compiler-core/src/transforms/vIf.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "71050a856435209542e86ea4eaf3d254da976294",
-                      "size": 10324,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/71050a856435209542e86ea4eaf3d254da976294"
+                      "sha": "2faa16374eeb931d5d0faa9f9ace11cdabe1de76",
+                      "size": 10388,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2faa16374eeb931d5d0faa9f9ace11cdabe1de76"
                     }
                   },
                   {
@@ -1433,8 +1475,8 @@
           "path": "packages/compiler-dom",
           "mode": "040000",
           "type": "tree",
-          "sha": "875771b3561d45be2e6fc263f93e935f2b5166d1",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/875771b3561d45be2e6fc263f93e935f2b5166d1"
+          "sha": "368ade927a3bc988b744f8ab3c507ce80eba6776",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/368ade927a3bc988b744f8ab3c507ce80eba6776"
         },
         "children": [
           {
@@ -1474,8 +1516,8 @@
               "path": "packages/compiler-dom/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "6b1b9af1761e2e71b32f788681ea2d6d3cd18d2d",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/6b1b9af1761e2e71b32f788681ea2d6d3cd18d2d"
+              "sha": "3603f39512bb021878601156c4dc4dc85a87a8ed",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/3603f39512bb021878601156c4dc4dc85a87a8ed"
             },
             "children": [
               {
@@ -1558,10 +1600,24 @@
                   "path": "packages/compiler-dom/__tests__/transforms",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "d8be98c94168f54a94d41423872c7bcbdfbe9a4f",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/d8be98c94168f54a94d41423872c7bcbdfbe9a4f"
+                  "sha": "52b7b60cf0a4c8f1db49533f00b7385176e93503",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/52b7b60cf0a4c8f1db49533f00b7385176e93503"
                 },
                 "children": [
+                  {
+                    "label": "Transition.spec.ts",
+                    "status": "undo",
+                    "path": "packages/compiler-dom/__tests__/transforms/Transition.spec.ts",
+                    "dir": false,
+                    "meta": {
+                      "path": "packages/compiler-dom/__tests__/transforms/Transition.spec.ts",
+                      "mode": "100644",
+                      "type": "blob",
+                      "sha": "1ae71360778ec8d3ee5b24005f9dfe5c15719439",
+                      "size": 3208,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/1ae71360778ec8d3ee5b24005f9dfe5c15719439"
+                    }
+                  },
                   {
                     "label": "__snapshots__",
                     "status": "undo",
@@ -1571,10 +1627,24 @@
                       "path": "packages/compiler-dom/__tests__/transforms/__snapshots__",
                       "mode": "040000",
                       "type": "tree",
-                      "sha": "329944a76be8c49ec7c6816d04968e57a1b33ae4",
-                      "url": "https://api.github.com/repos/vuejs/core/git/trees/329944a76be8c49ec7c6816d04968e57a1b33ae4"
+                      "sha": "553912949b7cad1e01ced0fc167cf2f15c243eb3",
+                      "url": "https://api.github.com/repos/vuejs/core/git/trees/553912949b7cad1e01ced0fc167cf2f15c243eb3"
                     },
                     "children": [
+                      {
+                        "label": "Transition.spec.ts.snap",
+                        "status": "undo",
+                        "path": "packages/compiler-dom/__tests__/transforms/__snapshots__/Transition.spec.ts.snap",
+                        "dir": false,
+                        "meta": {
+                          "path": "packages/compiler-dom/__tests__/transforms/__snapshots__/Transition.spec.ts.snap",
+                          "mode": "100644",
+                          "type": "blob",
+                          "sha": "026fb8aae45451b3145ae87db6060b165a3a4dd8",
+                          "size": 1886,
+                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/026fb8aae45451b3145ae87db6060b165a3a4dd8"
+                        }
+                      },
                       {
                         "label": "stringifyStatic.spec.ts.snap",
                         "status": "undo",
@@ -1584,9 +1654,9 @@
                           "path": "packages/compiler-dom/__tests__/transforms/__snapshots__/stringifyStatic.spec.ts.snap",
                           "mode": "100644",
                           "type": "blob",
-                          "sha": "efa75df3f47c1d660e866d6658d86cee5923c6b2",
-                          "size": 1730,
-                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/efa75df3f47c1d660e866d6658d86cee5923c6b2"
+                          "sha": "8427b38fcecf74aeac7357aab3a2822b5b84b015",
+                          "size": 2564,
+                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/8427b38fcecf74aeac7357aab3a2822b5b84b015"
                         }
                       },
                       {
@@ -1616,20 +1686,6 @@
                           "size": 459,
                           "url": "https://api.github.com/repos/vuejs/core/git/blobs/a0d5e72002bd1d2c8594ef7af38afd224060946f"
                         }
-                      },
-                      {
-                        "label": "warnTransitionChildren.spec.ts.snap",
-                        "status": "undo",
-                        "path": "packages/compiler-dom/__tests__/transforms/__snapshots__/warnTransitionChildren.spec.ts.snap",
-                        "dir": false,
-                        "meta": {
-                          "path": "packages/compiler-dom/__tests__/transforms/__snapshots__/warnTransitionChildren.spec.ts.snap",
-                          "mode": "100644",
-                          "type": "blob",
-                          "sha": "5787b08ffda7bcd0618c51790b0cde88cda475ac",
-                          "size": 1263,
-                          "url": "https://api.github.com/repos/vuejs/core/git/blobs/5787b08ffda7bcd0618c51790b0cde88cda475ac"
-                        }
                       }
                     ]
                   },
@@ -1656,9 +1712,9 @@
                       "path": "packages/compiler-dom/__tests__/transforms/stringifyStatic.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "0beb42585b436f089d319f7a81d52e061d6fa647",
-                      "size": 12062,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0beb42585b436f089d319f7a81d52e061d6fa647"
+                      "sha": "c737071a827150c5fa23065becf5bd47e31a45c0",
+                      "size": 12799,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/c737071a827150c5fa23065becf5bd47e31a45c0"
                     }
                   },
                   {
@@ -1744,20 +1800,6 @@
                       "size": 2184,
                       "url": "https://api.github.com/repos/vuejs/core/git/blobs/75dbda31fd10d29944a6208ecc22672265f6c364"
                     }
-                  },
-                  {
-                    "label": "warnTransitionChildren.spec.ts",
-                    "status": "undo",
-                    "path": "packages/compiler-dom/__tests__/transforms/warnTransitionChildren.spec.ts",
-                    "dir": false,
-                    "meta": {
-                      "path": "packages/compiler-dom/__tests__/transforms/warnTransitionChildren.spec.ts",
-                      "mode": "100644",
-                      "type": "blob",
-                      "sha": "3cccdfffc889c17b9dc0b8d0e4daf5a790a0d175",
-                      "size": 3202,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/3cccdfffc889c17b9dc0b8d0e4daf5a790a0d175"
-                    }
                   }
                 ]
               }
@@ -1800,9 +1842,9 @@
               "path": "packages/compiler-dom/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "6bd44b95fd3cbf4ebaa00660a69cf6c454261c44",
+              "sha": "2a0a3880a18490510e39a6a02857bafc107cd252",
               "size": 978,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/6bd44b95fd3cbf4ebaa00660a69cf6c454261c44"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/2a0a3880a18490510e39a6a02857bafc107cd252"
             }
           },
           {
@@ -1814,8 +1856,8 @@
               "path": "packages/compiler-dom/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "1b25bd4003024e87f20b47842af835654e1021a9",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/1b25bd4003024e87f20b47842af835654e1021a9"
+              "sha": "29d9dcd7b0a83609eef906cfda731905ec6343a3",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/29d9dcd7b0a83609eef906cfda731905ec6343a3"
             },
             "children": [
               {
@@ -1869,9 +1911,9 @@
                   "path": "packages/compiler-dom/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "3687d84bdbb4ea4087ea2ed13e45c3198fd4b164",
-                  "size": 2265,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/3687d84bdbb4ea4087ea2ed13e45c3198fd4b164"
+                  "sha": "2c6f71cefbbb259a81407108599bb10ea1025662",
+                  "size": 2247,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2c6f71cefbbb259a81407108599bb10ea1025662"
                 }
               },
               {
@@ -1925,10 +1967,24 @@
                   "path": "packages/compiler-dom/src/transforms",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "3abdd5c880839d35fb520dc0784e58402da089a5",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/3abdd5c880839d35fb520dc0784e58402da089a5"
+                  "sha": "50aa30c7283bb6674808367f53d611df95411882",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/50aa30c7283bb6674808367f53d611df95411882"
                 },
                 "children": [
+                  {
+                    "label": "Transition.ts",
+                    "status": "undo",
+                    "path": "packages/compiler-dom/src/transforms/Transition.ts",
+                    "dir": false,
+                    "meta": {
+                      "path": "packages/compiler-dom/src/transforms/Transition.ts",
+                      "mode": "100644",
+                      "type": "blob",
+                      "sha": "56d05ef03c12938cc7381edb5785cc3b3cd90ba0",
+                      "size": 2044,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/56d05ef03c12938cc7381edb5785cc3b3cd90ba0"
+                    }
+                  },
                   {
                     "label": "ignoreSideEffectTags.ts",
                     "status": "undo",
@@ -1952,9 +2008,9 @@
                       "path": "packages/compiler-dom/src/transforms/stringifyStatic.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "e257e3254fe21284ff1b778b63903fae6f8336fa",
-                      "size": 10721,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/e257e3254fe21284ff1b778b63903fae6f8336fa"
+                      "sha": "a268d86cd07a2205d8afcc8ce7c78e4ad41c450f",
+                      "size": 11243,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/a268d86cd07a2205d8afcc8ce7c78e4ad41c450f"
                     }
                   },
                   {
@@ -2036,23 +2092,9 @@
                       "path": "packages/compiler-dom/src/transforms/vText.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "862d2c2040cc54c6006d1e86ad0e1a9d7cf1e235",
-                      "size": 926,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/862d2c2040cc54c6006d1e86ad0e1a9d7cf1e235"
-                    }
-                  },
-                  {
-                    "label": "warnTransitionChildren.ts",
-                    "status": "undo",
-                    "path": "packages/compiler-dom/src/transforms/warnTransitionChildren.ts",
-                    "dir": false,
-                    "meta": {
-                      "path": "packages/compiler-dom/src/transforms/warnTransitionChildren.ts",
-                      "mode": "100644",
-                      "type": "blob",
-                      "sha": "4e9bdba20bc287560cd0110e9ec799965d117037",
-                      "size": 1416,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/4e9bdba20bc287560cd0110e9ec799965d117037"
+                      "sha": "77bf0032b8e4a17142ba88537ae375f4808ed86e",
+                      "size": 1019,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/77bf0032b8e4a17142ba88537ae375f4808ed86e"
                     }
                   }
                 ]
@@ -2070,8 +2112,8 @@
           "path": "packages/compiler-sfc",
           "mode": "040000",
           "type": "tree",
-          "sha": "b915704d050796413ca416257e24989717c58735",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/b915704d050796413ca416257e24989717c58735"
+          "sha": "3b45d765ea500133b31c34603ec79557db011fd2",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/3b45d765ea500133b31c34603ec79557db011fd2"
         },
         "children": [
           {
@@ -2111,8 +2153,8 @@
               "path": "packages/compiler-sfc/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "0fe077c00a5ecf191e4aa462543e9f8dff36133b",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/0fe077c00a5ecf191e4aa462543e9f8dff36133b"
+              "sha": "bf268ab087a4eafbd8b496b0fecb3fede9a45c63",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/bf268ab087a4eafbd8b496b0fecb3fede9a45c63"
             },
             "children": [
               {
@@ -2124,8 +2166,8 @@
                   "path": "packages/compiler-sfc/__tests__/__snapshots__",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "6c1228962f7b5fa9ce5ed22bcb18185fad700d82",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/6c1228962f7b5fa9ce5ed22bcb18185fad700d82"
+                  "sha": "685c9d8365220d3c32a13532756be5493fc9e059",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/685c9d8365220d3c32a13532756be5493fc9e059"
                 },
                 "children": [
                   {
@@ -2137,9 +2179,9 @@
                       "path": "packages/compiler-sfc/__tests__/__snapshots__/compileScript.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "52bda6f48b69a53fc474a2129ffa1d4bec1a18ca",
-                      "size": 33114,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/52bda6f48b69a53fc474a2129ffa1d4bec1a18ca"
+                      "sha": "e8026dc129c6be5671da743078f012895aa71d92",
+                      "size": 38147,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/e8026dc129c6be5671da743078f012895aa71d92"
                     }
                   },
                   {
@@ -2151,9 +2193,9 @@
                       "path": "packages/compiler-sfc/__tests__/__snapshots__/compileScriptPropsTransform.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "7105dfe38643b52acd9d9213b4c3ff03f05ced96",
-                      "size": 2703,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/7105dfe38643b52acd9d9213b4c3ff03f05ced96"
+                      "sha": "cfde6700dba94e5b48770dd6b7e3a55b6800a4b7",
+                      "size": 3050,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/cfde6700dba94e5b48770dd6b7e3a55b6800a4b7"
                     }
                   },
                   {
@@ -2179,9 +2221,9 @@
                       "path": "packages/compiler-sfc/__tests__/__snapshots__/compileTemplate.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "0af6bed672fce13cde828b86aa26767d194d3354",
-                      "size": 580,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0af6bed672fce13cde828b86aa26767d194d3354"
+                      "sha": "4dfc212e02a4d29dbc226b8a8d92c53761577cf9",
+                      "size": 1973,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/4dfc212e02a4d29dbc226b8a8d92c53761577cf9"
                     }
                   },
                   {
@@ -2207,9 +2249,9 @@
                       "path": "packages/compiler-sfc/__tests__/__snapshots__/templateTransformAssetUrl.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "c0fceecee6fc5bd8a75b004c83dab1cf39e0eca3",
-                      "size": 5362,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/c0fceecee6fc5bd8a75b004c83dab1cf39e0eca3"
+                      "sha": "ac09f57e40d4ea96cf3faa4db239b0710e27ea98",
+                      "size": 5496,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/ac09f57e40d4ea96cf3faa4db239b0710e27ea98"
                     }
                   },
                   {
@@ -2221,9 +2263,9 @@
                       "path": "packages/compiler-sfc/__tests__/__snapshots__/templateTransformSrcset.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "89e487f095febbece991594ca74e740223c57f3c",
-                      "size": 8407,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/89e487f095febbece991594ca74e740223c57f3c"
+                      "sha": "fe80f986429757fb93b70c96d9f895e27124bf93",
+                      "size": 11240,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/fe80f986429757fb93b70c96d9f895e27124bf93"
                     }
                   }
                 ]
@@ -2237,9 +2279,9 @@
                   "path": "packages/compiler-sfc/__tests__/compileScript.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "500777ee5ca90fc606b8ed4322f562009f6d924c",
-                  "size": 43737,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/500777ee5ca90fc606b8ed4322f562009f6d924c"
+                  "sha": "77a26a6f5db06928487a66d7359d7d82e4fb187b",
+                  "size": 47587,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/77a26a6f5db06928487a66d7359d7d82e4fb187b"
                 }
               },
               {
@@ -2251,9 +2293,9 @@
                   "path": "packages/compiler-sfc/__tests__/compileScriptPropsTransform.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "140dbec2e6be20ad1468b54d298ec28c7944e17f",
-                  "size": 6421,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/140dbec2e6be20ad1468b54d298ec28c7944e17f"
+                  "sha": "25fb4bed2800cf64076b5731229be9cb2b6d75fb",
+                  "size": 7080,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/25fb4bed2800cf64076b5731229be9cb2b6d75fb"
                 }
               },
               {
@@ -2293,9 +2335,9 @@
                   "path": "packages/compiler-sfc/__tests__/compileTemplate.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "af0f66007c71c16b8876567d3e754a4611fdd49b",
-                  "size": 3592,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/af0f66007c71c16b8876567d3e754a4611fdd49b"
+                  "sha": "2beda880b5bb4164b969fe9422103d4e866a34b9",
+                  "size": 4040,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2beda880b5bb4164b969fe9422103d4e866a34b9"
                 }
               },
               {
@@ -2364,9 +2406,9 @@
                   "path": "packages/compiler-sfc/__tests__/rewriteDefault.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "d44eeca0210dfce81b64e2dc689bf436927f48c6",
-                  "size": 2700,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d44eeca0210dfce81b64e2dc689bf436927f48c6"
+                  "sha": "ce198fbc23623729e18aa17f176f4dfc2b4bb8c6",
+                  "size": 4941,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ce198fbc23623729e18aa17f176f4dfc2b4bb8c6"
                 }
               },
               {
@@ -2378,9 +2420,9 @@
                   "path": "packages/compiler-sfc/__tests__/templateTransformAssetUrl.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "44ef092aa2249731d7e7503bcc4ee7b6e46ddddf",
-                  "size": 4788,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/44ef092aa2249731d7e7503bcc4ee7b6e46ddddf"
+                  "sha": "0b0f138b8a8d56577870454ece553ca910632abf",
+                  "size": 4840,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/0b0f138b8a8d56577870454ece553ca910632abf"
                 }
               },
               {
@@ -2392,9 +2434,9 @@
                   "path": "packages/compiler-sfc/__tests__/templateTransformSrcset.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "f88706c420bd3303bb2e0fb21cde4ba26ccd6590",
-                  "size": 2607,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f88706c420bd3303bb2e0fb21cde4ba26ccd6590"
+                  "sha": "8c21dd4165644de64525bf3baad503f55b906207",
+                  "size": 2934,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8c21dd4165644de64525bf3baad503f55b906207"
                 }
               },
               {
@@ -2420,9 +2462,9 @@
                   "path": "packages/compiler-sfc/__tests__/utils.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "206ff3681dd60e31fbf364b250fd8c09137e00f8",
-                  "size": 656,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/206ff3681dd60e31fbf364b250fd8c09137e00f8"
+                  "sha": "ffa12652c83293f4fbe34db591c569064d96a377",
+                  "size": 729,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ffa12652c83293f4fbe34db591c569064d96a377"
                 }
               }
             ]
@@ -2450,9 +2492,9 @@
               "path": "packages/compiler-sfc/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "b32f83ff9935b989a4699520e492e43e7c0e542b",
+              "sha": "6fda58f4fd823c6065db722875baccc5e32d9c88",
               "size": 1492,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/b32f83ff9935b989a4699520e492e43e7c0e542b"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/6fda58f4fd823c6065db722875baccc5e32d9c88"
             }
           },
           {
@@ -2464,8 +2506,8 @@
               "path": "packages/compiler-sfc/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "beacd6faf3389bf20e949eb24372d25550c43101",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/beacd6faf3389bf20e949eb24372d25550c43101"
+              "sha": "2d13a7158ef5fe17587172d7a35903b3cb4d8ce3",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/2d13a7158ef5fe17587172d7a35903b3cb4d8ce3"
             },
             "children": [
               {
@@ -2491,9 +2533,9 @@
                   "path": "packages/compiler-sfc/src/compileScript.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "05623326ca0c3b9b5f99727d26e7a9cc7f4c7a1b",
-                  "size": 62217,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/05623326ca0c3b9b5f99727d26e7a9cc7f4c7a1b"
+                  "sha": "ca82dc909bd83189cd32cc377647936b76379552",
+                  "size": 66831,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ca82dc909bd83189cd32cc377647936b76379552"
                 }
               },
               {
@@ -2519,9 +2561,9 @@
                   "path": "packages/compiler-sfc/src/compileTemplate.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "4ddd005971dbfbb2a9ccceb4d2aeea402e3d8c85",
-                  "size": 8640,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/4ddd005971dbfbb2a9ccceb4d2aeea402e3d8c85"
+                  "sha": "2654da105a7733b6f12d053e91207c763b439566",
+                  "size": 8646,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2654da105a7733b6f12d053e91207c763b439566"
                 }
               },
               {
@@ -2533,9 +2575,9 @@
                   "path": "packages/compiler-sfc/src/cssVars.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "c7572e58d973df868834295ed3a72b62b635bad4",
-                  "size": 3588,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/c7572e58d973df868834295ed3a72b62b635bad4"
+                  "sha": "a922e2de7cf24de1605b7088610dd9bc95441803",
+                  "size": 3637,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a922e2de7cf24de1605b7088610dd9bc95441803"
                 }
               },
               {
@@ -2547,9 +2589,9 @@
                   "path": "packages/compiler-sfc/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "bf89c5de45464562c9c2e128fca940c89817847c",
+                  "sha": "b99aeafbb47af30959211c43c638c4eb3efd2bed",
                   "size": 1474,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/bf89c5de45464562c9c2e128fca940c89817847c"
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/b99aeafbb47af30959211c43c638c4eb3efd2bed"
                 }
               },
               {
@@ -2561,9 +2603,9 @@
                   "path": "packages/compiler-sfc/src/parse.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ed44e53682934e5d01affa1da03a49d55e7f0b91",
-                  "size": 11338,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ed44e53682934e5d01affa1da03a49d55e7f0b91"
+                  "sha": "cc7873c29a8c9384e3ed3b261e689d8e3fa034aa",
+                  "size": 11388,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/cc7873c29a8c9384e3ed3b261e689d8e3fa034aa"
                 }
               },
               {
@@ -2575,9 +2617,9 @@
                   "path": "packages/compiler-sfc/src/rewriteDefault.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "f4b2f2e87ae889e0e5000d991dccb4a1b5166ed9",
-                  "size": 2133,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f4b2f2e87ae889e0e5000d991dccb4a1b5166ed9"
+                  "sha": "da7c3a042e950eec7c4b520a41412aae1495704a",
+                  "size": 3421,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/da7c3a042e950eec7c4b520a41412aae1495704a"
                 }
               },
               {
@@ -2645,9 +2687,9 @@
                   "path": "packages/compiler-sfc/src/templateTransformAssetUrl.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "2f6152b8eb6d3bce1e74567c4dc75ca92d517e36",
-                  "size": 5378,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2f6152b8eb6d3bce1e74567c4dc75ca92d517e36"
+                  "sha": "32bf33bcea10bbb27537b47ef2e98157108aab03",
+                  "size": 5488,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/32bf33bcea10bbb27537b47ef2e98157108aab03"
                 }
               },
               {
@@ -2659,9 +2701,9 @@
                   "path": "packages/compiler-sfc/src/templateTransformSrcset.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ccdcc721e7b01215c0440580fae9e5e3ba2dc1ae",
-                  "size": 5347,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ccdcc721e7b01215c0440580fae9e5e3ba2dc1ae"
+                  "sha": "9780f93b5c55b13bf7b54ad5d39e85e97d6bd10d",
+                  "size": 5627,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/9780f93b5c55b13bf7b54ad5d39e85e97d6bd10d"
                 }
               },
               {
@@ -2705,8 +2747,8 @@
           "path": "packages/compiler-ssr",
           "mode": "040000",
           "type": "tree",
-          "sha": "17c279e74aaec70b5ab129343c39ad8e3be6e8a3",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/17c279e74aaec70b5ab129343c39ad8e3be6e8a3"
+          "sha": "05715cc3fab245a933dade9d9c5e098918755380",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/05715cc3fab245a933dade9d9c5e098918755380"
         },
         "children": [
           {
@@ -2746,8 +2788,8 @@
               "path": "packages/compiler-ssr/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "f2329cc5037c6309ec04342760124558a36554ea",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/f2329cc5037c6309ec04342760124558a36554ea"
+              "sha": "f2a1fac31ed1f98d08df05e01bd6e2fbeb26fb0e",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/f2a1fac31ed1f98d08df05e01bd6e2fbeb26fb0e"
             },
             "children": [
               {
@@ -2759,9 +2801,9 @@
                   "path": "packages/compiler-ssr/__tests__/ssrComponent.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "49eb9ff994172267eaecb8d8e5a4912bd8e830af",
-                  "size": 14982,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/49eb9ff994172267eaecb8d8e5a4912bd8e830af"
+                  "sha": "1a7961867391a0facc658c5fa70087ff82e5ebe4",
+                  "size": 14672,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1a7961867391a0facc658c5fa70087ff82e5ebe4"
                 }
               },
               {
@@ -2776,6 +2818,20 @@
                   "sha": "bf95065237d7fd889648c6f22a076f8b5fe193be",
                   "size": 10724,
                   "url": "https://api.github.com/repos/vuejs/core/git/blobs/bf95065237d7fd889648c6f22a076f8b5fe193be"
+                }
+              },
+              {
+                "label": "ssrFallthroughAttrs.spec.ts",
+                "status": "undo",
+                "path": "packages/compiler-ssr/__tests__/ssrFallthroughAttrs.spec.ts",
+                "dir": false,
+                "meta": {
+                  "path": "packages/compiler-ssr/__tests__/ssrFallthroughAttrs.spec.ts",
+                  "mode": "100644",
+                  "type": "blob",
+                  "sha": "6cbb0d3a9562e2508cb27de06ff59efe21110ff4",
+                  "size": 2008,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6cbb0d3a9562e2508cb27de06ff59efe21110ff4"
                 }
               },
               {
@@ -2829,9 +2885,9 @@
                   "path": "packages/compiler-ssr/__tests__/ssrSlotOutlet.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "d4c6fee918a8735ea14ebd34c3ab35b3c072b4c4",
-                  "size": 3869,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d4c6fee918a8735ea14ebd34c3ab35b3c072b4c4"
+                  "sha": "695cfdf7f133937688d70a58eba8589ab155bdf3",
+                  "size": 4408,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/695cfdf7f133937688d70a58eba8589ab155bdf3"
                 }
               },
               {
@@ -2860,6 +2916,20 @@
                   "sha": "8629eec0dc883097c55f6f4aa3bc1629c51b540e",
                   "size": 2177,
                   "url": "https://api.github.com/repos/vuejs/core/git/blobs/8629eec0dc883097c55f6f4aa3bc1629c51b540e"
+                }
+              },
+              {
+                "label": "ssrTransitionGroup.spec.ts",
+                "status": "undo",
+                "path": "packages/compiler-ssr/__tests__/ssrTransitionGroup.spec.ts",
+                "dir": false,
+                "meta": {
+                  "path": "packages/compiler-ssr/__tests__/ssrTransitionGroup.spec.ts",
+                  "mode": "100644",
+                  "type": "blob",
+                  "sha": "2a3b6d3b4d488d3ac049117df97cd2408b679690",
+                  "size": 3191,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2a3b6d3b4d488d3ac049117df97cd2408b679690"
                 }
               },
               {
@@ -2957,9 +3027,9 @@
               "path": "packages/compiler-ssr/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "ac6ea38e73bf2f4ec88c90842b330cfa66dbafee",
+              "sha": "b517363198e5351dab9b63d38b8f3b9a12afdd7a",
               "size": 729,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/ac6ea38e73bf2f4ec88c90842b330cfa66dbafee"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/b517363198e5351dab9b63d38b8f3b9a12afdd7a"
             }
           },
           {
@@ -2971,8 +3041,8 @@
               "path": "packages/compiler-ssr/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "e46fa6d22c5cb656556b5ddea9b8e50d762552a8",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/e46fa6d22c5cb656556b5ddea9b8e50d762552a8"
+              "sha": "1a1cdcf634a31cf442278f89970d2171f0bcec9f",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/1a1cdcf634a31cf442278f89970d2171f0bcec9f"
             },
             "children": [
               {
@@ -2998,9 +3068,9 @@
                   "path": "packages/compiler-ssr/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "37333471b963b294d2523fdeafd461a8b041a3a3",
-                  "size": 2673,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/37333471b963b294d2523fdeafd461a8b041a3a3"
+                  "sha": "1775af52bfc56dc4ed26de24f5af724aade804fe",
+                  "size": 2714,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1775af52bfc56dc4ed26de24f5af724aade804fe"
                 }
               },
               {
@@ -3012,9 +3082,9 @@
                   "path": "packages/compiler-ssr/src/runtimeHelpers.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "f0a6a2f290cdc922b91a0c3b65934b69f8ae3845",
-                  "size": 2142,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f0a6a2f290cdc922b91a0c3b65934b69f8ae3845"
+                  "sha": "220af4854f67deb4c7d22d1e230eb4f83c0cbf16",
+                  "size": 2257,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/220af4854f67deb4c7d22d1e230eb4f83c0cbf16"
                 }
               },
               {
@@ -3026,9 +3096,9 @@
                   "path": "packages/compiler-ssr/src/ssrCodegenTransform.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "c30b90aa1313d5cc7d485a8758e41caa28dfba1b",
-                  "size": 6774,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/c30b90aa1313d5cc7d485a8758e41caa28dfba1b"
+                  "sha": "a7f3ada15b4ed0f6f3a2c3ac1e589c4f8627a8eb",
+                  "size": 6834,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a7f3ada15b4ed0f6f3a2c3ac1e589c4f8627a8eb"
                 }
               },
               {
@@ -3040,8 +3110,8 @@
                   "path": "packages/compiler-ssr/src/transforms",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "6f1c2cf794e589eea96b17ae82417022bcede9b0",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/6f1c2cf794e589eea96b17ae82417022bcede9b0"
+                  "sha": "3ebdb38ff6a95fecb91adc53c549e9ded5ccf0f3",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/3ebdb38ff6a95fecb91adc53c549e9ded5ccf0f3"
                 },
                 "children": [
                   {
@@ -3067,9 +3137,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrInjectFallthroughAttrs.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "b368fd2ec92330eb08846a09e078ce39ade3d4ce",
-                      "size": 1645,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/b368fd2ec92330eb08846a09e078ce39ade3d4ce"
+                      "sha": "2b5c350a557565c3820d587a9d635a2a0fc6c20f",
+                      "size": 2410,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2b5c350a557565c3820d587a9d635a2a0fc6c20f"
                     }
                   },
                   {
@@ -3081,9 +3151,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrTransformComponent.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "b02d3afddb5aaed972846c30258068db56458a6a",
-                      "size": 10481,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/b02d3afddb5aaed972846c30258068db56458a6a"
+                      "sha": "df190c768a8b938b5542b10e86d8890c88b68c85",
+                      "size": 11457,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/df190c768a8b938b5542b10e86d8890c88b68c85"
                     }
                   },
                   {
@@ -3095,9 +3165,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrTransformElement.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "32991ed8def00b16991e9a7e3db6d2c8d756aa07",
-                      "size": 14253,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/32991ed8def00b16991e9a7e3db6d2c8d756aa07"
+                      "sha": "2c42a83ba3708bf639f9ce78273abc907158550a",
+                      "size": 14339,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2c42a83ba3708bf639f9ce78273abc907158550a"
                     }
                   },
                   {
@@ -3109,9 +3179,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrTransformSlotOutlet.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "98020f6c179ae944dd723b64607275d8475cd21a",
-                      "size": 1690,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/98020f6c179ae944dd723b64607275d8475cd21a"
+                      "sha": "3486f3551021667a14a9aadd42c3949296310769",
+                      "size": 2353,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/3486f3551021667a14a9aadd42c3949296310769"
                     }
                   },
                   {
@@ -3123,9 +3193,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrTransformSuspense.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "33543326922af776118c2386b5fd5f53ae25e02a",
-                      "size": 1852,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/33543326922af776118c2386b5fd5f53ae25e02a"
+                      "sha": "207e9348eef5b9ed9fc5bea2ae564803197d58d4",
+                      "size": 1841,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/207e9348eef5b9ed9fc5bea2ae564803197d58d4"
                     }
                   },
                   {
@@ -3137,9 +3207,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrTransformTeleport.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "d9cfdbb0274c05e0225524a3a538ab7731f26e48",
-                      "size": 1764,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/d9cfdbb0274c05e0225524a3a538ab7731f26e48"
+                      "sha": "f470ca711d4eaae248ea808adf79be7e3e3d5d67",
+                      "size": 1755,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/f470ca711d4eaae248ea808adf79be7e3e3d5d67"
                     }
                   },
                   {
@@ -3151,9 +3221,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrTransformTransitionGroup.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "80a26c98a4978c9f0a62c220d5bb725351b4a414",
-                      "size": 1319,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/80a26c98a4978c9f0a62c220d5bb725351b4a414"
+                      "sha": "dedf1f6407552262a626bdeaeaf07c6aa434804c",
+                      "size": 2675,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/dedf1f6407552262a626bdeaeaf07c6aa434804c"
                     }
                   },
                   {
@@ -3165,9 +3235,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrVFor.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "583873b66ff83a2c8a204d60c953f550a9723bbe",
-                      "size": 1406,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/583873b66ff83a2c8a204d60c953f550a9723bbe"
+                      "sha": "0515993d4753778d9f29d526353d75028d6cbbb2",
+                      "size": 1397,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0515993d4753778d9f29d526353d75028d6cbbb2"
                     }
                   },
                   {
@@ -3179,9 +3249,9 @@
                       "path": "packages/compiler-ssr/src/transforms/ssrVIf.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "57f77eafd30ec8424128ff9d5ab170af6a5a6606",
-                      "size": 2056,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/57f77eafd30ec8424128ff9d5ab170af6a5a6606"
+                      "sha": "9de1d0e9a2d24087a582b5624bc554ba9f15635b",
+                      "size": 2054,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9de1d0e9a2d24087a582b5624bc554ba9f15635b"
                     }
                   },
                   {
@@ -3241,8 +3311,8 @@
           "path": "packages/reactivity-transform",
           "mode": "040000",
           "type": "tree",
-          "sha": "c5708b4ff2ccd007b8967cd40a954ee58e7034dd",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/c5708b4ff2ccd007b8967cd40a954ee58e7034dd"
+          "sha": "3a6594a31440c2aee01e059f85508d73636e274b",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/3a6594a31440c2aee01e059f85508d73636e274b"
         },
         "children": [
           {
@@ -3268,8 +3338,8 @@
               "path": "packages/reactivity-transform/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "d4ae4fd8c773530a04cfc58ff68e27b76928e1c9",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/d4ae4fd8c773530a04cfc58ff68e27b76928e1c9"
+              "sha": "9b1a1a2b6a7620d465ab35736dbc93129284e405",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/9b1a1a2b6a7620d465ab35736dbc93129284e405"
             },
             "children": [
               {
@@ -3281,8 +3351,8 @@
                   "path": "packages/reactivity-transform/__tests__/__snapshots__",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "af294aaad6454f1c793f792fa170869dd77a2953",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/af294aaad6454f1c793f792fa170869dd77a2953"
+                  "sha": "c451b8fb5526a96be31e40cac1d6e19cdb9f8120",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/c451b8fb5526a96be31e40cac1d6e19cdb9f8120"
                 },
                 "children": [
                   {
@@ -3294,9 +3364,9 @@
                       "path": "packages/reactivity-transform/__tests__/__snapshots__/reactivityTransform.spec.ts.snap",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "73b5db93ee69900f5808ff6c5049e2a4a9dff2cc",
-                      "size": 4984,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/73b5db93ee69900f5808ff6c5049e2a4a9dff2cc"
+                      "sha": "0251a2f5d175acba387609561133e3a4b38e353d",
+                      "size": 5079,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0251a2f5d175acba387609561133e3a4b38e353d"
                     }
                   }
                 ]
@@ -3310,9 +3380,9 @@
                   "path": "packages/reactivity-transform/__tests__/reactivityTransform.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "9f24d2663e55bfafebec2ff624720ef909d9b5f5",
-                  "size": 11984,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/9f24d2663e55bfafebec2ff624720ef909d9b5f5"
+                  "sha": "7471615cae20f1eefe7822b8daadb688abd8bb38",
+                  "size": 12122,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/7471615cae20f1eefe7822b8daadb688abd8bb38"
                 }
               }
             ]
@@ -3340,9 +3410,9 @@
               "path": "packages/reactivity-transform/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "7569f34ecf66302c4abaae959a8eca846f0788b7",
+              "sha": "0ffa065419724a85837d821dd5280547f6b62cb4",
               "size": 959,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/7569f34ecf66302c4abaae959a8eca846f0788b7"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/0ffa065419724a85837d821dd5280547f6b62cb4"
             }
           },
           {
@@ -3354,8 +3424,8 @@
               "path": "packages/reactivity-transform/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "98e7fc2c80b7d707f60443ea02320a28aaf729fa",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/98e7fc2c80b7d707f60443ea02320a28aaf729fa"
+              "sha": "b05fa93f3a2972436be5913b3d174a2fd9b7afce",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/b05fa93f3a2972436be5913b3d174a2fd9b7afce"
             },
             "children": [
               {
@@ -3395,9 +3465,9 @@
                   "path": "packages/reactivity-transform/src/reactivityTransform.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "a67d843280d65ad4639a95cbee2a987bc36656b8",
-                  "size": 19679,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a67d843280d65ad4639a95cbee2a987bc36656b8"
+                  "sha": "34d537d221becd5f8d24e16f8595c256a7f67a24",
+                  "size": 19987,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/34d537d221becd5f8d24e16f8595c256a7f67a24"
                 }
               }
             ]
@@ -3413,8 +3483,8 @@
           "path": "packages/reactivity",
           "mode": "040000",
           "type": "tree",
-          "sha": "b734a81a7b8a799538afdf5ba16ab6a06bc828b2",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/b734a81a7b8a799538afdf5ba16ab6a06bc828b2"
+          "sha": "a9a933a7fd5a5b8c5007c091474f875eecedfa69",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/a9a933a7fd5a5b8c5007c091474f875eecedfa69"
         },
         "children": [
           {
@@ -3454,8 +3524,8 @@
               "path": "packages/reactivity/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "1b7c1b13bb5bd6037fe2a04c398e1f20851760a6",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/1b7c1b13bb5bd6037fe2a04c398e1f20851760a6"
+              "sha": "22f09e4d82497889db7bdba27f0188bf9daef69a",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/22f09e4d82497889db7bdba27f0188bf9daef69a"
             },
             "children": [
               {
@@ -3552,9 +3622,9 @@
                   "path": "packages/reactivity/__tests__/computed.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "a3efc8c854a9c304a9e56a8cae48b51767fa9654",
-                  "size": 6636,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a3efc8c854a9c304a9e56a8cae48b51767fa9654"
+                  "sha": "3e4dead83719399c650143a61f3ad5f3660335dd",
+                  "size": 7116,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/3e4dead83719399c650143a61f3ad5f3660335dd"
                 }
               },
               {
@@ -3580,9 +3650,9 @@
                   "path": "packages/reactivity/__tests__/effect.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "77d069fc6187e61ec1f8f359d499d8d49901139b",
-                  "size": 24205,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/77d069fc6187e61ec1f8f359d499d8d49901139b"
+                  "sha": "a66aff278a4eeca3c54b50c021f767685c36ce62",
+                  "size": 24803,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a66aff278a4eeca3c54b50c021f767685c36ce62"
                 }
               },
               {
@@ -3594,9 +3664,9 @@
                   "path": "packages/reactivity/__tests__/effectScope.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "3ce8affe78cbfce375b9fd1a4532016b85bb2f78",
-                  "size": 6069,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/3ce8affe78cbfce375b9fd1a4532016b85bb2f78"
+                  "sha": "af92c97f94c7cdfb693812d8e14ffd563e5efe7d",
+                  "size": 6486,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/af92c97f94c7cdfb693812d8e14ffd563e5efe7d"
                 }
               },
               {
@@ -3622,9 +3692,9 @@
                   "path": "packages/reactivity/__tests__/reactiveArray.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "9402f3c5d6ebedd394ba2e8a023a7c0dc450998c",
-                  "size": 6132,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/9402f3c5d6ebedd394ba2e8a023a7c0dc450998c"
+                  "sha": "1b7323fa97e0e5eb248ebc7cf3233ac5172e6839",
+                  "size": 6138,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1b7323fa97e0e5eb248ebc7cf3233ac5172e6839"
                 }
               },
               {
@@ -3636,9 +3706,9 @@
                   "path": "packages/reactivity/__tests__/readonly.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "73030c5b997d6f858f7e3cfdf2e2a39e5288c5f3",
-                  "size": 14962,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/73030c5b997d6f858f7e3cfdf2e2a39e5288c5f3"
+                  "sha": "c37c8e190ed39b2a6e1463c1371f6fc57cd574dc",
+                  "size": 14979,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/c37c8e190ed39b2a6e1463c1371f6fc57cd574dc"
                 }
               },
               {
@@ -3678,9 +3748,9 @@
                   "path": "packages/reactivity/__tests__/shallowReadonly.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ca3f9671c59b62904f2f2b9a9196e4b1c42bf9ee",
-                  "size": 6324,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ca3f9671c59b62904f2f2b9a9196e4b1c42bf9ee"
+                  "sha": "79d4376cc015de26740a4de0cb26064d946533b3",
+                  "size": 6313,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/79d4376cc015de26740a4de0cb26064d946533b3"
                 }
               }
             ]
@@ -3722,9 +3792,9 @@
               "path": "packages/reactivity/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "87fdf743a961132ea563e67d3d7d16dfd2c71267",
+              "sha": "c976fade149275bebb95222c5b6ada7e86e26605",
               "size": 905,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/87fdf743a961132ea563e67d3d7d16dfd2c71267"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/c976fade149275bebb95222c5b6ada7e86e26605"
             }
           },
           {
@@ -3736,8 +3806,8 @@
               "path": "packages/reactivity/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "7f1349b8d05f1befb3ad07d9aff31e17135cba29",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/7f1349b8d05f1befb3ad07d9aff31e17135cba29"
+              "sha": "cb6ed06f782a7afec3676dbb2b40c06426c887a3",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/cb6ed06f782a7afec3676dbb2b40c06426c887a3"
             },
             "children": [
               {
@@ -3749,9 +3819,9 @@
                   "path": "packages/reactivity/src/baseHandlers.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "8ad8e57171ffffae0c044ca57f6f433c2d99c535",
-                  "size": 6969,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8ad8e57171ffffae0c044ca57f6f433c2d99c535"
+                  "sha": "dac444ffdc115909495b389bb27e43d964118241",
+                  "size": 7209,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/dac444ffdc115909495b389bb27e43d964118241"
                 }
               },
               {
@@ -3763,9 +3833,9 @@
                   "path": "packages/reactivity/src/collectionHandlers.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "0e9e19e824c2e5bacffc764d26e8a3c8a44b1a89",
-                  "size": 11414,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/0e9e19e824c2e5bacffc764d26e8a3c8a44b1a89"
+                  "sha": "09365f96021cab3dc49e6e16b79516e8942e5e18",
+                  "size": 11420,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/09365f96021cab3dc49e6e16b79516e8942e5e18"
                 }
               },
               {
@@ -3791,9 +3861,9 @@
                   "path": "packages/reactivity/src/deferredComputed.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "bf19fd42fdf7db4f2ce8a174212ed06286d47ff2",
-                  "size": 2387,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/bf19fd42fdf7db4f2ce8a174212ed06286d47ff2"
+                  "sha": "a23122046a4bf8010c8d56aa41aeffd85a71108a",
+                  "size": 2401,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a23122046a4bf8010c8d56aa41aeffd85a71108a"
                 }
               },
               {
@@ -3819,9 +3889,9 @@
                   "path": "packages/reactivity/src/effect.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "61894ebc2ec71cedefb6dba828e39445e5b0e41c",
-                  "size": 8458,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/61894ebc2ec71cedefb6dba828e39445e5b0e41c"
+                  "sha": "34b53eb8fef103354e236eea8f2b508208a15df2",
+                  "size": 8961,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/34b53eb8fef103354e236eea8f2b508208a15df2"
                 }
               },
               {
@@ -3833,9 +3903,9 @@
                   "path": "packages/reactivity/src/effectScope.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "fcacab6e381dd3e34dd328116932b1115ad9142e",
-                  "size": 2440,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/fcacab6e381dd3e34dd328116932b1115ad9142e"
+                  "sha": "f4396e8f3ab07b8ed688136fb54e636ebf8b811d",
+                  "size": 2881,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f4396e8f3ab07b8ed688136fb54e636ebf8b811d"
                 }
               },
               {
@@ -3875,9 +3945,9 @@
                   "path": "packages/reactivity/src/reactive.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "f160b21110db53c24f5b888d22e863b6d8c24e8a",
-                  "size": 7027,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f160b21110db53c24f5b888d22e863b6d8c24e8a"
+                  "sha": "1a94749971044b2b0dfdf18847825b76abc19b31",
+                  "size": 7066,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1a94749971044b2b0dfdf18847825b76abc19b31"
                 }
               },
               {
@@ -3889,9 +3959,9 @@
                   "path": "packages/reactivity/src/ref.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "22dd432b9452ea39c94f56a81ed7c969c0eae967",
-                  "size": 7541,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/22dd432b9452ea39c94f56a81ed7c969c0eae967"
+                  "sha": "2a3b3732e0e9ee8110183f3da5237d4318217d0c",
+                  "size": 7614,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2a3b3732e0e9ee8110183f3da5237d4318217d0c"
                 }
               },
               {
@@ -3921,8 +3991,8 @@
           "path": "packages/runtime-core",
           "mode": "040000",
           "type": "tree",
-          "sha": "8cff2ac4aea90361233d4028f14857547c98a36a",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/8cff2ac4aea90361233d4028f14857547c98a36a"
+          "sha": "34bb88c4a0087ac92f0a2c6c87566c43de432e47",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/34bb88c4a0087ac92f0a2c6c87566c43de432e47"
         },
         "children": [
           {
@@ -3962,8 +4032,8 @@
               "path": "packages/runtime-core/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "032c84088b644855cc643922ed2aec04d9e7e712",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/032c84088b644855cc643922ed2aec04d9e7e712"
+              "sha": "e9e7b5d4103851f2a355ef73b161d0653ec3da0e",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/e9e7b5d4103851f2a355ef73b161d0653ec3da0e"
             },
             "children": [
               {
@@ -3975,9 +4045,9 @@
                   "path": "packages/runtime-core/__tests__/apiAsyncComponent.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "b771ba9652de8141409cf0810742395829087cdf",
-                  "size": 21587,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/b771ba9652de8141409cf0810742395829087cdf"
+                  "sha": "45b82923dbab0981328d675dc564b97853d047b8",
+                  "size": 22511,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/45b82923dbab0981328d675dc564b97853d047b8"
                 }
               },
               {
@@ -3989,9 +4059,9 @@
                   "path": "packages/runtime-core/__tests__/apiCreateApp.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "e5e9a5906b1ce5fa167e827267bdb34f48c4cb4e",
-                  "size": 12470,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e5e9a5906b1ce5fa167e827267bdb34f48c4cb4e"
+                  "sha": "3fb5bb17529aa194ef33460f5c9a44c70a25cf0c",
+                  "size": 12668,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/3fb5bb17529aa194ef33460f5c9a44c70a25cf0c"
                 }
               },
               {
@@ -4031,9 +4101,9 @@
                   "path": "packages/runtime-core/__tests__/apiLifecycle.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "d8ce5b3edfe0544f2a903c91ab0324ac0afac121",
-                  "size": 9027,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d8ce5b3edfe0544f2a903c91ab0324ac0afac121"
+                  "sha": "60a7f7d0cce3540f650d5a62f255c431225bbd2a",
+                  "size": 9055,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/60a7f7d0cce3540f650d5a62f255c431225bbd2a"
                 }
               },
               {
@@ -4045,9 +4115,9 @@
                   "path": "packages/runtime-core/__tests__/apiOptions.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "0dda642656541c1a1894dfadabc8eec5ad4fe8a8",
-                  "size": 36665,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/0dda642656541c1a1894dfadabc8eec5ad4fe8a8"
+                  "sha": "18207f61dc37a75b668acad0adaac5e3aa3f460e",
+                  "size": 36671,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/18207f61dc37a75b668acad0adaac5e3aa3f460e"
                 }
               },
               {
@@ -4087,9 +4157,9 @@
                   "path": "packages/runtime-core/__tests__/apiWatch.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "a5517ab1d263350d65837a6714d88f3528049dd2",
-                  "size": 25455,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a5517ab1d263350d65837a6714d88f3528049dd2"
+                  "sha": "118c5732681be08e2d47f8337ff2f3b43234a072",
+                  "size": 26495,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/118c5732681be08e2d47f8337ff2f3b43234a072"
                 }
               },
               {
@@ -4101,9 +4171,9 @@
                   "path": "packages/runtime-core/__tests__/componentEmits.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "d88981a43d4f553f0c0bc9a6d8a3986be407fc2d",
-                  "size": 9037,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d88981a43d4f553f0c0bc9a6d8a3986be407fc2d"
+                  "sha": "f22be2de0c1239b819c542c22fbdebcead2a2f94",
+                  "size": 10423,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f22be2de0c1239b819c542c22fbdebcead2a2f94"
                 }
               },
               {
@@ -4129,9 +4199,9 @@
                   "path": "packages/runtime-core/__tests__/componentPublicInstance.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "2bea4e0eedc6bf42d3de7212d398e4bf05e00fbb",
-                  "size": 11407,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2bea4e0eedc6bf42d3de7212d398e4bf05e00fbb"
+                  "sha": "47dcb03c3ab650bfe5ce34ee2ee76f73ab05afcc",
+                  "size": 11404,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/47dcb03c3ab650bfe5ce34ee2ee76f73ab05afcc"
                 }
               },
               {
@@ -4157,8 +4227,8 @@
                   "path": "packages/runtime-core/__tests__/components",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "aaa00314c5d265d1e1f6e9298e514015b1af3e23",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/aaa00314c5d265d1e1f6e9298e514015b1af3e23"
+                  "sha": "7bf5c8080f338670ba2b6a202e35b5a505bf37da",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/7bf5c8080f338670ba2b6a202e35b5a505bf37da"
                 },
                 "children": [
                   {
@@ -4184,9 +4254,9 @@
                       "path": "packages/runtime-core/__tests__/components/KeepAlive.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "b60931e1ffb1110e9c7df6c6b3b77d0f5a1f3bfa",
-                      "size": 24036,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/b60931e1ffb1110e9c7df6c6b3b77d0f5a1f3bfa"
+                      "sha": "79e7811723a621b9b0eaa58223db037068ab2f79",
+                      "size": 25892,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/79e7811723a621b9b0eaa58223db037068ab2f79"
                     }
                   },
                   {
@@ -4198,9 +4268,9 @@
                       "path": "packages/runtime-core/__tests__/components/Suspense.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "421bc0a8e963b00ef04fda3c032a413174952519",
-                      "size": 30574,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/421bc0a8e963b00ef04fda3c032a413174952519"
+                      "sha": "a2c38b2846e11b8f1b4f1b52bbbea249f755ca9b",
+                      "size": 31043,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/a2c38b2846e11b8f1b4f1b52bbbea249f755ca9b"
                     }
                   },
                   {
@@ -4228,9 +4298,9 @@
                   "path": "packages/runtime-core/__tests__/directives.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "02d24711804773df53c3386024706cfaa7029bfe",
-                  "size": 10344,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/02d24711804773df53c3386024706cfaa7029bfe"
+                  "sha": "c2a183b12ef4a9e0ad02a4e2fbbe6cbc6bb4f891",
+                  "size": 10952,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/c2a183b12ef4a9e0ad02a4e2fbbe6cbc6bb4f891"
                 }
               },
               {
@@ -4242,9 +4312,9 @@
                   "path": "packages/runtime-core/__tests__/errorHandling.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "d1d6969104e3f7e83c83d2c19fc8570ac4e25836",
-                  "size": 12577,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d1d6969104e3f7e83c83d2c19fc8570ac4e25836"
+                  "sha": "8a18870a5db3a927e5deda5c56e07d57bb31d752",
+                  "size": 12576,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8a18870a5db3a927e5deda5c56e07d57bb31d752"
                 }
               },
               {
@@ -4270,8 +4340,8 @@
                   "path": "packages/runtime-core/__tests__/helpers",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "98a3e3c034efa2399817b4005926bb91a4f23bd7",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/98a3e3c034efa2399817b4005926bb91a4f23bd7"
+                  "sha": "988a6df4a392aaa23238bc15fc9d7fc0394479ec",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/988a6df4a392aaa23238bc15fc9d7fc0394479ec"
                 },
                 "children": [
                   {
@@ -4297,9 +4367,9 @@
                       "path": "packages/runtime-core/__tests__/helpers/renderList.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "06d2825df3683f009711aa5cb643c40963db5c61",
-                      "size": 1611,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/06d2825df3683f009711aa5cb643c40963db5c61"
+                      "sha": "ae487b6be23c76fd9127fd0936511c65d9d8e728",
+                      "size": 1642,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/ae487b6be23c76fd9127fd0936511c65d9d8e728"
                     }
                   },
                   {
@@ -4325,9 +4395,9 @@
                       "path": "packages/runtime-core/__tests__/helpers/resolveAssets.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "44434a256d52d6b9d112375c53ec762e5b1c88bb",
-                      "size": 6756,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/44434a256d52d6b9d112375c53ec762e5b1c88bb"
+                      "sha": "fdcde4639fcfba87ae9e89e31db256333f68c7d9",
+                      "size": 6774,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/fdcde4639fcfba87ae9e89e31db256333f68c7d9"
                     }
                   },
                   {
@@ -4353,9 +4423,9 @@
                       "path": "packages/runtime-core/__tests__/helpers/withMemo.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "5d6590bd9096a1fa7a03af79d5788697cf5f1198",
-                      "size": 5336,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/5d6590bd9096a1fa7a03af79d5788697cf5f1198"
+                      "sha": "9b7fcfc017f4a1dcc4218550d963941557f68db6",
+                      "size": 5682,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9b7fcfc017f4a1dcc4218550d963941557f68db6"
                     }
                   }
                 ]
@@ -4383,9 +4453,9 @@
                   "path": "packages/runtime-core/__tests__/hydration.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "c5dbe539df933c0ad6f95d4178dde12de196f727",
-                  "size": 28089,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/c5dbe539df933c0ad6f95d4178dde12de196f727"
+                  "sha": "34e76100ee4991181e16aa31648bdabe0e75d499",
+                  "size": 31132,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/34e76100ee4991181e16aa31648bdabe0e75d499"
                 }
               },
               {
@@ -4481,9 +4551,9 @@
                   "path": "packages/runtime-core/__tests__/rendererOptimizedMode.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "82acc4bdb5d5034a415c024384ac87bd484da1a7",
-                  "size": 24843,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/82acc4bdb5d5034a415c024384ac87bd484da1a7"
+                  "sha": "a1a3293c0328b3af4528b8a66dcc47860b3c0e30",
+                  "size": 24844,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a1a3293c0328b3af4528b8a66dcc47860b3c0e30"
                 }
               },
               {
@@ -4495,9 +4565,9 @@
                   "path": "packages/runtime-core/__tests__/rendererTemplateRef.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "198687c06db7677d76239a770a12308e14f4fbe2",
-                  "size": 10470,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/198687c06db7677d76239a770a12308e14f4fbe2"
+                  "sha": "6a03e7a8eb5fe11bb7f33462e917003a682472a0",
+                  "size": 11623,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6a03e7a8eb5fe11bb7f33462e917003a682472a0"
                 }
               },
               {
@@ -4509,9 +4579,9 @@
                   "path": "packages/runtime-core/__tests__/scheduler.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "fbea3e7773f570b8f60df59f1e799373849cd180",
-                  "size": 13722,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/fbea3e7773f570b8f60df59f1e799373849cd180"
+                  "sha": "4518035fb4e872753eec81568e7aade5dc450333",
+                  "size": 13498,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/4518035fb4e872753eec81568e7aade5dc450333"
                 }
               },
               {
@@ -4595,9 +4665,9 @@
               "path": "packages/runtime-core/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "928009507c353ff845b241c89ef255a6fcf9a476",
+              "sha": "dc597ebd83501b8edcd1c6ad57186ef80a8f1cce",
               "size": 831,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/928009507c353ff845b241c89ef255a6fcf9a476"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/dc597ebd83501b8edcd1c6ad57186ef80a8f1cce"
             }
           },
           {
@@ -4609,8 +4679,8 @@
               "path": "packages/runtime-core/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "4e47c117e843f8c843133f67dadc5581227c2454",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/4e47c117e843f8c843133f67dadc5581227c2454"
+              "sha": "ecca4f3b6121ff2fc1bb1a4655ecdd045f1c5800",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/ecca4f3b6121ff2fc1bb1a4655ecdd045f1c5800"
             },
             "children": [
               {
@@ -4622,9 +4692,9 @@
                   "path": "packages/runtime-core/src/apiAsyncComponent.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "8825eefa5c62cdf9c6faf3dfa6c5f88c00aa64c3",
-                  "size": 6158,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8825eefa5c62cdf9c6faf3dfa6c5f88c00aa64c3"
+                  "sha": "41ccd94a7445faa644aa1ced414eeba1fc727007",
+                  "size": 6187,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/41ccd94a7445faa644aa1ced414eeba1fc727007"
                 }
               },
               {
@@ -4650,9 +4720,9 @@
                   "path": "packages/runtime-core/src/apiCreateApp.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ae2f58418dce7d2f333a3ca0fc90b875e56e621a",
-                  "size": 10093,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ae2f58418dce7d2f333a3ca0fc90b875e56e621a"
+                  "sha": "b0c8a3f2bba2771c3dbdd0555f5159cb8ca64b50",
+                  "size": 10453,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/b0c8a3f2bba2771c3dbdd0555f5159cb8ca64b50"
                 }
               },
               {
@@ -4706,9 +4776,9 @@
                   "path": "packages/runtime-core/src/apiSetupHelpers.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "155c8cd19cc8ab8349810e07616b7deea108e95d",
-                  "size": 7334,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/155c8cd19cc8ab8349810e07616b7deea108e95d"
+                  "sha": "a8b7fcdef31f8224b88dbfc28205ea0211489884",
+                  "size": 7354,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a8b7fcdef31f8224b88dbfc28205ea0211489884"
                 }
               },
               {
@@ -4720,9 +4790,9 @@
                   "path": "packages/runtime-core/src/apiWatch.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "fd09c7434e317f9aa41050b08b03cdf182b9a9ee",
-                  "size": 11498,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/fd09c7434e317f9aa41050b08b03cdf182b9a9ee"
+                  "sha": "a1922f0cd2ed24cac5177e5f7de499d22e543e28",
+                  "size": 11257,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a1922f0cd2ed24cac5177e5f7de499d22e543e28"
                 }
               },
               {
@@ -4734,8 +4804,8 @@
                   "path": "packages/runtime-core/src/compat",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "a89b922b077a1b0f30a50482bc6374fc1b65ff21",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/a89b922b077a1b0f30a50482bc6374fc1b65ff21"
+                  "sha": "738cec257179a67a56dec20d4cb20195520f3879",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/738cec257179a67a56dec20d4cb20195520f3879"
                 },
                 "children": [
                   {
@@ -4859,9 +4929,9 @@
                       "path": "packages/runtime-core/src/compat/global.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "e0fc699fa5f99d6fcaf02cc47b12a4dc82efe42a",
-                      "size": 17515,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/e0fc699fa5f99d6fcaf02cc47b12a4dc82efe42a"
+                      "sha": "823181d23a7713ed7b82c3e74c99f7d48cd0f979",
+                      "size": 17606,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/823181d23a7713ed7b82c3e74c99f7d48cd0f979"
                     }
                   },
                   {
@@ -4901,9 +4971,9 @@
                       "path": "packages/runtime-core/src/compat/instanceChildren.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "349b5a3fcbd7c184e8ee52b7bd161c48d6411167",
-                      "size": 922,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/349b5a3fcbd7c184e8ee52b7bd161c48d6411167"
+                      "sha": "7524e53b7f1ab400691301b60dd57e44055bcde6",
+                      "size": 918,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/7524e53b7f1ab400691301b60dd57e44055bcde6"
                     }
                   },
                   {
@@ -4987,9 +5057,9 @@
                   "path": "packages/runtime-core/src/component.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "9b2f35c9745d71ee3cb1a0d10cc2c75482ecad1a",
-                  "size": 25614,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/9b2f35c9745d71ee3cb1a0d10cc2c75482ecad1a"
+                  "sha": "11a6cafbcf14784fbfd0671b5aed282866a7e09a",
+                  "size": 26213,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/11a6cafbcf14784fbfd0671b5aed282866a7e09a"
                 }
               },
               {
@@ -5001,9 +5071,9 @@
                   "path": "packages/runtime-core/src/componentEmits.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "4d028913d15a0bf6aa85fc0aedfd92a384bae30a",
-                  "size": 7072,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/4d028913d15a0bf6aa85fc0aedfd92a384bae30a"
+                  "sha": "68393c80b351e2b31d879bdb9ef329f1a782f773",
+                  "size": 7106,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/68393c80b351e2b31d879bdb9ef329f1a782f773"
                 }
               },
               {
@@ -5015,9 +5085,9 @@
                   "path": "packages/runtime-core/src/componentOptions.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "e8fa676a25cdcd2d34fe78cecce19cc9b64109c8",
-                  "size": 27756,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e8fa676a25cdcd2d34fe78cecce19cc9b64109c8"
+                  "sha": "0d47e18c4af50c46058bb8377990db71e0205685",
+                  "size": 27910,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/0d47e18c4af50c46058bb8377990db71e0205685"
                 }
               },
               {
@@ -5029,9 +5099,9 @@
                   "path": "packages/runtime-core/src/componentProps.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "7ed8aeee4a1ff11c9c2d04130a7cf80b151460ca",
-                  "size": 19902,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/7ed8aeee4a1ff11c9c2d04130a7cf80b151460ca"
+                  "sha": "e046342db3566214efb928593ce56873fc399205",
+                  "size": 20165,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e046342db3566214efb928593ce56873fc399205"
                 }
               },
               {
@@ -5043,9 +5113,9 @@
                   "path": "packages/runtime-core/src/componentPublicInstance.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "9bfbfc10371f3f0fde68dd65f490fdeeed958ca6",
-                  "size": 16905,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/9bfbfc10371f3f0fde68dd65f490fdeeed958ca6"
+                  "sha": "1d913673123cb7d8a019be7eefc7bd8e6e1c3b23",
+                  "size": 17102,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1d913673123cb7d8a019be7eefc7bd8e6e1c3b23"
                 }
               },
               {
@@ -5071,9 +5141,9 @@
                   "path": "packages/runtime-core/src/componentRenderUtils.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ce03b4f6af055f410228f82dc6e90673f85229df",
-                  "size": 11827,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ce03b4f6af055f410228f82dc6e90673f85229df"
+                  "sha": "d9de968a074c24e5ca95af3c36f02c6fa5db9acb",
+                  "size": 11931,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/d9de968a074c24e5ca95af3c36f02c6fa5db9acb"
                 }
               },
               {
@@ -5085,9 +5155,9 @@
                   "path": "packages/runtime-core/src/componentSlots.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ec58fd695c0692cf3a6c1b7368e7c518331e74a6",
-                  "size": 6265,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ec58fd695c0692cf3a6c1b7368e7c518331e74a6"
+                  "sha": "682a107e676f57392049ea1c1ff35d3559dace5c",
+                  "size": 6359,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/682a107e676f57392049ea1c1ff35d3559dace5c"
                 }
               },
               {
@@ -5099,8 +5169,8 @@
                   "path": "packages/runtime-core/src/components",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "206d2db9fc15c19eb475ec4efb5a6eda49553fbf",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/206d2db9fc15c19eb475ec4efb5a6eda49553fbf"
+                  "sha": "62d2de90fc1de494e67955c786b3321a8ed7212a",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/62d2de90fc1de494e67955c786b3321a8ed7212a"
                 },
                 "children": [
                   {
@@ -5112,9 +5182,9 @@
                       "path": "packages/runtime-core/src/components/BaseTransition.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "27bfb5f523aa02baebc95b57f920f0ee2918da5b",
-                      "size": 14087,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/27bfb5f523aa02baebc95b57f920f0ee2918da5b"
+                      "sha": "53c3e85390a146497a14403a5e2c5747bb9740b9",
+                      "size": 15022,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/53c3e85390a146497a14403a5e2c5747bb9740b9"
                     }
                   },
                   {
@@ -5126,9 +5196,9 @@
                       "path": "packages/runtime-core/src/components/KeepAlive.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "15dbff5291382504790d2129052297d9b8fbfaa9",
-                      "size": 12784,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/15dbff5291382504790d2129052297d9b8fbfaa9"
+                      "sha": "3fec48140fc441467ce9a1637f51791c64d2bcdb",
+                      "size": 13005,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/3fec48140fc441467ce9a1637f51791c64d2bcdb"
                     }
                   },
                   {
@@ -5154,9 +5224,9 @@
                       "path": "packages/runtime-core/src/components/Teleport.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "68d50a63fbdb57ed6aac85864c7de11a02e43f2d",
-                      "size": 11233,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/68d50a63fbdb57ed6aac85864c7de11a02e43f2d"
+                      "sha": "06b69aff4ec911e2db330b73de20eaa2c9e60be1",
+                      "size": 11764,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/06b69aff4ec911e2db330b73de20eaa2c9e60be1"
                     }
                   }
                 ]
@@ -5184,9 +5254,9 @@
                   "path": "packages/runtime-core/src/devtools.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "6bbd3db6e753d6b251385baec100c344fbccbe77",
-                  "size": 3994,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6bbd3db6e753d6b251385baec100c344fbccbe77"
+                  "sha": "36c5763dcf14966d2db5ed9c8a0dbfaa3b2163af",
+                  "size": 3983,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/36c5763dcf14966d2db5ed9c8a0dbfaa3b2163af"
                 }
               },
               {
@@ -5198,9 +5268,9 @@
                   "path": "packages/runtime-core/src/directives.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "a3cf81dd0af37520b3f0d4d197c9901ea8a0a942",
-                  "size": 4091,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/a3cf81dd0af37520b3f0d4d197c9901ea8a0a942"
+                  "sha": "6f0eb4c2c0abdb463949a1f329694c977d2cdd3a",
+                  "size": 4180,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6f0eb4c2c0abdb463949a1f329694c977d2cdd3a"
                 }
               },
               {
@@ -5254,8 +5324,8 @@
                   "path": "packages/runtime-core/src/helpers",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "f75722fe9f3ec2de37f8db857c292cb833668b9b",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/f75722fe9f3ec2de37f8db857c292cb833668b9b"
+                  "sha": "5e7d1d3762f3f1878a177826dc3bd1b2c6107fc6",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/5e7d1d3762f3f1878a177826dc3bd1b2c6107fc6"
                 },
                 "children": [
                   {
@@ -5281,9 +5351,9 @@
                       "path": "packages/runtime-core/src/helpers/renderList.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "9fbf967a8ca31ff5278e25efc34e8dd605cdf139",
-                      "size": 2263,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9fbf967a8ca31ff5278e25efc34e8dd605cdf139"
+                      "sha": "1655d555fb33cbd1d8e5f284751aa682c1ac01e0",
+                      "size": 2247,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/1655d555fb33cbd1d8e5f284751aa682c1ac01e0"
                     }
                   },
                   {
@@ -5295,9 +5365,9 @@
                       "path": "packages/runtime-core/src/helpers/renderSlot.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "9389cc28abe73bd5849491bc84fd05ef37ec5d01",
-                      "size": 2529,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9389cc28abe73bd5849491bc84fd05ef37ec5d01"
+                      "sha": "9310ee0b8f4e551e7a5ee6c27228719a140cdf81",
+                      "size": 2716,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9310ee0b8f4e551e7a5ee6c27228719a140cdf81"
                     }
                   },
                   {
@@ -5351,9 +5421,9 @@
                       "path": "packages/runtime-core/src/helpers/withMemo.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "3e40365ea3f34703add68e91300f87d18dac90e1",
-                      "size": 813,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/3e40365ea3f34703add68e91300f87d18dac90e1"
+                      "sha": "002b9e27a88110caea3128d9a578d0d29b9b126d",
+                      "size": 866,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/002b9e27a88110caea3128d9a578d0d29b9b126d"
                     }
                   }
                 ]
@@ -5381,9 +5451,9 @@
                   "path": "packages/runtime-core/src/hydration.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ef66f0d3fe6021da227222a6254e84426eaffec6",
-                  "size": 16153,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ef66f0d3fe6021da227222a6254e84426eaffec6"
+                  "sha": "61644184dee7908559da065096633cb8265946a8",
+                  "size": 16888,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/61644184dee7908559da065096633cb8265946a8"
                 }
               },
               {
@@ -5395,9 +5465,9 @@
                   "path": "packages/runtime-core/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ad4817d91b96c37354656f211fded76701a180b7",
-                  "size": 9025,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ad4817d91b96c37354656f211fded76701a180b7"
+                  "sha": "12a2dee2773d909a5d0ab6866964e930c72f3731",
+                  "size": 9062,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/12a2dee2773d909a5d0ab6866964e930c72f3731"
                 }
               },
               {
@@ -5423,9 +5493,9 @@
                   "path": "packages/runtime-core/src/renderer.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "0a215a14b762b6d3bfe218b137ef9f25b6fa60fb",
-                  "size": 67636,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/0a215a14b762b6d3bfe218b137ef9f25b6fa60fb"
+                  "sha": "1f3c2a918d4fd30a11d0f35695eb63a65a400097",
+                  "size": 68273,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/1f3c2a918d4fd30a11d0f35695eb63a65a400097"
                 }
               },
               {
@@ -5437,9 +5507,9 @@
                   "path": "packages/runtime-core/src/rendererTemplateRef.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "249fb9e55e9f19e1468d32a360b6b2c2ef1f62ba",
-                  "size": 3739,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/249fb9e55e9f19e1468d32a360b6b2c2ef1f62ba"
+                  "sha": "740624c917e7417ad76157c76de7c676d29f640d",
+                  "size": 3850,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/740624c917e7417ad76157c76de7c676d29f640d"
                 }
               },
               {
@@ -5451,9 +5521,9 @@
                   "path": "packages/runtime-core/src/scheduler.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ccf7ac70b417537bef075bcd84ac8e0eb3adf013",
-                  "size": 8921,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ccf7ac70b417537bef075bcd84ac8e0eb3adf013"
+                  "sha": "2056d80e84709282c1bc1a1ced8b3fc177ff8918",
+                  "size": 9025,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2056d80e84709282c1bc1a1ced8b3fc177ff8918"
                 }
               },
               {
@@ -5465,9 +5535,9 @@
                   "path": "packages/runtime-core/src/vnode.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "60ea0f718cfd32063451d4cfe4b1f1e54ca41020",
-                  "size": 23179,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/60ea0f718cfd32063451d4cfe4b1f1e54ca41020"
+                  "sha": "b2c52ac7e2e141facaec2b828c39fd2341181786",
+                  "size": 23572,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/b2c52ac7e2e141facaec2b828c39fd2341181786"
                 }
               },
               {
@@ -5540,8 +5610,8 @@
           "path": "packages/runtime-dom",
           "mode": "040000",
           "type": "tree",
-          "sha": "0996e5536f8553379b4309b4f9b7eb7e1687d20a",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/0996e5536f8553379b4309b4f9b7eb7e1687d20a"
+          "sha": "6c733d74b1a8326ac137159982a7901e892f1b12",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/6c733d74b1a8326ac137159982a7901e892f1b12"
         },
         "children": [
           {
@@ -5581,8 +5651,8 @@
               "path": "packages/runtime-dom/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "09f4ed45b836cf364c21a8b644b6a21cd6cafb94",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/09f4ed45b836cf364c21a8b644b6a21cd6cafb94"
+              "sha": "91dfaebf7564fe623779e642b7dc6062a4e3bc9b",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/91dfaebf7564fe623779e642b7dc6062a4e3bc9b"
             },
             "children": [
               {
@@ -5594,9 +5664,9 @@
                   "path": "packages/runtime-dom/__tests__/createApp.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "00c9282e1b3107d738373186d154553ae71e3ebf",
-                  "size": 401,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/00c9282e1b3107d738373186d154553ae71e3ebf"
+                  "sha": "25ab5c67321126b94dd21ede2d66b2f87f1fcbce",
+                  "size": 1094,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/25ab5c67321126b94dd21ede2d66b2f87f1fcbce"
                 }
               },
               {
@@ -5608,9 +5678,9 @@
                   "path": "packages/runtime-dom/__tests__/customElement.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "777f9677d048d61e0520e59aed577d6817f10f1a",
-                  "size": 13626,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/777f9677d048d61e0520e59aed577d6817f10f1a"
+                  "sha": "e29c36123f316c8b7df6bf7b58bb8bca75c2c7ac",
+                  "size": 14529,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e29c36123f316c8b7df6bf7b58bb8bca75c2c7ac"
                 }
               },
               {
@@ -5636,8 +5706,8 @@
                   "path": "packages/runtime-dom/__tests__/directives",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "f645d1d8ca1f1dbf8c9e28e0a334dbe65a019440",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/f645d1d8ca1f1dbf8c9e28e0a334dbe65a019440"
+                  "sha": "0eb9aa7b8c261d36533e8adad3984f884e4a98e6",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/0eb9aa7b8c261d36533e8adad3984f884e4a98e6"
                 },
                 "children": [
                   {
@@ -5663,9 +5733,9 @@
                       "path": "packages/runtime-dom/__tests__/directives/vModel.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "2c77f515221fe11fcff1cb5f46df6f28a042c869",
-                      "size": 26606,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2c77f515221fe11fcff1cb5f46df6f28a042c869"
+                      "sha": "f5a0c6fadcc9d471aa1df656387450864c8c169e",
+                      "size": 29272,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/f5a0c6fadcc9d471aa1df656387450864c8c169e"
                     }
                   },
                   {
@@ -5806,9 +5876,9 @@
                   "path": "packages/runtime-dom/__tests__/patchProps.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "07aee676ded1b70fecbd2f2c31364d538341d491",
-                  "size": 8363,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/07aee676ded1b70fecbd2f2c31364d538341d491"
+                  "sha": "b7ce2302f80bb2dcbbcde3022eafd17427ab7075",
+                  "size": 9236,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/b7ce2302f80bb2dcbbcde3022eafd17427ab7075"
                 }
               },
               {
@@ -5820,9 +5890,9 @@
                   "path": "packages/runtime-dom/__tests__/patchStyle.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "92b30aa5815bf8fb7451b41ea2ee64721b2ec455",
-                  "size": 3660,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/92b30aa5815bf8fb7451b41ea2ee64721b2ec455"
+                  "sha": "409d6936eaf8fd5dc8481270e91b466baf581616",
+                  "size": 3859,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/409d6936eaf8fd5dc8481270e91b466baf581616"
                 }
               },
               {
@@ -5878,9 +5948,9 @@
               "path": "packages/runtime-dom/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "a45131c1aa16c24c0007d2f653ea0e60df59afaf",
+              "sha": "15d6eed948c7abfddbcfa4389a2933815b53cdf0",
               "size": 929,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/a45131c1aa16c24c0007d2f653ea0e60df59afaf"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/15d6eed948c7abfddbcfa4389a2933815b53cdf0"
             }
           },
           {
@@ -5892,8 +5962,8 @@
               "path": "packages/runtime-dom/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "c062f3013afb2d79783793d103b821b8f3006b94",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/c062f3013afb2d79783793d103b821b8f3006b94"
+              "sha": "1e3b18ad45383611b2504ff9a58eaa04623e57fa",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/1e3b18ad45383611b2504ff9a58eaa04623e57fa"
             },
             "children": [
               {
@@ -5905,9 +5975,9 @@
                   "path": "packages/runtime-dom/src/apiCustomElement.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "059fcac16f1a04495327c3fa43b62956d2565f93",
-                  "size": 9818,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/059fcac16f1a04495327c3fa43b62956d2565f93"
+                  "sha": "eabe83b6b9fff578c6c49a2c632f3e372d3327a2",
+                  "size": 9820,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/eabe83b6b9fff578c6c49a2c632f3e372d3327a2"
                 }
               },
               {
@@ -5919,8 +5989,8 @@
                   "path": "packages/runtime-dom/src/components",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "d8212b2a0acd15f3cfecf2b86007ac23881d30e2",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/d8212b2a0acd15f3cfecf2b86007ac23881d30e2"
+                  "sha": "2c007a3bb767d0aee67870ad49074e9cd6c982d0",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/2c007a3bb767d0aee67870ad49074e9cd6c982d0"
                 },
                 "children": [
                   {
@@ -5932,9 +6002,9 @@
                       "path": "packages/runtime-dom/src/components/Transition.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "9e290ef2289169d20afba642f842bc1711c4ebe2",
-                      "size": 12337,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/9e290ef2289169d20afba642f842bc1711c4ebe2"
+                      "sha": "0c1a30f6b9523aff36e97533f4d6e982ad6dd025",
+                      "size": 12591,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/0c1a30f6b9523aff36e97533f4d6e982ad6dd025"
                     }
                   },
                   {
@@ -5962,8 +6032,8 @@
                   "path": "packages/runtime-dom/src/directives",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "8f6d26ca50f3b50da54f03d2351c8778fb2abf2f",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/8f6d26ca50f3b50da54f03d2351c8778fb2abf2f"
+                  "sha": "50ad5001ed522e18862672f93e59a78909268e8b",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/50ad5001ed522e18862672f93e59a78909268e8b"
                 },
                 "children": [
                   {
@@ -5975,9 +6045,9 @@
                       "path": "packages/runtime-dom/src/directives/vModel.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "8780b5d4977cf4e3060bb9df7a28d651c353a9b0",
-                      "size": 9617,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8780b5d4977cf4e3060bb9df7a28d651c353a9b0"
+                      "sha": "722b4d9b44cd596a41b3cadc093c9c6dea262a2d",
+                      "size": 10009,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/722b4d9b44cd596a41b3cadc093c9c6dea262a2d"
                     }
                   },
                   {
@@ -6062,9 +6132,9 @@
                   "path": "packages/runtime-dom/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "8ed984d2b3167e8ff9e0a109e8af59fbc81a6adf",
-                  "size": 7132,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8ed984d2b3167e8ff9e0a109e8af59fbc81a6adf"
+                  "sha": "405acc089445427c6b6ca0739b359886b794ee63",
+                  "size": 7146,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/405acc089445427c6b6ca0739b359886b794ee63"
                 }
               },
               {
@@ -6076,8 +6146,8 @@
                   "path": "packages/runtime-dom/src/modules",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "358e9abc1950dbac63dc82ab02c268e449fa55d5",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/358e9abc1950dbac63dc82ab02c268e449fa55d5"
+                  "sha": "e53201ad484ac593eab42291fbccaac830122721",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/e53201ad484ac593eab42291fbccaac830122721"
                 },
                 "children": [
                   {
@@ -6117,9 +6187,9 @@
                       "path": "packages/runtime-dom/src/modules/events.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "51544dedf4987aa2544185c339a2cddb17866fd2",
-                      "size": 4727,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/51544dedf4987aa2544185c339a2cddb17866fd2"
+                      "sha": "bd2279cf5f2bdbb9f7016d760bf4c6e02f2d1d77",
+                      "size": 4863,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/bd2279cf5f2bdbb9f7016d760bf4c6e02f2d1d77"
                     }
                   },
                   {
@@ -6131,9 +6201,9 @@
                       "path": "packages/runtime-dom/src/modules/props.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "5092911e44a6dbed718b762b7d1e8c1f94da6859",
-                      "size": 2964,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/5092911e44a6dbed718b762b7d1e8c1f94da6859"
+                      "sha": "591f8caa7d0a745ed550c24b72b542ac8bffbce9",
+                      "size": 3121,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/591f8caa7d0a745ed550c24b72b542ac8bffbce9"
                     }
                   },
                   {
@@ -6145,9 +6215,9 @@
                       "path": "packages/runtime-dom/src/modules/style.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "a9cc67ba5e2520d86f3a668ebe3ce5e0869963a6",
-                      "size": 2300,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/a9cc67ba5e2520d86f3a668ebe3ce5e0869963a6"
+                      "sha": "f4924ea2ec6fb559ee8bb140377229e3b70f3ba5",
+                      "size": 2330,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/f4924ea2ec6fb559ee8bb140377229e3b70f3ba5"
                     }
                   }
                 ]
@@ -6161,9 +6231,9 @@
                   "path": "packages/runtime-dom/src/nodeOps.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "16762580e98231717e298ca998e5aca3b3611e77",
-                  "size": 3369,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/16762580e98231717e298ca998e5aca3b3611e77"
+                  "sha": "c03bda4e31ac3f505d3761a4f97ebf1741f4ec9f",
+                  "size": 3383,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/c03bda4e31ac3f505d3761a4f97ebf1741f4ec9f"
                 }
               },
               {
@@ -6175,9 +6245,9 @@
                   "path": "packages/runtime-dom/src/patchProp.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "e10d189c581f1e653041ccc65ea8096586609190",
-                  "size": 3155,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e10d189c581f1e653041ccc65ea8096586609190"
+                  "sha": "6d65a63a88c4d513a3b824196b04e14521e106e0",
+                  "size": 3160,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6d65a63a88c4d513a3b824196b04e14521e106e0"
                 }
               }
             ]
@@ -6191,8 +6261,8 @@
               "path": "packages/runtime-dom/types",
               "mode": "040000",
               "type": "tree",
-              "sha": "0c02504b482a2b622d2b12af42dbb3bca24a5585",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/0c02504b482a2b622d2b12af42dbb3bca24a5585"
+              "sha": "29d8f7b771dbe6accf08919a8cbf8b1c3f6e83e7",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/29d8f7b771dbe6accf08919a8cbf8b1c3f6e83e7"
             },
             "children": [
               {
@@ -6204,9 +6274,9 @@
                   "path": "packages/runtime-dom/types/jsx.d.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "ab34e299de6bb59653e9566feddb2b1ded2441b4",
-                  "size": 36246,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ab34e299de6bb59653e9566feddb2b1ded2441b4"
+                  "sha": "6120f77715adf19d3df8f5e1959bf0e0c9137948",
+                  "size": 36243,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/6120f77715adf19d3df8f5e1959bf0e0c9137948"
                 }
               },
               {
@@ -6236,8 +6306,8 @@
           "path": "packages/runtime-test",
           "mode": "040000",
           "type": "tree",
-          "sha": "33fb40be978806008e0fd7ddc485d793996beacf",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/33fb40be978806008e0fd7ddc485d793996beacf"
+          "sha": "91bdf1f4ee10dbafdb4a338ec94ff6792aa4bc77",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/91bdf1f4ee10dbafdb4a338ec94ff6792aa4bc77"
         },
         "children": [
           {
@@ -6334,9 +6404,9 @@
               "path": "packages/runtime-test/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "22562f1b1f3ecf7a21e042d0e9f8116e84549a26",
+              "sha": "e8b7c34c4758aac6daccd7df5d5d8ab899206f08",
               "size": 717,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/22562f1b1f3ecf7a21e042d0e9f8116e84549a26"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/e8b7c34c4758aac6daccd7df5d5d8ab899206f08"
             }
           },
           {
@@ -6435,8 +6505,8 @@
           "path": "packages/server-renderer",
           "mode": "040000",
           "type": "tree",
-          "sha": "40a6d80051cbbe4c1554f582b50b8dd415dd5c60",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/40a6d80051cbbe4c1554f582b50b8dd415dd5c60"
+          "sha": "e2f584de24b42f42e06238d86975b2c389a3cd51",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/e2f584de24b42f42e06238d86975b2c389a3cd51"
         },
         "children": [
           {
@@ -6476,8 +6546,8 @@
               "path": "packages/server-renderer/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "216affdd8dd931f0ede02ce293c3c0864a673563",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/216affdd8dd931f0ede02ce293c3c0864a673563"
+              "sha": "df2550ce4983e71c60a24e61a89b9b2ce4d00c5b",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/df2550ce4983e71c60a24e61a89b9b2ce4d00c5b"
             },
             "children": [
               {
@@ -6489,9 +6559,9 @@
                   "path": "packages/server-renderer/__tests__/render.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "96e16750917586e7c63d4b09012d00e99feff068",
-                  "size": 28893,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/96e16750917586e7c63d4b09012d00e99feff068"
+                  "sha": "4fd781fcae255b2c9829a28a2b041ed1959b6d35",
+                  "size": 28877,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/4fd781fcae255b2c9829a28a2b041ed1959b6d35"
                 }
               },
               {
@@ -6545,9 +6615,9 @@
                   "path": "packages/server-renderer/__tests__/ssrDirectives.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "3e8bd2e0f67905989bc941e992f266d68c208c9a",
-                  "size": 11177,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/3e8bd2e0f67905989bc941e992f266d68c208c9a"
+                  "sha": "74b01204d3183a79a463a2b5e0251c4f52311481",
+                  "size": 13561,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/74b01204d3183a79a463a2b5e0251c4f52311481"
                 }
               },
               {
@@ -6587,9 +6657,9 @@
                   "path": "packages/server-renderer/__tests__/ssrRenderAttrs.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "f3bcf8d3b93d84a7b723cc0edb35ff67da5b8d75",
-                  "size": 3847,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f3bcf8d3b93d84a7b723cc0edb35ff67da5b8d75"
+                  "sha": "62ccdb59974ac58e3339a115a9b71b36444f374b",
+                  "size": 3895,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/62ccdb59974ac58e3339a115a9b71b36444f374b"
                 }
               },
               {
@@ -6621,6 +6691,20 @@
                 }
               },
               {
+                "label": "ssrSlot.spec.ts",
+                "status": "undo",
+                "path": "packages/server-renderer/__tests__/ssrSlot.spec.ts",
+                "dir": false,
+                "meta": {
+                  "path": "packages/server-renderer/__tests__/ssrSlot.spec.ts",
+                  "mode": "100644",
+                  "type": "blob",
+                  "sha": "baf8f227806b33b67d74c312dcbee3b81c8cfaf6",
+                  "size": 2674,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/baf8f227806b33b67d74c312dcbee3b81c8cfaf6"
+                }
+              },
+              {
                 "label": "ssrSuspense.spec.ts",
                 "status": "undo",
                 "path": "packages/server-renderer/__tests__/ssrSuspense.spec.ts",
@@ -6643,9 +6727,9 @@
                   "path": "packages/server-renderer/__tests__/ssrTeleport.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "fda959186150a086a2e607bcb9569bcc350ea5f6",
-                  "size": 2967,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/fda959186150a086a2e607bcb9569bcc350ea5f6"
+                  "sha": "76c5c8eb3d91f08031bc0eec508a594569abbc62",
+                  "size": 4535,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/76c5c8eb3d91f08031bc0eec508a594569abbc62"
                 }
               },
               {
@@ -6715,9 +6799,9 @@
               "path": "packages/server-renderer/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "2640a08871d4682dabb9f0dd5ad81c126f5cda0b",
+              "sha": "8b6ceb4b3e3a5686b6d0356832b31c1ab2de3e23",
               "size": 879,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/2640a08871d4682dabb9f0dd5ad81c126f5cda0b"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/8b6ceb4b3e3a5686b6d0356832b31c1ab2de3e23"
             }
           },
           {
@@ -6729,8 +6813,8 @@
               "path": "packages/server-renderer/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "877a09b25d0cc84ffb0d4438d3222f1d0d132ba4",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/877a09b25d0cc84ffb0d4438d3222f1d0d132ba4"
+              "sha": "5542f6640bfa45a07871537c05a6cf24095f5730",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/5542f6640bfa45a07871537c05a6cf24095f5730"
             },
             "children": [
               {
@@ -6742,8 +6826,8 @@
                   "path": "packages/server-renderer/src/helpers",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "0568a08fbbeb031211bd8993ed807014b6810279",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/0568a08fbbeb031211bd8993ed807014b6810279"
+                  "sha": "798180ecf74770ee1d1ce196034f64a14987d9f1",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/798180ecf74770ee1d1ce196034f64a14987d9f1"
                 },
                 "children": [
                   {
@@ -6797,9 +6881,9 @@
                       "path": "packages/server-renderer/src/helpers/ssrRenderAttrs.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "8814f1fd735b612c838423878a3f7b60a73b9845",
-                      "size": 2403,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8814f1fd735b612c838423878a3f7b60a73b9845"
+                      "sha": "746ffa10729db81ac3e18f34d786d35e5ce7fd5c",
+                      "size": 2423,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/746ffa10729db81ac3e18f34d786d35e5ce7fd5c"
                     }
                   },
                   {
@@ -6839,9 +6923,9 @@
                       "path": "packages/server-renderer/src/helpers/ssrRenderSlot.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "8b9a3971e2c4198049bf7566e6fe8da436429cd5",
-                      "size": 1829,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8b9a3971e2c4198049bf7566e6fe8da436429cd5"
+                      "sha": "8f746ec1e471fcdf34c41d914cf167009dc88683",
+                      "size": 2260,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8f746ec1e471fcdf34c41d914cf167009dc88683"
                     }
                   },
                   {
@@ -6867,9 +6951,9 @@
                       "path": "packages/server-renderer/src/helpers/ssrRenderTeleport.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "77331b7bddddf3a47725d5bda96c825f59647d28",
-                      "size": 1028,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/77331b7bddddf3a47725d5bda96c825f59647d28"
+                      "sha": "8338ec06c25f1a5f211580a44c245d23107d1e47",
+                      "size": 1201,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8338ec06c25f1a5f211580a44c245d23107d1e47"
                     }
                   },
                   {
@@ -6897,9 +6981,9 @@
                   "path": "packages/server-renderer/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "e8b716a865792b7f7c1b11dc73f8d17375d308ca",
-                  "size": 1244,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e8b716a865792b7f7c1b11dc73f8d17375d308ca"
+                  "sha": "b6d973ea599541bd13291efd65b64d1cee2c1ac0",
+                  "size": 1264,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/b6d973ea599541bd13291efd65b64d1cee2c1ac0"
                 }
               },
               {
@@ -6911,9 +6995,9 @@
                   "path": "packages/server-renderer/src/render.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "3a08163f927c979d91aecacd4ceb26f3c772adf5",
-                  "size": 10219,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/3a08163f927c979d91aecacd4ceb26f3c772adf5"
+                  "sha": "ae71a9e627583e577d07f41dc936ffe5e0620cca",
+                  "size": 10584,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/ae71a9e627583e577d07f41dc936ffe5e0620cca"
                 }
               },
               {
@@ -6925,9 +7009,9 @@
                   "path": "packages/server-renderer/src/renderToStream.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "0644fb0a05a901375d155801d263c225fd94336e",
-                  "size": 4741,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/0644fb0a05a901375d155801d263c225fd94336e"
+                  "sha": "79484f9cffc292405441734f7d6d0484119cd21e",
+                  "size": 4849,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/79484f9cffc292405441734f7d6d0484119cd21e"
                 }
               },
               {
@@ -6939,9 +7023,9 @@
                   "path": "packages/server-renderer/src/renderToString.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "cf6e9759a35237fb6f60a31c7a85a187edeeee71",
-                  "size": 2142,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/cf6e9759a35237fb6f60a31c7a85a187edeeee71"
+                  "sha": "2450b0a3acbc16c5b1b25f44562f04afe7274c59",
+                  "size": 2180,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/2450b0a3acbc16c5b1b25f44562f04afe7274c59"
                 }
               }
             ]
@@ -6957,8 +7041,8 @@
           "path": "packages/sfc-playground",
           "mode": "040000",
           "type": "tree",
-          "sha": "0cd1025dfe1125d12f0e829debd5ac3c99326c72",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/0cd1025dfe1125d12f0e829debd5ac3c99326c72"
+          "sha": "079a8ac5d5363bf4bd72770328cd8c34a768cea6",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/079a8ac5d5363bf4bd72770328cd8c34a768cea6"
         },
         "children": [
           {
@@ -6984,9 +7068,9 @@
               "path": "packages/sfc-playground/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "9f971fd9c1ef830bafc9a39b32f3e8e71b22371c",
+              "sha": "afe5a79aa135ce4a3c42af518a4fb2b7675fcc07",
               "size": 381,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/9f971fd9c1ef830bafc9a39b32f3e8e71b22371c"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/afe5a79aa135ce4a3c42af518a4fb2b7675fcc07"
             }
           },
           {
@@ -7027,8 +7111,8 @@
               "path": "packages/sfc-playground/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "9d08baa4ded301b256930d428685ef61471b9af9",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/9d08baa4ded301b256930d428685ef61471b9af9"
+              "sha": "f479b2d984b3389a305dab75753051a318d3af75",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/f479b2d984b3389a305dab75753051a318d3af75"
             },
             "children": [
               {
@@ -7040,9 +7124,9 @@
                   "path": "packages/sfc-playground/src/App.vue",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "df91bb5af74bc5e25f7fbc7467c1d643890a58ec",
-                  "size": 1370,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/df91bb5af74bc5e25f7fbc7467c1d643890a58ec"
+                  "sha": "95a1d9552d83f95695f11c1eff5f380c6beac789",
+                  "size": 1818,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/95a1d9552d83f95695f11c1eff5f380c6beac789"
                 }
               },
               {
@@ -7054,9 +7138,9 @@
                   "path": "packages/sfc-playground/src/Header.vue",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "fe65d8af7aebd65dfac05669cfc9cf32e0b1ffa8",
-                  "size": 6090,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/fe65d8af7aebd65dfac05669cfc9cf32e0b1ffa8"
+                  "sha": "8cf4966c56d129c07e8ea4abf583254111e589d3",
+                  "size": 6426,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8cf4966c56d129c07e8ea4abf583254111e589d3"
                 }
               },
               {
@@ -7267,9 +7351,9 @@
                   "path": "packages/sfc-playground/src/main.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "e645bb2bd0fad8e27481ffac9d14db9b68297951",
-                  "size": 230,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e645bb2bd0fad8e27481ffac9d14db9b68297951"
+                  "sha": "713251fd81cf8122562757b1003abbd39a689ccf",
+                  "size": 227,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/713251fd81cf8122562757b1003abbd39a689ccf"
                 }
               },
               {
@@ -7313,8 +7397,8 @@
           "path": "packages/shared",
           "mode": "040000",
           "type": "tree",
-          "sha": "2b9525536de8a6b12c5045fe75a91192a6fbe861",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/2b9525536de8a6b12c5045fe75a91192a6fbe861"
+          "sha": "e6b88f70dcd1ee3bcdba933cd9198730871a6687",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/e6b88f70dcd1ee3bcdba933cd9198730871a6687"
         },
         "children": [
           {
@@ -7354,8 +7438,8 @@
               "path": "packages/shared/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "3c381ca2b04e6fb78a4da8b3c8974c2d04194e1b",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/3c381ca2b04e6fb78a4da8b3c8974c2d04194e1b"
+              "sha": "8e8f24f4955091682321b30da7b1ec2372f9f396",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/8e8f24f4955091682321b30da7b1ec2372f9f396"
             },
             "children": [
               {
@@ -7424,9 +7508,9 @@
                   "path": "packages/shared/__tests__/looseEqual.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "75bb25058b735a63bda6ebed675d07fa6cc8007b",
-                  "size": 8128,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/75bb25058b735a63bda6ebed675d07fa6cc8007b"
+                  "sha": "24bd48c1015996eb1150fed75b3046067638bb4f",
+                  "size": 8513,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/24bd48c1015996eb1150fed75b3046067638bb4f"
                 }
               },
               {
@@ -7452,9 +7536,9 @@
                   "path": "packages/shared/__tests__/toDisplayString.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "53cfcb87a1f1b334cb0f2ffd78a0e3e7a55aedff",
-                  "size": 4025,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/53cfcb87a1f1b334cb0f2ffd78a0e3e7a55aedff"
+                  "sha": "bc25c1e27fef740ae505d92f53c3386fed4a8cc2",
+                  "size": 4023,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/bc25c1e27fef740ae505d92f53c3386fed4a8cc2"
                 }
               }
             ]
@@ -7496,9 +7580,9 @@
               "path": "packages/shared/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "ac9bcbf67078d7abfb3407afe92cb26d5bc776b2",
-              "size": 686,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/ac9bcbf67078d7abfb3407afe92cb26d5bc776b2"
+              "sha": "d36e34d05e56c50bf35250c96875b39222245faa",
+              "size": 710,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/d36e34d05e56c50bf35250c96875b39222245faa"
             }
           },
           {
@@ -7510,8 +7594,8 @@
               "path": "packages/shared/src",
               "mode": "040000",
               "type": "tree",
-              "sha": "3b8a08e43868b630a13a8daf114f946198b1cc3c",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/3b8a08e43868b630a13a8daf114f946198b1cc3c"
+              "sha": "e65fdea0ad9c533f76194367c07e4cf06b874ee0",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/e65fdea0ad9c533f76194367c07e4cf06b874ee0"
             },
             "children": [
               {
@@ -7593,9 +7677,9 @@
                   "path": "packages/shared/src/index.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "e47cb5cd673d28256b06b5fbb0b242f961df7264",
-                  "size": 4738,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/e47cb5cd673d28256b06b5fbb0b242f961df7264"
+                  "sha": "f3fee4c45e7be83b52fac3818b4e04e1a6299948",
+                  "size": 4970,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/f3fee4c45e7be83b52fac3818b4e04e1a6299948"
                 }
               },
               {
@@ -7607,9 +7691,9 @@
                   "path": "packages/shared/src/looseEqual.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "030f0338b30e395e0496ba0dff42546e05c27e1a",
-                  "size": 1477,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/030f0338b30e395e0496ba0dff42546e05c27e1a"
+                  "sha": "387150535c7484163519136dc919a4150929d22a",
+                  "size": 1598,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/387150535c7484163519136dc919a4150929d22a"
                 }
               },
               {
@@ -7705,9 +7789,9 @@
                   "path": "packages/shared/src/typeUtils.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "8caba54c6cae44f61c0643127ebb74f6facdb1d2",
-                  "size": 297,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8caba54c6cae44f61c0643127ebb74f6facdb1d2"
+                  "sha": "8730d7f38bf545c4ef108d2d0ef638f8e252a0e3",
+                  "size": 465,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/8730d7f38bf545c4ef108d2d0ef638f8e252a0e3"
                 }
               }
             ]
@@ -7723,8 +7807,8 @@
           "path": "packages/size-check",
           "mode": "040000",
           "type": "tree",
-          "sha": "9cae0b92c4564d0db6ddc9bb60ab01f66d3630f0",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/9cae0b92c4564d0db6ddc9bb60ab01f66d3630f0"
+          "sha": "2d1f7403f472a893fdac539ff0bc6554f25a6d28",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/2d1f7403f472a893fdac539ff0bc6554f25a6d28"
         },
         "children": [
           {
@@ -7764,9 +7848,9 @@
               "path": "packages/size-check/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "01ad081207412fc59ff3e9de0e8d27b844275dd5",
+              "sha": "5e1f6f3693093f3b0016b787ef1bc2c83d55cdeb",
               "size": 120,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/01ad081207412fc59ff3e9de0e8d27b844275dd5"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/5e1f6f3693093f3b0016b787ef1bc2c83d55cdeb"
             }
           },
           {
@@ -7823,8 +7907,8 @@
           "path": "packages/template-explorer",
           "mode": "040000",
           "type": "tree",
-          "sha": "f07e38a83687497118762cf0936f94e5ea18003c",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/f07e38a83687497118762cf0936f94e5ea18003c"
+          "sha": "c5db3a5195cb2743d67c00646a79a8872e8d5da9",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/c5db3a5195cb2743d67c00646a79a8872e8d5da9"
         },
         "children": [
           {
@@ -7878,9 +7962,9 @@
               "path": "packages/template-explorer/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "35eadc58af75b980db5a87447892e7e6dbd389a8",
+              "sha": "b4b3ab75c6981e2b1cd2409b4f9af5c93052dac5",
               "size": 312,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/35eadc58af75b980db5a87447892e7e6dbd389a8"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/b4b3ab75c6981e2b1cd2409b4f9af5c93052dac5"
             }
           },
           {
@@ -7965,8 +8049,8 @@
           "path": "packages/vue-compat",
           "mode": "040000",
           "type": "tree",
-          "sha": "9b3ddbf2fbe2df2298c04bd14bb81536d2e901a4",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/9b3ddbf2fbe2df2298c04bd14bb81536d2e901a4"
+          "sha": "22d5d467e3cc935dc86ac62a02e696554fe469fa",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/22d5d467e3cc935dc86ac62a02e696554fe469fa"
         },
         "children": [
           {
@@ -7992,9 +8076,9 @@
               "path": "packages/vue-compat/README.md",
               "mode": "100644",
               "type": "blob",
-              "sha": "01bd71643a8e9d206ce4c0c8594242d085521227",
-              "size": 26326,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/01bd71643a8e9d206ce4c0c8594242d085521227"
+              "sha": "0bc84b3340220f45a3e553405040ef7daafbbe80",
+              "size": 26089,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/0bc84b3340220f45a3e553405040ef7daafbbe80"
             }
           },
           {
@@ -8006,8 +8090,8 @@
               "path": "packages/vue-compat/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "71f31766fb21c06c4f37015e170fa7571a85427c",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/71f31766fb21c06c4f37015e170fa7571a85427c"
+              "sha": "9686d0ee8e85704b1a8d10a8dcce9c4849452e5b",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/9686d0ee8e85704b1a8d10a8dcce9c4849452e5b"
             },
             "children": [
               {
@@ -8089,9 +8173,9 @@
                   "path": "packages/vue-compat/__tests__/global.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "86bb4391092829b49a7ee3d785ed24ec537727fa",
-                  "size": 10039,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/86bb4391092829b49a7ee3d785ed24ec537727fa"
+                  "sha": "eda08d3026ecc91b7694f30dd00e01db61ab0952",
+                  "size": 12050,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/eda08d3026ecc91b7694f30dd00e01db61ab0952"
                 }
               },
               {
@@ -8203,9 +8287,9 @@
               "path": "packages/vue-compat/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "662c6c4f42a909bef5bf8ec38f8fcfae078a1e01",
+              "sha": "59eafbe031d397eeab47c7a765d30c9fb752f190",
               "size": 920,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/662c6c4f42a909bef5bf8ec38f8fcfae078a1e01"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/59eafbe031d397eeab47c7a765d30c9fb752f190"
             }
           },
           {
@@ -8318,8 +8402,8 @@
           "path": "packages/vue",
           "mode": "040000",
           "type": "tree",
-          "sha": "60b4c18b2edb4bd8e446ba0cd6829867ea620ae9",
-          "url": "https://api.github.com/repos/vuejs/core/git/trees/60b4c18b2edb4bd8e446ba0cd6829867ea620ae9"
+          "sha": "18345df3249414c473a2a84f0d8cbd6de4ee0232",
+          "url": "https://api.github.com/repos/vuejs/core/git/trees/18345df3249414c473a2a84f0d8cbd6de4ee0232"
         },
         "children": [
           {
@@ -8359,8 +8443,8 @@
               "path": "packages/vue/__tests__",
               "mode": "040000",
               "type": "tree",
-              "sha": "1924e4a534c6c7957b2b81fae3fd181d7ffa2f4a",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/1924e4a534c6c7957b2b81fae3fd181d7ffa2f4a"
+              "sha": "7dd2c1901f6679b2cae618d38de07f6c00858190",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/7dd2c1901f6679b2cae618d38de07f6c00858190"
             },
             "children": [
               {
@@ -8372,9 +8456,9 @@
                   "path": "packages/vue/__tests__/Transition.spec.ts",
                   "mode": "100644",
                   "type": "blob",
-                  "sha": "97b3ccd96257544e9547ad74407e984bdc81a53a",
-                  "size": 63996,
-                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/97b3ccd96257544e9547ad74407e984bdc81a53a"
+                  "sha": "61926310d292ebb2b029bf937d0ec2eb68c2a17b",
+                  "size": 69236,
+                  "url": "https://api.github.com/repos/vuejs/core/git/blobs/61926310d292ebb2b029bf937d0ec2eb68c2a17b"
                 }
               },
               {
@@ -8557,8 +8641,8 @@
               "path": "packages/vue/examples",
               "mode": "040000",
               "type": "tree",
-              "sha": "60fd8257a025957ffa6af3a6ab6d5dabecad0fbb",
-              "url": "https://api.github.com/repos/vuejs/core/git/trees/60fd8257a025957ffa6af3a6ab6d5dabecad0fbb"
+              "sha": "37dd96eb82bca1e605647c96e4c91c1f9c86a459",
+              "url": "https://api.github.com/repos/vuejs/core/git/trees/37dd96eb82bca1e605647c96e4c91c1f9c86a459"
             },
             "children": [
               {
@@ -8570,8 +8654,8 @@
                   "path": "packages/vue/examples/__tests__",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "a67dda65a5820d9c88e2105992babd2ff063cfaf",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/a67dda65a5820d9c88e2105992babd2ff063cfaf"
+                  "sha": "cc48f3df63a75ed1d103c3eaea7a2cf339fd4323",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/cc48f3df63a75ed1d103c3eaea7a2cf339fd4323"
                 },
                 "children": [
                   {
@@ -8583,9 +8667,9 @@
                       "path": "packages/vue/examples/__tests__/commits.mock.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "4b2d21c10bf3993c0e4e6219acfdbb8543c55d61",
-                      "size": 23478,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/4b2d21c10bf3993c0e4e6219acfdbb8543c55d61"
+                      "sha": "8bcb8d8f97bfe2e5485836eacf07b7bd92baea5f",
+                      "size": 23483,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8bcb8d8f97bfe2e5485836eacf07b7bd92baea5f"
                     }
                   },
                   {
@@ -8597,9 +8681,9 @@
                       "path": "packages/vue/examples/__tests__/commits.spec.ts",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "2190fb0d93ffb0710873ad1199e1a49a1f7f8826",
-                      "size": 1889,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/2190fb0d93ffb0710873ad1199e1a49a1f7f8826"
+                      "sha": "52e2fda755f89b1711ad8e2873e1cedbdffaee9d",
+                      "size": 1911,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/52e2fda755f89b1711ad8e2873e1cedbdffaee9d"
                     }
                   },
                   {
@@ -8683,8 +8767,8 @@
                   "path": "packages/vue/examples/classic",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "968f956139f6327521d6659e1e96b0ec8409cdcc",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/968f956139f6327521d6659e1e96b0ec8409cdcc"
+                  "sha": "ebaeea6f6d3a1dcd2bd50d787d6743be2cbd9ec9",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/ebaeea6f6d3a1dcd2bd50d787d6743be2cbd9ec9"
                 },
                 "children": [
                   {
@@ -8696,9 +8780,9 @@
                       "path": "packages/vue/examples/classic/commits.html",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "8803009bc538079c762ff5bdd58b4abc8edc9a13",
-                      "size": 1719,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/8803009bc538079c762ff5bdd58b4abc8edc9a13"
+                      "sha": "811f0edc2589656f40beb6c56a640bda169690a3",
+                      "size": 1721,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/811f0edc2589656f40beb6c56a640bda169690a3"
                     }
                   },
                   {
@@ -8782,8 +8866,8 @@
                   "path": "packages/vue/examples/composition",
                   "mode": "040000",
                   "type": "tree",
-                  "sha": "971a60d0dd930c532c8d90fdfa727a0111e2401d",
-                  "url": "https://api.github.com/repos/vuejs/core/git/trees/971a60d0dd930c532c8d90fdfa727a0111e2401d"
+                  "sha": "248a661a24e4b5622626a183f5bde691e097f6d9",
+                  "url": "https://api.github.com/repos/vuejs/core/git/trees/248a661a24e4b5622626a183f5bde691e097f6d9"
                 },
                 "children": [
                   {
@@ -8795,9 +8879,9 @@
                       "path": "packages/vue/examples/composition/commits.html",
                       "mode": "100644",
                       "type": "blob",
-                      "sha": "6009237b7a18696add97e90c7824d821f52f5147",
-                      "size": 1776,
-                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/6009237b7a18696add97e90c7824d821f52f5147"
+                      "sha": "b094214179f2c969b5db0a229aa145e3a7cf70e8",
+                      "size": 1778,
+                      "url": "https://api.github.com/repos/vuejs/core/git/blobs/b094214179f2c969b5db0a229aa145e3a7cf70e8"
                     }
                   },
                   {
@@ -8968,9 +9052,9 @@
               "path": "packages/vue/macros.d.ts",
               "mode": "100644",
               "type": "blob",
-              "sha": "a0a9f54d306f8943039ad157360d11f6bace02e3",
-              "size": 2909,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/a0a9f54d306f8943039ad157360d11f6bace02e3"
+              "sha": "9df3f107cb220a9a7748819216eb51f806aff865",
+              "size": 3063,
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/9df3f107cb220a9a7748819216eb51f806aff865"
             }
           },
           {
@@ -8982,9 +9066,9 @@
               "path": "packages/vue/package.json",
               "mode": "100644",
               "type": "blob",
-              "sha": "10c943617a31f300b470e28f0aadb4342ca47a24",
+              "sha": "b7cad08802152b4589e8a2cf9248ceca7061f4da",
               "size": 1841,
-              "url": "https://api.github.com/repos/vuejs/core/git/blobs/10c943617a31f300b470e28f0aadb4342ca47a24"
+              "url": "https://api.github.com/repos/vuejs/core/git/blobs/b7cad08802152b4589e8a2cf9248ceca7061f4da"
             }
           },
           {
@@ -9142,9 +9226,9 @@
       "path": "pnpm-lock.yaml",
       "mode": "100644",
       "type": "blob",
-      "sha": "1af4d31bca8c519d867850e8d72ed31213a1d71a",
-      "size": 235896,
-      "url": "https://api.github.com/repos/vuejs/core/git/blobs/1af4d31bca8c519d867850e8d72ed31213a1d71a"
+      "sha": "ee6700a1a8971ea12c6306a33c0c268c01a476e0",
+      "size": 236923,
+      "url": "https://api.github.com/repos/vuejs/core/git/blobs/ee6700a1a8971ea12c6306a33c0c268c01a476e0"
     }
   },
   {
@@ -9170,9 +9254,9 @@
       "path": "rollup.config.js",
       "mode": "100644",
       "type": "blob",
-      "sha": "6e909274bc7676d3614566909b1a2df577a64041",
-      "size": 9315,
-      "url": "https://api.github.com/repos/vuejs/core/git/blobs/6e909274bc7676d3614566909b1a2df577a64041"
+      "sha": "1bc27969cb0d9170ab4effa01e14089182136ba3",
+      "size": 9440,
+      "url": "https://api.github.com/repos/vuejs/core/git/blobs/1bc27969cb0d9170ab4effa01e14089182136ba3"
     }
   },
   {
@@ -9184,8 +9268,8 @@
       "path": "scripts",
       "mode": "040000",
       "type": "tree",
-      "sha": "e28366e13e3d7335067c3076b9470f0cc7144ae4",
-      "url": "https://api.github.com/repos/vuejs/core/git/trees/e28366e13e3d7335067c3076b9470f0cc7144ae4"
+      "sha": "a4a12b25cf8eaf7291f99fd48320df3d164b76d8",
+      "url": "https://api.github.com/repos/vuejs/core/git/trees/a4a12b25cf8eaf7291f99fd48320df3d164b76d8"
     },
     "children": [
       {
@@ -9225,9 +9309,9 @@
           "path": "scripts/dev.js",
           "mode": "100644",
           "type": "blob",
-          "sha": "a197ea21d8c13bd06bdd59573698813384f704b1",
-          "size": 3056,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/a197ea21d8c13bd06bdd59573698813384f704b1"
+          "sha": "81efc5c6903a1c6395468f7f9527b6be9ea7fc5e",
+          "size": 3122,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/81efc5c6903a1c6395468f7f9527b6be9ea7fc5e"
         }
       },
       {
@@ -9239,9 +9323,9 @@
           "path": "scripts/filter-e2e.js",
           "mode": "100644",
           "type": "blob",
-          "sha": "bbc3602283b3045881f0c6f265fe9e1d491879e2",
-          "size": 254,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/bbc3602283b3045881f0c6f265fe9e1d491879e2"
+          "sha": "d1856a389cde0ce5fc1b044b73f865ff797f3b6c",
+          "size": 337,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/d1856a389cde0ce5fc1b044b73f865ff797f3b6c"
         }
       },
       {
@@ -9281,9 +9365,9 @@
           "path": "scripts/release.js",
           "mode": "100644",
           "type": "blob",
-          "sha": "69edcbca64316e9da51d2147bc5f567f1c31a677",
-          "size": 6485,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/69edcbca64316e9da51d2147bc5f567f1c31a677"
+          "sha": "b47f075bcd8dd8f3338e50d954befdbf0dd05bf3",
+          "size": 6506,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/b47f075bcd8dd8f3338e50d954befdbf0dd05bf3"
         }
       },
       {
@@ -9339,8 +9423,8 @@
       "path": "test-dts",
       "mode": "040000",
       "type": "tree",
-      "sha": "7d2543d9a033996b4b37eb076e3766ac945740b6",
-      "url": "https://api.github.com/repos/vuejs/core/git/trees/7d2543d9a033996b4b37eb076e3766ac945740b6"
+      "sha": "080fa6bf68cb32e038eff71485e58950b46b150e",
+      "url": "https://api.github.com/repos/vuejs/core/git/trees/080fa6bf68cb32e038eff71485e58950b46b150e"
     },
     "children": [
       {
@@ -9366,9 +9450,9 @@
           "path": "test-dts/component.test-d.ts",
           "mode": "100644",
           "type": "blob",
-          "sha": "d8d3934b964230b4e3147e3cd6be6d318d42397e",
-          "size": 14746,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/d8d3934b964230b4e3147e3cd6be6d318d42397e"
+          "sha": "3463995613c6056c55a1887ecd646c8d477e3030",
+          "size": 14748,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/3463995613c6056c55a1887ecd646c8d477e3030"
         }
       },
       {
@@ -9380,9 +9464,9 @@
           "path": "test-dts/componentTypeExtensions.test-d.tsx",
           "mode": "100644",
           "type": "blob",
-          "sha": "32a72f844e6b0a3aba6d5cbdad37d097019657ac",
-          "size": 1201,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/32a72f844e6b0a3aba6d5cbdad37d097019657ac"
+          "sha": "3ff5b7addb0d213c484b75afa916e80a3d2bfe70",
+          "size": 1264,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/3ff5b7addb0d213c484b75afa916e80a3d2bfe70"
         }
       },
       {
@@ -9394,9 +9478,9 @@
           "path": "test-dts/defineComponent.test-d.tsx",
           "mode": "100644",
           "type": "blob",
-          "sha": "031b4a13eb85f05c41c3fa16a07a1cfaf6ca9aac",
-          "size": 28905,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/031b4a13eb85f05c41c3fa16a07a1cfaf6ca9aac"
+          "sha": "2c4076b9b2df121da6802dfea95172fc5e74d9e1",
+          "size": 30158,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/2c4076b9b2df121da6802dfea95172fc5e74d9e1"
         }
       },
       {
@@ -9436,9 +9520,9 @@
           "path": "test-dts/index.d.ts",
           "mode": "100644",
           "type": "blob",
-          "sha": "59eadcb92d9075a66aff99cc41e0227200c8e56c",
-          "size": 562,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/59eadcb92d9075a66aff99cc41e0227200c8e56c"
+          "sha": "0662a6447e6a9218f64b8cd3e4030430a38c4f8b",
+          "size": 618,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/0662a6447e6a9218f64b8cd3e4030430a38c4f8b"
         }
       },
       {
@@ -9464,9 +9548,9 @@
           "path": "test-dts/reactivity.test-d.ts",
           "mode": "100644",
           "type": "blob",
-          "sha": "4c22765e742f740245f06824fe3bda4655926622",
-          "size": 628,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/4c22765e742f740245f06824fe3bda4655926622"
+          "sha": "0499c6da2873f0fcd73a67b33d021e97b2a1c020",
+          "size": 1217,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/0499c6da2873f0fcd73a67b33d021e97b2a1c020"
         }
       },
       {
@@ -9506,9 +9590,9 @@
           "path": "test-dts/setupHelpers.test-d.ts",
           "mode": "100644",
           "type": "blob",
-          "sha": "155ba337dcfa0a7c1f0267c3aa37c2ca089c7e7d",
-          "size": 2647,
-          "url": "https://api.github.com/repos/vuejs/core/git/blobs/155ba337dcfa0a7c1f0267c3aa37c2ca089c7e7d"
+          "sha": "6b9c67b28978e6685a9ff310ca47e936910a6163",
+          "size": 2789,
+          "url": "https://api.github.com/repos/vuejs/core/git/blobs/6b9c67b28978e6685a9ff310ca47e936910a6163"
         }
       },
       {

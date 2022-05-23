@@ -1,19 +1,29 @@
 import GitHub from "github-api";
 import fs from "fs";
-const gh = new GitHub();
+import path from "path";
+
+const config = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), "private-config.json"))
+);
+
+const gh = new GitHub({
+  token: config.githubToken,
+});
+
 let repo = gh.getRepo("vuejs", "core");
 
 repo.getTree("main?recursive=1", function (err, data) {
-  console.log(data)
   if (err) {
+    console.error(err);
     console.dir(err.status);
+    return;
   }
   fs.writeFileSync(
-    "/Users/zy/codes/reading-source-code/src/data/rawFiles.json",
+    "/Users/zy/codes/read-vue3-source/src/data/rawFiles.json",
     JSON.stringify(data.tree)
   );
   fs.writeFileSync(
-    "/Users/zy/codes/reading-source-code/src/data/fileTree.json",
+    "/Users/zy/codes/read-vue3-source/src/data/fileTree.json",
     JSON.stringify(convertToTree(data.tree))
   );
 });

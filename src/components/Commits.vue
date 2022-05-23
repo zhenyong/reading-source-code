@@ -67,7 +67,7 @@ ul {
   border: 1px solid #eee;
   border-radius: 4px;
   overflow-y: scroll;
-  height: 200px;
+  height: 280px;
   padding: 0;
   margin: 0;
   list-style: none;

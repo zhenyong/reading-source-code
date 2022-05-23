@@ -32,8 +32,6 @@ let fileTreeData = rawFileTreeJson;
 const fileTreeLocalStorage = localStorage.getItem("FILE_TREE_STORE");
 if (fileTreeLocalStorage) {
   fileTreeData = JSON.parse(fileTreeLocalStorage).tree;
-} else {
-  localStorage.setItem("FILE_TREE_STORE", JSON.stringify(rawFileTreeJson));
 }
 
 const flatten = (item: any) => {
